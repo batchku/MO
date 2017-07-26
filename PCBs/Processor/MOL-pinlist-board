@@ -1,0 +1,468 @@
+Pinlist
+
+Exported from MOL-v1.1.brd at 2017-07-13 2:13 PM
+
+EAGLE Version 8.2.2 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Part     Pad      Net
+
+GND-SHRT 1        GND_MOT
+         2        GND
+
+I2C-0    1        +3V3
+         2        GND
+         3        I2C_SCL
+         4        I2C_SDA
+
+IC1      1        L1
+         2        L2
+         3        L3
+         4        L4
+         5        L5
+         6        L6
+         7        L7
+         8        L8
+         9        GND
+         10       +5V
+         11       LED8
+         12       LED7
+         13       LED6
+         14       LED5
+         15       LED4
+         16       LED3
+         17       LED2
+         18       LED1
+
+IC2      1        L9
+         2        L10
+         3        L11
+         4        L12
+         5        L13
+         6        L14
+         7        L15
+         8        L16
+         9        GND
+         10       +5V
+         11       LED16
+         12       LED15
+         13       LED14
+         14       LED13
+         15       LED12
+         16       LED11
+         17       LED10
+         18       LED9
+
+J1       1        GND
+         2        +5V
+         3        S1
+
+J2       1        GND
+         2        +5V
+         3        S2
+
+J3       1        +3V3
+         2        AN1
+         3        AGND
+
+J4       1        +3V3
+         2        AN2
+         3        AGND
+
+J5       1        +3V3
+         2        AN5
+         3        AGND
+
+J6       1        +3V3
+         2        AN6
+         3        AGND
+
+J7       1        +3V3
+         2        AN9
+         3        AGND
+
+J8       1        +3V3
+         2        AN10
+         3        AGND
+
+LED13    A        N$2
+         K        GND
+
+LED14    A        N$3
+         K        GND
+
+LED15    A        N$4
+         K        GND
+
+LED16    A        N$7
+         K        GND
+
+MOTORS1  1                 *** unconnected ***
+         2                 *** unconnected ***
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         P$1      N$45
+         P$2      N$46
+         P$3      N$52
+         P$4      N$54
+
+POWER-5V GND      GND_MOT
+         PWR      +5V
+         GNDBREAK GNDBREAK
+
+R1       P$1      N$1
+         P$2      LED1
+
+R2       P$1      N$8
+         P$2      LED2
+
+R3       P$1      N$9
+         P$2      LED3
+
+R4       P$1      N$10
+         P$2      LED4
+
+R5       P$1      +5V
+         P$2      I2C_SCL
+
+R6       P$1      +5V
+         P$2      I2C_SDA
+
+R9       P$1      N$15
+         P$2      LED9
+
+R10      P$1      N$16
+         P$2      LED10
+
+R11      P$1      N$17
+         P$2      LED11
+
+R12      P$1      N$18
+         P$2      LED12
+
+R13      P$1      N$2
+         P$2      U1
+
+R14      P$1      N$3
+         P$2      U2
+
+R15      P$1      N$4
+         P$2      U3
+
+R16      P$1      N$7
+         P$2      U4
+
+R17      P$1      N$19
+         P$2      LED5
+
+R18      P$1      N$20
+         P$2      LED6
+
+R19      P$1      N$21
+         P$2      LED7
+
+R20      P$1      N$22
+         P$2      LED8
+
+S1       1        GND
+         2                 *** unconnected ***
+         3        BTN1
+         4                 *** unconnected ***
+         A        N$1
+         C        GND
+
+S2       1        GND
+         2                 *** unconnected ***
+         3        BTN2
+         4                 *** unconnected ***
+         A        N$8
+         C        GND
+
+S3       1        GND
+         2                 *** unconnected ***
+         3        BTN3
+         4                 *** unconnected ***
+         A        N$9
+         C        GND
+
+S4       1        GND
+         2                 *** unconnected ***
+         3        BTN4
+         4                 *** unconnected ***
+         A        N$10
+         C        GND
+
+S5       1        GND
+         2                 *** unconnected ***
+         3        BTN5
+         4                 *** unconnected ***
+         A        N$19
+         C        GND
+
+S6       1        GND
+         2                 *** unconnected ***
+         3        BTN6
+         4                 *** unconnected ***
+         A        N$20
+         C        GND
+
+S7       1        GND
+         2                 *** unconnected ***
+         3        BTN7
+         4                 *** unconnected ***
+         A        N$21
+         C        GND
+
+S8       1        GND
+         2                 *** unconnected ***
+         3        BTN8
+         4                 *** unconnected ***
+         A        N$22
+         C        GND
+
+S9       1        GND
+         2                 *** unconnected ***
+         3        BTN9
+         4                 *** unconnected ***
+         A        N$15
+         C        GND
+
+S10      1        GND
+         2                 *** unconnected ***
+         3        BTN10
+         4                 *** unconnected ***
+         A        N$16
+         C        GND
+
+S11      1        GND
+         2                 *** unconnected ***
+         3        BTN11
+         4                 *** unconnected ***
+         A        N$17
+         C        GND
+
+S12      1        GND
+         2                 *** unconnected ***
+         3        BTN12
+         4                 *** unconnected ***
+         A        N$18
+         C        GND
+
+TEENSY   0        JOY_BTN_M
+         1        JOY_BTN_S
+         2        L1
+         3        L2
+         4        L3
+         5        L4
+         6        L5
+         7        L6
+         8        L7
+         9        S1
+         P                 *** unconnected ***
+         R                 *** unconnected ***
+         10       S2
+         11       BTN1
+         12       BTN2
+         13                *** unconnected ***
+         14       AN1
+         15       AN2
+         16       AN3
+         17       JOY_AN_V_M
+         18       JOY_AN_H_M
+         19       JOY_AN_V_S
+         20       JOY_AN_H_S
+         21       M_PWM_A
+         22       M_PWM_B
+         23       L8
+         24       BTN3
+         25       BTN4
+         26       BTN5
+         27       BTN6
+         28       BTN7
+         29       L9
+         30       L10
+         31       L11
+         32       L12
+         33       AN4
+         34       AN5
+         35       AN6
+         36       AN7
+         37                *** unconnected ***
+         38                *** unconnected ***
+         39       AN8
+         40       M_A_IN
+         41       M_B_IN
+         42       BTN8
+         43       BTN9
+         44       BTN10
+         45       BTN11
+         46       BTN12
+         47       I2C_SCL
+         48       I2C_SDA
+         49                *** unconnected ***
+         50                *** unconnected ***
+         51       U1
+         52       U2
+         53       U3
+         54       U4
+         55                *** unconnected ***
+         56                *** unconnected ***
+         57                *** unconnected ***
+         5V                *** unconnected ***
+         D+                *** unconnected ***
+         D-                *** unconnected ***
+         DC                *** unconnected ***
+         DD                *** unconnected ***
+         DE                *** unconnected ***
+         G0       GND
+         G1       GND
+         G2       GND
+         G3       GND
+         G4       GND
+         G5       GND
+         G6       GND
+         A10      AN11
+         A11      AN12
+         VIN               *** unconnected ***
+         AGND     AGND
+         AREF              *** unconnected ***
+         DAC0     AN9
+         DAC1     AN10
+         VBAT              *** unconnected ***
+         VUSB              *** unconnected ***
+         3V3(1)   +3V3
+         3V3(2)   +3V3
+         3V3(3)   +3V3
+         3V3(4)   +3V3
+
+TM1      1        +3V3
+         2        AN1
+         3        AGND
+         5                 *** unconnected ***
+         M2                *** unconnected ***
+
+TM2      1        +3V3
+         2        AN2
+         3        AGND
+         5                 *** unconnected ***
+         M2                *** unconnected ***
+
+TM3      1        +3V3
+         2        AN3
+         3        AGND
+         5                 *** unconnected ***
+         M2                *** unconnected ***
+
+TM4      1        +3V3
+         2        AN4
+         3        AGND
+         5                 *** unconnected ***
+         M2                *** unconnected ***
+
+TM5      1        +3V3
+         2        AN5
+         3        AGND
+         5                 *** unconnected ***
+         M2                *** unconnected ***
+
+TM6      1        +3V3
+         2        AN6
+         3        AGND
+         5                 *** unconnected ***
+         M2                *** unconnected ***
+
+TM7      1        +3V3
+         2        AN7
+         3        AGND
+         5                 *** unconnected ***
+         M2                *** unconnected ***
+
+TM8      1        +3V3
+         2        AN8
+         3        AGND
+         5                 *** unconnected ***
+         M2                *** unconnected ***
+
+TM9      1        +3V3
+         2        AN9
+         3        AGND
+         5                 *** unconnected ***
+         M2                *** unconnected ***
+
+TM10     1        +3V3
+         2        AN10
+         3        AGND
+         5                 *** unconnected ***
+         M2                *** unconnected ***
+
+TM11     1        +3V3
+         2        AN11
+         3        AGND
+         5                 *** unconnected ***
+         M2                *** unconnected ***
+
+TM12     1        +3V3
+         2        AN12
+         3        AGND
+         5                 *** unconnected ***
+         M2                *** unconnected ***
+
+U$7      AO1      N$54
+         AO2      N$52
+         BO1      N$45
+         BO2      N$46
+         GND      GND
+         VCC      +3V3
+         AIN1     M_A_IN
+         AIN2     N$6
+         BIN1     N$5
+         BIN2     M_B_IN
+         GND1     GND_MOT
+         GND2     GND_MOT
+         PWMA     M_PWM_A
+         PWMB     M_PWM_B
+         STBY     +3V3
+         VMOT     VMOT
+
+U1       1        M_B_IN
+         2        GND
+         3        M_A_IN
+         4        N$6
+         5        +3V3
+         6        N$5
+
+U2       H1       +3V3
+         H2       JOY_AN_H_M
+         H3       AGND
+         V1       +3V3
+         V2       JOY_AN_V_M
+         V3       AGND
+         B1A      JOY_BTN_M
+         B1B               *** unconnected ***
+         B2A      AGND
+         B2B               *** unconnected ***
+         MOUNT1            *** unconnected ***
+         MOUNT2            *** unconnected ***
+         MOUNT3            *** unconnected ***
+         MOUNT4            *** unconnected ***
+
+U3       H1       +3V3
+         H2       JOY_AN_H_S
+         H3       AGND
+         V1       +3V3
+         V2       JOY_AN_V_S
+         V3       AGND
+         B1A      JOY_BTN_S
+         B1B               *** unconnected ***
+         B2A      AGND
+         B2B               *** unconnected ***
+         MOUNT1            *** unconnected ***
+         MOUNT2            *** unconnected ***
+         MOUNT3            *** unconnected ***
+         MOUNT4            *** unconnected ***
+
+VIN      1        +5V
+         2        GND
+
+VOUT     1        GND
+         2        VMOT
+

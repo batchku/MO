@@ -1,0 +1,7 @@
+#N canvas 0 23 1250 405 10;
+#X obj 5 -388 momol.arrayReader;
+#X obj 5 -355 momol.strip 1;
+#X obj 169 -355 momol.actuator;
+#X obj 358 -355 momol.joy 1;
+#X obj 470 -355 momol.ui;
+#X obj 889 -354 momol.in;

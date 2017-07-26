@@ -1,0 +1,424 @@
+Netlist
+
+Exported from MOL-v1.brd at 2017-07-12 11:40 AM
+
+EAGLE Version 8.2.2 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Net      Part     Pad
+
++3V3     I2C-0    1
+         J3       1
+         J4       1
+         J5       1
+         J6       1
+         J7       1
+         J8       1
+         TEENSY   3V3(1)
+         TEENSY   3V3(2)
+         TEENSY   3V3(3)
+         TEENSY   3V3(4)
+         TM1      1
+         TM10     1
+         TM11     1
+         TM12     1
+         TM2      1
+         TM3      1
+         TM4      1
+         TM5      1
+         TM6      1
+         TM7      1
+         TM8      1
+         TM9      1
+         U$7      STBY
+         U$7      VCC
+         U1       5
+         U2       H1
+         U2       V1
+         U3       H1
+         U3       V1
+
++5V      IC1      10
+         IC2      10
+         J1       2
+         J2       2
+         POWER-5V PWR
+         R5       P$1
+         R6       P$1
+         VIN      1
+
+A1       J3       2
+         TEENSY   14
+         TM1      2
+
+A2       J4       2
+         TEENSY   15
+         TM2      2
+
+A3       TEENSY   16
+         TM3      2
+
+A4       TEENSY   33
+         TM4      2
+
+A5       J5       2
+         TEENSY   34
+         TM5      2
+
+A6       J6       2
+         TEENSY   35
+         TM6      2
+
+A7       TEENSY   36
+         TM7      2
+
+A8       TEENSY   39
+         TM8      2
+
+A9       J7       2
+         TEENSY   DAC0
+         TM9      2
+
+A10      J8       2
+         TEENSY   DAC1
+         TM10     2
+
+A11      TEENSY   A10
+         TM11     2
+
+A12      TEENSY   A11
+         TM12     2
+
+AGND     J3       3
+         J4       3
+         J5       3
+         J6       3
+         J7       3
+         J8       3
+         TEENSY   AGND
+         TM1      3
+         TM10     3
+         TM11     3
+         TM12     3
+         TM2      3
+         TM3      3
+         TM4      3
+         TM5      3
+         TM6      3
+         TM7      3
+         TM8      3
+         TM9      3
+         U2       B2A
+         U2       H3
+         U2       V3
+         U3       B2A
+         U3       H3
+         U3       V3
+
+B1       S1       3
+         TEENSY   11
+
+B2       S2       3
+         TEENSY   12
+
+B3       S3       3
+         TEENSY   24
+
+B4       S4       3
+         TEENSY   25
+
+B5       S5       3
+         TEENSY   26
+
+B6       S6       3
+         TEENSY   27
+
+B7       S7       3
+         TEENSY   28
+
+B8       S8       3
+         TEENSY   42
+
+B9       S9       3
+         TEENSY   43
+
+B10      S10      3
+         TEENSY   44
+
+B11      S11      3
+         TEENSY   45
+
+B12      S12      3
+         TEENSY   46
+
+GND      GND-SHRT 2
+         I2C-0    2
+         IC1      9
+         IC2      9
+         J1       1
+         J2       1
+         LED13    K
+         LED14    K
+         LED15    K
+         LED16    K
+         S1       1
+         S1       C
+         S10      1
+         S10      C
+         S11      1
+         S11      C
+         S12      1
+         S12      C
+         S2       1
+         S2       C
+         S3       1
+         S3       C
+         S4       1
+         S4       C
+         S5       1
+         S5       C
+         S6       1
+         S6       C
+         S7       1
+         S7       C
+         S8       1
+         S8       C
+         S9       1
+         S9       C
+         TEENSY   G0
+         TEENSY   G1
+         TEENSY   G2
+         TEENSY   G3
+         TEENSY   G4
+         TEENSY   G5
+         TEENSY   G6
+         U$7      GND
+         U1       2
+         VIN      2
+         VOUT     1
+
+GNDBREAK POWER-5V GNDBREAK
+
+GND_MOT  GND-SHRT 1
+         POWER-5V GND
+         U$7      GND1
+         U$7      GND2
+
+I2C_SCL  I2C-0    3
+         R5       P$2
+         TEENSY   47
+
+I2C_SDA  I2C-0    4
+         R6       P$2
+         TEENSY   48
+
+L1       IC1      1
+         TEENSY   2
+
+L2       IC1      2
+         TEENSY   3
+
+L3       IC1      3
+         TEENSY   4
+
+L4       IC1      4
+         TEENSY   5
+
+L5       IC1      5
+         TEENSY   6
+
+L6       IC1      6
+         TEENSY   7
+
+L7       IC1      7
+         TEENSY   8
+
+L8       IC1      8
+         TEENSY   23
+
+L9       IC2      1
+         TEENSY   29
+
+L10      IC2      2
+         TEENSY   30
+         TEENSY   37
+
+L11      IC2      3
+         TEENSY   31
+         TEENSY   38
+         TEENSY   50
+
+L12      IC2      4
+         TEENSY   32
+         TEENSY   49
+
+L13      IC2      5
+
+L14      IC2      6
+
+L15      IC2      7
+
+L16      IC2      8
+
+LED1     IC1      18
+         R1       P$2
+
+LED2     IC1      17
+         R2       P$2
+
+LED3     IC1      16
+         R3       P$2
+
+LED4     IC1      15
+         R4       P$2
+
+LED5     IC1      14
+         R17      P$2
+
+LED6     IC1      13
+         R18      P$2
+
+LED7     IC1      12
+         R19      P$2
+
+LED8     IC1      11
+         R20      P$2
+
+LED9     IC2      18
+         R9       P$2
+
+LED10    IC2      17
+         R10      P$2
+
+LED11    IC2      16
+         R11      P$2
+
+LED12    IC2      15
+         R12      P$2
+
+LED13    IC2      14
+
+LED14    IC2      13
+
+LED15    IC2      12
+
+LED16    IC2      11
+
+M_AIN    TEENSY   40
+         U$7      AIN1
+         U1       3
+
+M_BIN    TEENSY   41
+         U$7      BIN2
+         U1       1
+
+M_JOYB   TEENSY   0
+         U2       B1A
+
+M_JOYH   TEENSY   18
+         U2       H2
+
+M_JOYV   TEENSY   17
+         U2       V2
+
+M_PWMA   TEENSY   21
+         U$7      PWMA
+
+M_PWMB   TEENSY   22
+         U$7      PWMB
+
+N$1      R1       P$1
+         S1       A
+
+N$2      LED13    A
+         R13      P$1
+
+N$3      LED14    A
+         R14      P$1
+
+N$4      LED15    A
+         R15      P$1
+
+N$5      U$7      BIN1
+         U1       6
+
+N$6      U$7      AIN2
+         U1       4
+
+N$7      LED16    A
+         R16      P$1
+
+N$8      R2       P$1
+         S2       A
+
+N$9      R3       P$1
+         S3       A
+
+N$10     R4       P$1
+         S4       A
+
+N$15     R9       P$1
+         S9       A
+
+N$16     R10      P$1
+         S10      A
+
+N$17     R11      P$1
+         S11      A
+
+N$18     R12      P$1
+         S12      A
+
+N$19     R17      P$1
+         S5       A
+
+N$20     R18      P$1
+         S6       A
+
+N$21     R19      P$1
+         S7       A
+
+N$22     R20      P$1
+         S8       A
+
+N$45     MOTORS1  P$1
+         U$7      BO1
+
+N$46     MOTORS1  P$2
+         U$7      BO2
+
+N$52     MOTORS1  P$3
+         U$7      AO2
+
+N$54     MOTORS1  P$4
+         U$7      AO1
+
+S1       J1       3
+         TEENSY   9
+
+S2       J2       3
+         TEENSY   10
+
+S_JOYB   TEENSY   1
+         U3       B1A
+
+S_JOYH   TEENSY   20
+         U3       H2
+
+S_JOYV   TEENSY   19
+         U3       V2
+
+U1       R13      P$2
+         TEENSY   51
+
+U2       R14      P$2
+         TEENSY   52
+
+U3       R15      P$2
+         TEENSY   53
+
+U4       R16      P$2
+         TEENSY   54
+
+VMOT     U$7      VMOT
+         VOUT     2
+

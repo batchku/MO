@@ -1,0 +1,12 @@
+#N canvas 190 189 1136 580 10;
+#X obj 121 171 dac~;
+#X obj 191 60 loadbang;
+#X obj 189 93 del 4000;
+#X msg 191 123 \; pd dsp 1;
+#X obj 121 63 noise~;
+#X obj 118 110 *~ 0.1;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 4 0 5 0;
+#X connect 5 0 0 0;
+#X connect 5 0 0 1;
