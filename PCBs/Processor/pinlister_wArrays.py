@@ -94,6 +94,22 @@ def process(filename):
         outputLine = '{}{:10}{}{}{}'.format('const int ',key,'= ',value,';\n')
         output.write(outputLine)
 
+    #Create arrays for variables for looping 
+    output.write('\n')
+    output.write('//------------\n')
+    output.write('//---ARRAYS---\n')
+    output.write('//------------\n')
+    output.write('\n')
+    for key, value in arrayNames.items():
+    
+        outputLine = '{}{:10}{}'.format('const int ',key +'[]','= {')
+        outputLine += '{}{}{}'.format(value[0],',','\n')
+        for val in value[1 :-1]:
+            outputLine += '{:>23}{}{}{}'.format(' ',val,',','\n')
+        outputLine += '{:>23}{}{}{}'.format(' ',value[-1],'}',';\n')
+        outputLine += '\n'
+        output.write(outputLine)
+
     output.close()
 
 def changeToInt(s):
