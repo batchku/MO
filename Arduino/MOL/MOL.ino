@@ -1,7 +1,8 @@
 //Change these values for debugging
 #define NUM_MODS 3      //3
 #define NUM_POTS 12     //12
-#define NUM_BTNS 12     //12
+#define NUM_USERPOTS 4  //4
+#define NUM_BTNS 10     //12
 #define NUM_LEDS 16     //16 
 #define NUM_USR 4       //4
 #define NUM_JOYPOTS 2   //4
@@ -10,6 +11,7 @@
 #define NUM_MOTORS 2    //2
 
 #include "MOL.h"
+#include "Arrays.h"
 #include "CCs.h"
 #include "Filters.h"
 #include <Servo.h>
@@ -114,6 +116,17 @@ void potInput() {
       }
     } // read the pots
 
+    for (int b = 0; b < NUM_USERPOTS; b++) {
+      int f = analogRead(USERPOTS[b]) / 8;
+      //      if ( (f != potPrevs[b]) ) {
+      if (((f + potPrevs[0][b] + potPrevs[1][b] + potPrevs[2][b]) / 4) != potSends[b])  {
+        usbMIDI.sendControlChange(USERPOTCCs[b], 127 - ((f + potPrevs[0][b] + potPrevs[1][b] + potPrevs[2][b]) / 4), channel);
+        potSends[b] = (f + potPrevs[0][b] + potPrevs[1][b] + potPrevs[2][b]) / 4;
+        potPrevs[2][b] = potPrevs[1][b];
+        potPrevs[1][b] = potPrevs[0][b];
+        potPrevs[0][b] = f;
+      }
+    } // read the pots
 
 
     for (int b = 0; b < NUM_JOYPOTS; b++) {
