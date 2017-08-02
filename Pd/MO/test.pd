@@ -1,7 +1,10 @@
-#N canvas 0 23 1250 405 10;
-#X obj 5 -388 momol.arrayReader;
-#X obj 5 -355 momol.strip 1;
-#X obj 169 -355 momol.actuator;
-#X obj 358 -355 momol.joy 1;
-#X obj 470 -355 momol.ui;
-#X obj 889 -354 momol.in;
+#N canvas 0 22 1310 676 10;
+#X obj 976 84 momol.in;
+#X obj 777 71 momol.actuator;
+#X obj 12 24 momol.arrayReader;
+#X obj 173 25 momol.strip 1;
+#X obj 542 26 momol.strip 3;
+#X obj 358 26 momol.strip 2;
+#X obj 249 310 momol.ui;
+#X obj 90 355 momol.joy 1;
+#X obj 706 351 momol.joy 2;

@@ -1,18 +1,19 @@
 //Change these values for debugging
-#define NUM_MODS 3      //3
-#define NUM_POTS 12     //12
+#define NUM_POTS 6     //12
 #define NUM_USERPOTS 4  //4
-#define NUM_BTNS 10     //12
-#define NUM_LEDS 16     //16 
-#define NUM_USR 4       //4
-#define NUM_JOYPOTS 2   //4
+#define NUM_USERINS 0   //4
+#define NUM_BTNS 6     //12
+#define NUM_USERBTNS 4  //4
+#define NUM_LEDS 6     //16 
+#define NUM_USERLEDS 7   //10
+#define NUM_JOYPOTS 4   //4
 #define NUM_JOY_BTNS 2  //2
 #define NUM_SERVOS 2    //2
 #define NUM_MOTORS 2    //2
 
 #include "MOL.h"
 #include "Arrays.h"
-#include "CCs.h"
+#include "MIDI.h"
 #include "Filters.h"
 #include <Servo.h>
 
@@ -43,7 +44,7 @@ void setup() {
   } // read all current (center) values from the joy pots
 
   for (int b = 0; b < NUM_JOY_BTNS; b++) {
-    pinMode(JBTNS[b], INPUT_PULLUP);
+    pinMode(JBTNS[b], INPUT_PULLDOWN);
     joyButtDebouncer[b].attach(JBTNS[b]);
     joyButtDebouncer[b].interval(5);
   } //set up button pins and attach them to Bounce objects and set time interals
@@ -54,6 +55,12 @@ void setup() {
     buttDebouncer[b].attach(BTNS[b]);
     buttDebouncer[b].interval(5);
   } //set up button pins and attach them to Bounce objects and set time interals
+
+  for (int b = 0; b < NUM_USERBTNS; b++) {
+    pinMode(USERBTNS[b], INPUT_PULLUP);
+    userButtDebouncer[b].attach(USERBTNS[b]);
+    userButtDebouncer[b].interval(5);
+  }
 
   for (int b = 0; b < NUM_SERVOS; b++) {
     servo[b].attach(SERVOS[b]);
@@ -78,10 +85,10 @@ void buttonInput() {
   for (int b = 0; b < NUM_JOY_BTNS; b++) {
     joyButtDebouncer[b].update();
     if (joyButtDebouncer[b].fallingEdge()) {
-      usbMIDI.sendNoteOn(JBTNCCs[b], 127, channel);
+      usbMIDI.sendNoteOff(JBTNCCs[b], 0, channel);
     }
     if (joyButtDebouncer[b].risingEdge()) {
-      usbMIDI.sendNoteOff(JBTNCCs[b], 0, channel);
+      usbMIDI.sendNoteOn(JBTNCCs[b], 127, channel);
     }
   }
 
@@ -93,6 +100,16 @@ void buttonInput() {
     }
     if (buttDebouncer[b].risingEdge()) {
       usbMIDI.sendNoteOff(BTNCCs[b], 0, channel);
+    }
+  }
+
+  for (int b = 0; b < NUM_USERBTNS; b++) {
+    userButtDebouncer[b].update();
+    if (userButtDebouncer[b].fallingEdge()) {
+      usbMIDI.sendNoteOn(USERBTNCCs[b], 127, channel);
+    }
+    if (userButtDebouncer[b].risingEdge()) {
+      usbMIDI.sendNoteOff(USERBTNCCs[b], 0, channel);
     }
   }
 
@@ -119,8 +136,21 @@ void potInput() {
     for (int b = 0; b < NUM_USERPOTS; b++) {
       int f = analogRead(USERPOTS[b]) / 8;
       //      if ( (f != potPrevs[b]) ) {
+      if (((f + userPotPrevs[0][b] + userPotPrevs[1][b] + userPotPrevs[2][b]) / 4) != userPotSends[b])  {
+        usbMIDI.sendControlChange(USERPOTCCs[b], 127 - ((f + userPotPrevs[0][b] + userPotPrevs[1][b] + userPotPrevs[2][b]) / 4), channel);
+        userPotSends[b] = (f + userPotPrevs[0][b] + userPotPrevs[1][b] + userPotPrevs[2][b]) / 4;
+        userPotPrevs[2][b] = userPotPrevs[1][b];
+        userPotPrevs[1][b] = userPotPrevs[0][b];
+        userPotPrevs[0][b] = f;
+      }
+    } // read the pots
+
+
+    for (int b = 0; b < NUM_USERINS; b++) {
+      int f = analogRead(USERINS[b]) / 8;
+      //      if ( (f != potPrevs[b]) ) {
       if (((f + potPrevs[0][b] + potPrevs[1][b] + potPrevs[2][b]) / 4) != potSends[b])  {
-        usbMIDI.sendControlChange(USERPOTCCs[b], 127 - ((f + potPrevs[0][b] + potPrevs[1][b] + potPrevs[2][b]) / 4), channel);
+        usbMIDI.sendControlChange(USERINCCs[b], 127 - ((f + potPrevs[0][b] + potPrevs[1][b] + potPrevs[2][b]) / 4), channel);
         potSends[b] = (f + potPrevs[0][b] + potPrevs[1][b] + potPrevs[2][b]) / 4;
         potPrevs[2][b] = potPrevs[1][b];
         potPrevs[1][b] = potPrevs[0][b];
@@ -128,11 +158,10 @@ void potInput() {
       }
     } // read the pots
 
-
     for (int b = 0; b < NUM_JOYPOTS; b++) {
       int f = analogRead(JPOTS[b]) / 8;
-
-      if (((f + joyPotPrevs[0][b] + joyPotPrevs[1][b] + joyPotPrevs[2][b]) / 4) != joyPotSends[b]) {
+      int testVal = (f + joyPotPrevs[0][b] + joyPotPrevs[1][b] + joyPotPrevs[2][b]) / 4;
+      if ( (testVal <= joyPotSends[b] - 2) | (testVal >= joyPotSends[b] + 2)) {
         if (f <= joyPotCenters[b]) {
 
           f = map(f, 0, joyPotCenters[b], 0, 64);
@@ -178,6 +207,12 @@ void OnNoteOn(byte channel, byte note, byte velocity)
     }
   }
 
+  for (int b = 0; b < NUM_USERLEDS; b++) {
+    if (note == USERLEDCCs[b]) {
+      analogWrite(USERLEDS[b], velocity * 2);
+    }
+  }
+
   //INVERSE MOTOR DIRECTION
   for (int b = 0; b < NUM_MOTORS; b++) {
     if (note == MOTORINCCs[b]) {
@@ -198,7 +233,13 @@ void OnNoteOff(byte channel, byte note, byte velocity)
     }
   }
 
-    //INVERSE MOTOR DIRECTION
+  for (int b = 0; b < NUM_USERLEDS; b++) {
+    if (note == USERLEDCCs[b]) {
+      analogWrite(USERLEDS[b], 0);
+    }
+  }
+
+  //INVERSE MOTOR DIRECTION
   for (int b = 0; b < NUM_MOTORS; b++) {
     if (note == MOTORINCCs[b]) {
       //int val = map(value, 0, 127, LOW, HIGH);
