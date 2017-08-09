@@ -2172,13 +2172,9 @@ design rules under a new name.</description>
 <contactref element="J4" pad="1"/>
 <contactref element="TEENSY" pad="36"/>
 </signal>
-<signal name="M_AIN">
+<signal name="M_INA">
 <contactref element="J4" pad="2"/>
 <contactref element="TEENSY" pad="45"/>
-</signal>
-<signal name="M_BIN">
-<contactref element="J4" pad="4"/>
-<contactref element="TEENSY" pad="46"/>
 </signal>
 <signal name="JOYH2" class="3">
 <contactref element="J11" pad="3"/>
@@ -2571,6 +2567,11 @@ design rules under a new name.</description>
 <signal name="N$26">
 <contactref element="U$2" pad="13"/>
 <contactref element="RN2" pad="8"/>
+</signal>
+<signal name="M_INB">
+<contactref element="J4" pad="4"/>
+<contactref element="TEENSY" pad="46"/>
+<wire x1="42.754" y1="27.23" x2="108.827" y2="32.377" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

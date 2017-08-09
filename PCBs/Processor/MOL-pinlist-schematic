@@ -1,48 +1,10 @@
 Pinlist
 
-Exported from MOL-v2-1.sch at 2017-07-26 11:20 AM
+Exported from MOL-v2-2.sch at 2017-08-08 2:21 PM
 
 EAGLE Version 8.2.2 Copyright (c) 1988-2017 Autodesk, Inc.
 
 Part     Pad      Pin        Dir      Net
-
-IC1      1        I1         in       PWM7
-         2        I2         in       PWM8
-         3        I3         in       PWM6
-         4        I4         in       PWM5
-         5        I5         in       PWM3
-         6        I6         in       PWM4
-         7        I7         in       PWM1
-         8        I8         in       PWM2
-         9        GND        pwr      GND
-         10       CD+        pas      +5V
-         11       O8         oc       N$18
-         12       O7         oc       N$17
-         13       O6         oc       N$16
-         14       O5         oc       N$15
-         15       O4         oc       N$14
-         16       O3         oc       N$13
-         17       O2         oc       N$12
-         18       O1         oc       N$11
-
-IC2      1        I1         in       PWM16
-         2        I2         in       PWM15
-         3        I3         in       PWM14
-         4        I4         in       PWM13
-         5        I5         in       PWM12
-         6        I6         in       PWM11
-         7        I7         in       PWM9
-         8        I8         in       PWM10
-         9        GND        pwr      GND
-         10       CD+        pas      +5V
-         11       O8         oc       N$25
-         12       O7         oc       N$24
-         13       O6         oc       N$26
-         14       O5         oc       N$23
-         15       O4         oc       N$22
-         16       O3         oc       N$21
-         17       O2         oc       N$20
-         18       O1         oc       N$19
 
 J1       1        1          pas      GND
          2        2          pas      +5V
@@ -52,71 +14,10 @@ J2       1        1          pas      GND
          2        2          pas      +5V
          3        3          pas      S2
 
-J3       1        1          pas      AN1
-         2        2          pas      AN2
-         3        3          pas      B1
-         4        4          pas      B2
-         5        5          pas      PWM_1
-         6        6          pas      PWM_2
-         7        7          pas      LED1
-         8        8          pas      AGND
-         9        9          pas      +3V3
-         10       10         pas      GND
-         11       11         pas      AN3
-         12       12         pas      AN4
-         13       13         pas      B3
-         14       14         pas      B4
-         15       15         pas      PWM_3
-         16       16         pas      PWM_4
-         17       17         pas      LED2
-         18       18         pas      AGND
-         19       19         pas      +3V3
-         20       20         pas      GND
-         21       21         pas      AN5
-         22       22         pas               *** unconnected ***
-         23       23         pas      B5
-         24       24         pas               *** unconnected ***
-         25       25         pas      PWM_5
-         26       26         pas               *** unconnected ***
-         27       27         pas      LED3
-         28       28         pas      AGND
-         29       29         pas      +3V3
-         30       30         pas      GND
-         31       31         pas      AN7
-         32       32         pas      AN8
-         33       33         pas      B7
-         34       34         pas      B8
-         35       35         pas      PWM_7
-         36       36         pas      PWM_8
-         37       37         pas      LED4
-         38       38         pas      AGND
-         39       39         pas      +3V3
-         40       40         pas      GND
-         41       41         pas      PWM_10
-         42       42         pas      B10
-         43       43         pas      AN10
-         44       44         pas      AN9
-         45       45         pas      B9
-         46       46         pas      PWM_9
-         47       47         pas      LED5
-         48       48         pas      AGND
-         49       49         pas      +3V3
-         50       50         pas      GND
-         51       51         pas      AN11
-         52       52         pas      AN12
-         53       53         pas      B11
-         54       54         pas      B12
-         55       55         pas      PWM_11
-         56       56         pas      PWM_12
-         57       57         pas      LED6
-         58       58         pas      AGND
-         59       59         pas      +3V3
-         60       60         pas      GND
-
 J4       1        1          pas      M_PWMA
-         2        2          pas      M_AIN
+         2        2          pas      M_INA
          3        3          pas      M_PWMB
-         4        4          pas      M_BIN
+         4        4          pas      M_INB
          5        5          pas      S1
          6        6          pas      S2
          7        7          pas      +5V
@@ -304,8 +205,8 @@ MIDI_IN  * none * 0          io       AN1
          * none * 98         io       N$117
          * none * 99         io       N$118
 
-MIDI_OUT * none * 0          io       N$3
-         * none * 1          io       N$4
+MIDI_OUT * none * 0          io       LED1
+         * none * 1          io       LED2
          * none * 10         io       N$29
          * none * 100        io       N$119
          * none * 101        io       N$120
@@ -344,7 +245,7 @@ MIDI_OUT * none * 0          io       N$3
          * none * 17         io       PWM_6
          * none * 18         io       PWM_7
          * none * 19         io       PWM_8
-         * none * 2          io       N$5
+         * none * 2          io       LED3
          * none * 20         io       PWM_9
          * none * 21         io       PWM_10
          * none * 22         io       PWM_11
@@ -355,7 +256,7 @@ MIDI_OUT * none * 0          io       N$3
          * none * 27         io       PWM_16
          * none * 28         io       N$47
          * none * 29         io       N$48
-         * none * 3          io       N$6
+         * none * 3          io       LED4
          * none * 30         io       N$49
          * none * 31         io       N$50
          * none * 32         io       N$51
@@ -364,9 +265,9 @@ MIDI_OUT * none * 0          io       N$3
          * none * 35         io       S2
          * none * 36         io       M_PWMA
          * none * 37         io       M_PWMB
-         * none * 38         io       M_AIN
-         * none * 39         io       M_BIN
-         * none * 4          io       N$7
+         * none * 38         io       M_INA
+         * none * 39         io       M_INB
+         * none * 4          io       LED5
          * none * 40         io       N$59
          * none * 41         io       N$60
          * none * 42         io       N$61
@@ -377,7 +278,7 @@ MIDI_OUT * none * 0          io       N$3
          * none * 47         io       N$66
          * none * 48         io       N$67
          * none * 49         io       N$68
-         * none * 5          io       N$8
+         * none * 5          io       LED6
          * none * 50         io       N$69
          * none * 51         io       N$70
          * none * 52         io       N$71
@@ -436,132 +337,198 @@ MIDI_OUT * none * 0          io       N$3
 R1       1        1          pas      N$2
          2        2          pas      +5V
 
-RN1      A1       1          pas      N$11
-         A2       2          pas      PWM_8
-         B1       1          pas      N$12
-         B2       2          pas      PWM_7
-         C1       1          pas      N$13
-         C2       2          pas      PWM_6
-         D1       1          pas      N$14
-         D2       2          pas      PWM_5
-         E1       1          pas      N$15
-         E2       2          pas      PWM_4
-         F1       1          pas      N$16
-         F2       2          pas      PWM_3
-         G1       1          pas      N$17
-         G2       2          pas      PWM_2
-         H1       1          pas      N$18
-         H2       2          pas      PWM_1
+RN1      1        1          pas      N$18
+         2        2          pas      N$17
+         3        3          pas      N$16
+         4        4          pas      N$15
+         5        5          pas      N$14
+         6        6          pas      N$13
+         7        7          pas      N$12
+         8        8          pas      N$11
+         9        9          pas      PWM_9
+         10       10         pas      PWM_10
+         11       11         pas      PWM_12
+         12       12         pas      PWM_11
+         13       13         pas      PWM_13
+         14       14         pas      PWM_14
+         15       15         pas      PWM_15
+         16       16         pas      PWM_16
 
-RN2      A1       1          pas      N$19
-         A2       2          pas      PWM_16
-         B1       1          pas      N$20
-         B2       2          pas      PWM_15
-         C1       1          pas      N$21
-         C2       2          pas      PWM_14
-         D1       1          pas      N$22
-         D2       2          pas      PWM_13
-         E1       1          pas      N$23
-         E2       2          pas      PWM_11
-         F1       1          pas      N$26
-         F2       2          pas      PWM_12
-         G1       1          pas      N$24
-         G2       2          pas      PWM_10
-         H1       1          pas      N$25
-         H2       2          pas      PWM_9
+RN2      1        1          pas      N$19
+         2        2          pas      N$20
+         3        3          pas      N$21
+         4        4          pas      N$22
+         5        5          pas      N$23
+         6        6          pas      N$24
+         7        7          pas      N$25
+         8        8          pas      N$26
+         9        9          pas      PWM_1
+         10       10         pas      PWM_2
+         11       11         pas      PWM_3
+         12       12         pas      PWM_4
+         13       13         pas      PWM_5
+         14       14         pas      PWM_6
+         15       15         pas      PWM_7
+         16       16         pas      PWM_8
 
-S5       1        1          pas      B13
+S1       1        1          pas      GND
          2        2          pas               *** unconnected ***
-         3        3          pas      GND
+         3        3          pas      B13
          4        4          pas               *** unconnected ***
-         A        A          pas      V+
-         C        C          pas      PWM_13
+         A        A          pas      PWM_13
+         C        C          pas      GND
 
-S6       1        1          pas      B14
+S2       1        1          pas      GND
          2        2          pas               *** unconnected ***
-         3        3          pas      GND
+         3        3          pas      B14
          4        4          pas               *** unconnected ***
-         A        A          pas      V+
-         C        C          pas      PWM_14
+         A        A          pas      PWM_14
+         C        C          pas      GND
 
-S7       1        1          pas      B15
+S3       1        1          pas      GND
          2        2          pas               *** unconnected ***
-         3        3          pas      GND
+         3        3          pas      B15
          4        4          pas               *** unconnected ***
-         A        A          pas      V+
-         C        C          pas      PWM_15
+         A        A          pas      PWM_15
+         C        C          pas      GND
 
-S8       1        1          pas      B16
+S4       1        1          pas      GND
          2        2          pas               *** unconnected ***
-         3        3          pas      GND
+         3        3          pas      B16
          4        4          pas               *** unconnected ***
-         A        A          pas      V+
-         C        C          pas      PWM_16
+         A        A          pas      PWM_16
+         C        C          pas      GND
+
+STRIP1   1        1          pas      AN1
+         2        2          pas      AN2
+         3        3          pas      B1
+         4        4          pas      B2
+         5        5          pas      PWM_1
+         6        6          pas      PWM_2
+         7        7          pas      LED1
+         8        8          pas      AGND
+         9        9          pas      +3V3
+         10       10         pas      GND
+
+STRIP2   1        1          pas      AN3
+         2        2          pas      AN4
+         3        3          pas      B3
+         4        4          pas      B4
+         5        5          pas      PWM_3
+         6        6          pas      PWM_4
+         7        7          pas      LED2
+         8        8          pas      AGND
+         9        9          pas      +3V3
+         10       10         pas      GND
+
+STRIP3   1        1          pas      AN5
+         2        2          pas      AN6
+         3        3          pas      B5
+         4        4          pas      B6
+         5        5          pas      PWM_5
+         6        6          pas      PWM_6
+         7        7          pas      LED3
+         8        8          pas      AGND
+         9        9          pas      +3V3
+         10       10         pas      GND
+
+STRIP4   1        1          pas      AN7
+         2        2          pas      AN8
+         3        3          pas      B7
+         4        4          pas      B8
+         5        5          pas      PWM_7
+         6        6          pas      PWM_8
+         7        7          pas      LED4
+         8        8          pas      AGND
+         9        9          pas      +3V3
+         10       10         pas      GND
+
+STRIP5   1        1          pas      AN9
+         2        2          pas      AN10
+         3        3          pas      B9
+         4        4          pas      B10
+         5        5          pas      PWM_9
+         6        6          pas      PWM_10
+         7        7          pas      LED5
+         8        8          pas      AGND
+         9        9          pas      +3V3
+         10       10         pas      GND
+
+STRIP6   1        1          pas      AN11
+         2        2          pas      AN12
+         3        3          pas      B11
+         4        4          pas      B12
+         5        5          pas      PWM_11
+         6        6          pas      PWM_12
+         7        7          pas      LED6
+         8        8          pas      AGND
+         9        9          pas      +3V3
+         10       10         pas      GND
 
 SW1      1        1          pas      +5V
          2        2          pas      N$1
          3        3          pas               *** unconnected ***
 
-TEENSY   0        0/RX1/MOSI1/T io       LED3
-         1        1/TX1/MISO1/T io       B5
-         2        2/PWM      io       PWM2
-         3        3/PWM/SCL2/CAN0TX io       PWM1
-         4        4/PWM/SDA2/CAN0RX io       PWM4
-         5        5/PWM/ALT-TX1/ALT-MISO1 io       PWM3
-         6        6/PWM      io       PWM5
-         7        7/PWM/RX3/ALT-SCL0/ALT-MOSI0 io       PWM6
-         8        8/PWM/TX3/ALT-SDA0/ALT-MISO0 io       PWM8
-         9        9/PWM/RX2/CS0-1 io       PWM7
+TEENSY   0        0/RX1/MOSI1/T io       LED4
+         1        1/TX1/MISO1/T io       B16
+         2        2/PWM      io       PWM7
+         3        3/PWM/SCL2/CAN0TX io       PWM8
+         4        4/PWM/SDA2/CAN0RX io       PWM5
+         5        5/PWM/ALT-TX1/ALT-MISO1 io       PWM6
+         6        6/PWM      io       PWM3
+         7        7/PWM/RX3/ALT-SCL0/ALT-MOSI0 io       PWM4
+         8        8/PWM/TX3/ALT-SDA0/ALT-MISO0 io       PWM1
+         9        9/PWM/RX2/CS0-1 io       PWM2
          P        PROGRAM    io                *** unconnected ***
          R        RESET      io                *** unconnected ***
-         10       10/PWM/TX2/CS0-0 io       PWM9
-         11       11/MOSI0   io       B6
-         12       12/MISO0   io       B3
-         13       13/LED/ALT-PWM/SCK0 io       B16
+         10       10/PWM/TX2/CS0-0 io       PWM10
+         11       11/MOSI0   io       B12
+         12       12/MISO0   io       B11
+         13       13/LED/ALT-PWM/SCK0 io       B13
          14       14/A0/PWM/ALT-SCK0 io       PWM12
-         15       15/A1/CS0-4/T io       AN8
+         15       15/A1/CS0-4/T io       AN4
          16       16/A2/PWM/T/ALT-SCL0 io       PWM11
-         17       17/A3/PWM/T/ALT-SDA0 io       PWM10
-         18       18/A4/PWM/T/SDA0 io       AN10
-         19       19/A5/PWM/T/SCL0 io       AN5
-         20       20/A6/PWM/CS0-2/ALT-SCK1 io       AN3
-         21       21/A7/PWM/CS0-3/ALT-MOSI1/ALT-RX1 io       AN4
-         22       22/A8/PWM/T io       AN1
-         23       23/A9/PWM/T io       AN2
-         24       24         io       B4
-         25       25         io       B8
-         26       26/ALT-PWM/ALT-TX1/ALT-SCL2 io       B7
-         27       27/ALT-RX1/ALT-SCK0 io       B9
-         28       28/ALT-MOSI0 io       B15
-         29       29/PWM/T/ALT-CAN0TX io       PWM13
-         30       30/PWM/T/ALT-CAN0RX io       PWM14
+         17       17/A3/PWM/T/ALT-SDA0 io       PWM9
+         18       18/A4/PWM/T/SDA0 io       AN5
+         19       19/A5/PWM/T/SCL0 io       AN6
+         20       20/A6/PWM/CS0-2/ALT-SCK1 io       AN7
+         21       21/A7/PWM/CS0-3/ALT-MOSI1/ALT-RX1 io       AN8
+         22       22/A8/PWM/T io       AN11
+         23       23/A9/PWM/T io       AN12
+         24       24         io       B10
+         25       25         io       B9
+         26       26/ALT-PWM/ALT-TX1/ALT-SCL2 io       B8
+         27       27/ALT-RX1/ALT-SCK0 io       B7
+         28       28/ALT-MOSI0 io       B6
+         29       29/PWM/T/ALT-CAN0TX io       PWM14
+         30       30/PWM/T/ALT-CAN0RX io       PWM13
          31       31/A12/PWM/RX4/CS1-0 io       JOYH2
          32       32/A13/PWM/TX4/SCK1 io       JOYV2
-         33       33/A14/CAN1TX/TX5/ALT-SCL0 io       S2
-         34       34/A15/CAN1RX/RX5/ALT-SDA0 io       S1
+         33       33/A14/CAN1TX/TX5/ALT-SCL0 io       S1
+         34       34/A15/CAN1RX/RX5/ALT-SDA0 io       S2
          35       35/A16/PWM io       M_PWMB
          36       36/A17/PWM io       M_PWMA
          37       37/A18/PWM/SCL1 io       PWM16
          38       38/A19/PWM/SDA1 io       PWM15
-         39       39/A20/ALT-MISO0 io       AN6
-         40       40         io       B10
-         41       41         io       LED5
-         42       42         io       B13
-         43       43/CS2-0   io       LED6
+         39       39/A20/ALT-MISO0 io       AN1
+         40       40         io       B5
+         41       41         io       LED2
+         42       42         io       B3
+         43       43/CS2-0   io       LED1
          44       44/MOSI2   io       JOYB2
-         45       45/CS0-5/MISO2 io       M_AIN
-         46       46/SCK2    io       M_BIN
+         45       45/CS0-5/MISO2 io       M_INA
+         46       46/SCK2    io       M_INB
          47       47/SCL0/RX6 io       JOYB1
-         48       48/SDA0/TX6 io       B12
-         49       49/A23     io       AN12
-         50       50/A24     io       AN11
-         51       51/MISO2   io       B14
-         52       52/MOSI2   io       B11
-         53       53/PWM/SCK2 io       LED4
-         54       54/CS2-1   io       B1
-         55       55         io       LED1
-         56       56/SDA3    io       B2
-         57       57/SCL3    io       LED2
+         48       48/SDA0/TX6 io       B1
+         49       49/A23     io       AN9
+         50       50/A24     io       AN10
+         51       51/MISO2   io       B2
+         52       52/MOSI2   io       B4
+         53       53/PWM/SCK2 io       LED3
+         54       54/CS2-1   io       B14
+         55       55         io       LED5
+         56       56/SDA3    io       B15
+         57       57/SCL3    io       LED6
          DC       DC         io                *** unconnected ***
          DD       DD         io                *** unconnected ***
          DE       DE         io                *** unconnected ***
@@ -575,12 +542,54 @@ TEENSY   0        0/RX1/MOSI1/T io       LED3
          VIN      VIN        io                *** unconnected ***
          AGND     AGND       io       AGND
          AREF     AREF       io                *** unconnected ***
-         DAC0     DAC0       io       AN7
-         DAC1     DAC1       io       AN9
+         DAC0     DAC0       io       AN2
+         DAC1     DAC1       io       AN3
          VBAT     VBAT       io                *** unconnected ***
          VUSB     VUSB       io                *** unconnected ***
          3V3(1)   3V3        io       +3V3
          3V3(2)   3V3        io       +3V3
          3V3(3)   3V3        io       +3V3
          3V3(4)   3V3        io       +3V3
+
+U$1      1        IN1        io       PWM7
+         2        IN2        io       PWM8
+         3        IN3        io       PWM6
+         4        IN4        io       PWM5
+         5        IN5        io       PWM3
+         6        IN6        io       PWM4
+         7        IN7        io       PWM1
+         8        IN8        io       PWM2
+         9        VS         io       V+
+         10       NC         io                *** unconnected ***
+         11       NC1        io                *** unconnected ***
+         12       GND        io       GND
+         13       OUT1       io       N$11
+         14       OUT2       io       N$12
+         15       OUT3       io       N$13
+         16       OUT4       io       N$14
+         17       OUT5       io       N$15
+         18       OUT6       io       N$16
+         19       OUT7       io       N$17
+         20       OUT8       io       N$18
+
+U$2      1        IN1        io       PWM16
+         2        IN2        io       PWM15
+         3        IN3        io       PWM14
+         4        IN4        io       PWM13
+         5        IN5        io       PWM12
+         6        IN6        io       PWM11
+         7        IN7        io       PWM9
+         8        IN8        io       PWM10
+         9        VS         io       V+
+         10       NC         io                *** unconnected ***
+         11       NC1        io                *** unconnected ***
+         12       GND        io       GND
+         13       OUT1       io       N$26
+         14       OUT2       io       N$25
+         15       OUT3       io       N$24
+         16       OUT4       io       N$23
+         17       OUT5       io       N$22
+         18       OUT6       io       N$21
+         19       OUT7       io       N$20
+         20       OUT8       io       N$19
 

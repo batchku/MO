@@ -1,7 +1,7 @@
-#2017 Ali Momeni
+#2017 Ali Momeni, Daniel McNamara
 #Made for Python 3.6
 #   usage:
-#   1.  export a pinlist from eagle board, here called inputfile
+#   1.  export a pinlist from eagle SCHEMATIC, here called inputfile
 #   2.  execute:
 #       python3 pinlister.py intputfile
 
@@ -23,7 +23,7 @@ def process(filename):
     #define important strings
     startText = 'TEENSY   0'                        #starting text
     endText = '         3V3(4)'                     #ending text
-    skiptText = 'unconnected|3V3|AREF|AGND|GND'     #skip lines with these strings
+    skiptText = 'unconnected|3V3|AREF|AGND|GND|\*\*\*'     #skip lines with these strings
 
     #find starting and ending lines
     with open(filename) as myFile:
@@ -36,57 +36,23 @@ def process(filename):
 
     #populate dictionary
     for i in lineRange:
-        #print('------')
-        #print(theTextLines[i])
-        thisline = re.split(" +", theTextLines[i])  #split text by spaces
-        #print(thisline)
+            thisline = re.split(" +", theTextLines[i])
+            thisline = [thisline[1], thisline[-1]]
+            
+            pinName = thisline[1]                        #index 0 is the signal name
+            pinName = re.sub('\n','',pinName)            #remove line breaks from pinnames
+            
+            pinNum =re.sub('DAC0','A21', thisline[0])   #special substitutions
+            pinNum =re.sub('DAC1','A22', pinNum)        #special substitutions
+    
+            test = re.search(skiptText,thisline[1]) #skip lines that aren't connected
+            if test is None :
+                pinDict[pinName] = changeToInt(pinNum)
 
-        pinNum = re.sub('DAC0','A21',thisline[1])   #special substitutions
-        pinNum = re.sub('DAC1','A22',pinNum)        #special substitutions
-        pinSig = re.sub('\n','',thisline[2])        #remove newline chars
-        test = re.search(skiptText,theTextLines[i])
-
-        #print(test)
-        if test is None :
-            pinDict[pinSig] = changeToInt(pinNum)
-            #pinDict[pinSig] = pinNum
-    
-    #define lists to be populated for arrays
-    pots, joyPots, btns, joyBtns, leds, usr = ([] for i in range(6))
-    #define dicts that associate arrays with their name in header file
-    arrayNames = {'POTS'    : pots,
-                  'JPOTS'   : joyPots, 
-                  'BTNS'    : btns,
-                  'JBTNS'   : joyBtns,
-                  'LEDS'    : leds, 
-                  'USR'     : usr}
-    def atoi(text):
-        return int(text) if text.isdigit() else text
-
-    def natural_keys(text):
-        return [ atoi(c) for c in re.split('(\d+)', text) ]
-    
-    def createList(searchTerm, listToAppendTo):
-        listToAppendTo.clear()
-        for key in pinDict.keys():
-            if key.startswith(searchTerm):
-                listToAppendTo.append(key)
-                listToAppendTo.sort(key=natural_keys)
-    
-    #create lists using search terms and arrays provided  
-    createList('B', btns)
-    createList('AN', pots)
-    createList('JOY_AN', joyPots)
-    createList('JOY_BTN', joyBtns)
-    createList('PWM',leds)
-    createList('U',usr)
-    #combine leds and usr
-    leds += usr 
-    
     output = open("MOL.h", "w")
 
     output.write("//------------------------------------------------------\n")
-    output.write("//Thiis file is automatically generated with pinlister.py\n")
+    output.write("//Thiis file is automatically generated with pinlister_.py\n")
     output.write("//------------------------------------------------------\n")
     output.write("\n")
     for key, value in pinDict.items():

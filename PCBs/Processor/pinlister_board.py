@@ -1,7 +1,7 @@
 #2017 Ali Momeni
 #Made for Python 3.6
 #   usage:
-#   1.  export a pinlist from eagle board, here called inputfile
+#   1.  export a pinlist from eagle BOARD, here called inputfile
 #   2.  execute:
 #       python3 pinlister.py intputfile
 
@@ -51,37 +51,6 @@ def process(filename):
             pinDict[pinSig] = changeToInt(pinNum)
             #pinDict[pinSig] = pinNum
     
-    #define lists to be populated for arrays
-    pots, joyPots, btns, joyBtns, leds, usr = ([] for i in range(6))
-    #define dicts that associate arrays with their name in header file
-    arrayNames = {'POTS'    : pots,
-                  'JPOTS'   : joyPots, 
-                  'BTNS'    : btns,
-                  'JBTNS'   : joyBtns,
-                  'LEDS'    : leds, 
-                  'USR'     : usr}
-    def atoi(text):
-        return int(text) if text.isdigit() else text
-
-    def natural_keys(text):
-        return [ atoi(c) for c in re.split('(\d+)', text) ]
-    
-    def createList(searchTerm, listToAppendTo):
-        listToAppendTo.clear()
-        for key in pinDict.keys():
-            if key.startswith(searchTerm):
-                listToAppendTo.append(key)
-                listToAppendTo.sort(key=natural_keys)
-    
-    #create lists using search terms and arrays provided  
-    createList('B', btns)
-    createList('AN', pots)
-    createList('JOY_AN', joyPots)
-    createList('JOY_BTN', joyBtns)
-    createList('PWM',leds)
-    createList('U',usr)
-    #combine leds and usr
-    leds += usr 
     
     output = open("MOL.h", "w")
 
@@ -92,22 +61,6 @@ def process(filename):
     for key, value in pinDict.items():
         #outputLine = "int " + key + "\t" + "= " + str(value) + ";\n"
         outputLine = '{}{:10}{}{}{}'.format('const int ',key,'= ',value,';\n')
-        output.write(outputLine)
-
-    #Create arrays for variables for looping 
-    output.write('\n')
-    output.write('//------------\n')
-    output.write('//---ARRAYS---\n')
-    output.write('//------------\n')
-    output.write('\n')
-    for key, value in arrayNames.items():
-    
-        outputLine = '{}{:10}{}'.format('const int ',key +'[]','= {')
-        outputLine += '{}{}{}'.format(value[0],',','\n')
-        for val in value[1 :-1]:
-            outputLine += '{:>23}{}{}{}'.format(' ',val,',','\n')
-        outputLine += '{:>23}{}{}{}'.format(' ',value[-1],'}',';\n')
-        outputLine += '\n'
         output.write(outputLine)
 
     output.close()
