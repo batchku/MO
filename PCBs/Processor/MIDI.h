@@ -17,24 +17,6 @@ const int POTS_MIDI[]         = {0,
                                  10,
                                  11};
 
-const int JOYPOTS_MIDI[]      = {28,
-                                 29,
-                                 30,
-                                 31};
-
-const int USERPOTS_MIDI[]     = {0,
-                                 1,
-                                 2,
-                                 3};
-
-const int USERINS_MIDI[]      = {20,
-                                 21,
-                                 22,
-                                 23};
-
-const int JOYBTNS_MIDI[]      = {32,
-                                 33};
-
 const int BUTTONS_MIDI[]      = {12,
                                  13,
                                  14,
@@ -52,10 +34,13 @@ const int BUTTONS_MIDI[]      = {12,
                                  26,
                                  27};
 
-const int USERBUTTONS_MIDI[]  = {0,
-                                 1,
-                                 2,
-                                 3};
+const int JOYPOTS_MIDI[]      = {28,
+                                 29,
+                                 30,
+                                 31};
+
+const int JOYBUTTONS_MIDI[]   = {32,
+                                 33};
 
 const int LEDS_MIDI[]         = {12,
                                  13,
@@ -74,18 +59,6 @@ const int LEDS_MIDI[]         = {12,
                                  26,
                                  27};
 
-const int USERLEDS_MIDI[]     = {0,
-                                 1,
-                                 2,
-                                 3};
-
-const int STRIPLEDS_MIDI[]    = {0,
-                                 1,
-                                 2,
-                                 3,
-                                 4,
-                                 5};
-
 const int SERVOS_MIDI[]       = {34,
                                  35};
 
@@ -94,4 +67,31 @@ const int MOTORPWMS_MIDI[]    = {36,
 
 const int MOTORINS_MIDI[]     = {38,
                                  39};
+
+const int USERPOTS_MIDI[]     = {0,
+                                 1,
+                                 2,
+                                 3};
+
+const int USERBUTTONS_MIDI[]  = {0,
+                                 1,
+                                 2,
+                                 3};
+
+const int USERLEDS_MIDI[]     = {0,
+                                 1,
+                                 2,
+                                 3};
+
+const int USERINS_MIDI[]      = {20,
+                                 21,
+                                 22,
+                                 23};
+
+const int STRIPLEDS_MIDI[]    = {40,
+                                 41,
+                                 42,
+                                 43,
+                                 44,
+                                 45};
 

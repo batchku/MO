@@ -49,10 +49,10 @@ def process(filename):
             if test is None :
                 pinDict[pinName] = changeToInt(pinNum)
 
-    output = open("MOL.h", "w")
+    output = open("MO.h", "w")
 
     output.write("//------------------------------------------------------\n")
-    output.write("//Thiis file is automatically generated with pinlister_.py\n")
+    output.write("//Thiis file is automatically generated with pinlister.py\n")
     output.write("//------------------------------------------------------\n")
     output.write("\n")
     for key, value in pinDict.items():

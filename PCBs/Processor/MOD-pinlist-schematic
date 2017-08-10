@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from MOL-v2-2.sch at 2017-08-08 2:21 PM
+Exported from MOD-v2-2.sch at 2017-08-10 6:39 PM
 
 EAGLE Version 8.2.2 Copyright (c) 1988-2017 Autodesk, Inc.
 
@@ -205,8 +205,8 @@ MIDI_IN  * none * 0          io       AN1
          * none * 98         io       N$117
          * none * 99         io       N$118
 
-MIDI_OUT * none * 0          io       LED1
-         * none * 1          io       LED2
+MIDI_OUT * none * 0          io       N$1
+         * none * 1          io       N$1
          * none * 10         io       N$29
          * none * 100        io       N$119
          * none * 101        io       N$120
@@ -245,7 +245,7 @@ MIDI_OUT * none * 0          io       LED1
          * none * 17         io       PWM_6
          * none * 18         io       PWM_7
          * none * 19         io       PWM_8
-         * none * 2          io       LED3
+         * none * 2          io       N$1
          * none * 20         io       PWM_9
          * none * 21         io       PWM_10
          * none * 22         io       PWM_11
@@ -256,7 +256,7 @@ MIDI_OUT * none * 0          io       LED1
          * none * 27         io       PWM_16
          * none * 28         io       N$47
          * none * 29         io       N$48
-         * none * 3          io       LED4
+         * none * 3          io       N$1
          * none * 30         io       N$49
          * none * 31         io       N$50
          * none * 32         io       N$51
@@ -267,18 +267,18 @@ MIDI_OUT * none * 0          io       LED1
          * none * 37         io       M_PWMB
          * none * 38         io       M_INA
          * none * 39         io       M_INB
-         * none * 4          io       LED5
-         * none * 40         io       N$59
-         * none * 41         io       N$60
-         * none * 42         io       N$61
-         * none * 43         io       N$62
-         * none * 44         io       N$63
-         * none * 45         io       N$64
+         * none * 4          io       N$1
+         * none * 40         io       LED1
+         * none * 41         io       LED2
+         * none * 42         io       LED3
+         * none * 43         io       LED4
+         * none * 44         io       LED5
+         * none * 45         io       LED6
          * none * 46         io       N$65
          * none * 47         io       N$66
          * none * 48         io       N$67
          * none * 49         io       N$68
-         * none * 5          io       LED6
+         * none * 5          io       N$1
          * none * 50         io       N$69
          * none * 51         io       N$70
          * none * 52         io       N$71

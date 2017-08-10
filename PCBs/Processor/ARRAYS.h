@@ -17,24 +17,6 @@ const int POTS[]            = {AN1,
                                AN11,
                                AN12};
 
-const int JOYPOTS[]         = {JOYV1,
-                               JOYV2,
-                               JOYH1,
-                               JOYH2};
-
-const int USERPOTS[]        = {AN9,
-                               AN10,
-                               AN11,
-                               AN12};
-
-const int USERINS[]         = {AN5,
-                               AN6,
-                               AN7,
-                               AN8};
-
-const int JOYBTNS[]         = {JOYB1,
-                               JOYB2};
-
 const int BUTTONS[]         = {B1,
                                B2,
                                B3,
@@ -52,10 +34,13 @@ const int BUTTONS[]         = {B1,
                                B15,
                                B16};
 
-const int USERBUTTONS[]     = {B13,
-                               B14,
-                               B15,
-                               B16};
+const int JOYPOTS[]         = {JOYV1,
+                               JOYV2,
+                               JOYH1,
+                               JOYH2};
+
+const int JOYBUTTONS[]      = {JOYB1,
+                               JOYB2};
 
 const int LEDS[]            = {PWM_1,
                                PWM_2,
@@ -74,18 +59,6 @@ const int LEDS[]            = {PWM_1,
                                PWM_15,
                                PWM_16};
 
-const int USERLEDS[]        = {PWM_13,
-                               PWM_14,
-                               PWM_15,
-                               PWM_16};
-
-const int STRIPLEDS[]       = {LED1,
-                               LED2,
-                               LED3,
-                               LED4,
-                               LED5,
-                               LED6};
-
 const int SERVOS[]          = {S1,
                                S2};
 
@@ -94,4 +67,31 @@ const int MOTORPWMS[]       = {M_PWMA,
 
 const int MOTORINS[]        = {M_INA,
                                M_INB};
+
+const int USERPOTS[]        = {AN9,
+                               AN10,
+                               AN11,
+                               AN12};
+
+const int USERBUTTONS[]     = {B13,
+                               B14,
+                               B15,
+                               B16};
+
+const int USERLEDS[]        = {PWM_13,
+                               PWM_14,
+                               PWM_15,
+                               PWM_16};
+
+const int USERINS[]         = {AN5,
+                               AN6,
+                               AN7,
+                               AN8};
+
+const int STRIPLEDS[]       = {LED1,
+                               LED2,
+                               LED3,
+                               LED4,
+                               LED5,
+                               LED6};
 

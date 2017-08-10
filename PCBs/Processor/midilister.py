@@ -86,21 +86,28 @@ def process(filename):
     pots, joyPots, userPots, userIns, btns, joyBtns, userBtns, leds, userLeds, stripLeds, servos, motorPWMs, motorINs = ([] for i in range(13))
 
     arrayNames = {'POTS' : pots,
-                  'JOYPOTS' : joyPots,
-                  'USERPOTS' : userPots,
-                  'USERINS' : userIns,
-                  'JOYBTNS' : joyBtns,
                   'BUTTONS' : btns,
-                  'USERBUTTONS' : userBtns,
+                  'JOYPOTS' : joyPots,
+                  'JOYBUTTONS' : joyBtns,
                   'LEDS' : leds,
-                  'USERLEDS' : userLeds,
-                  'STRIPLEDS': stripLeds,
                   'SERVOS' : servos,
                   'MOTORPWMS' : motorPWMs,
-                  'MOTORINS' : motorINs}
+                  'MOTORINS' : motorINs,
+                  'USERPOTS' : userPots,
+                  'USERBUTTONS' : userBtns,
+                  'USERLEDS' : userLeds,
+                  'USERINS' : userIns,
+                  'STRIPLEDS': stripLeds}
+                  
+                  
+                  
 
-    #create lists using search terms and arrays provided  
-    createList('AN', pots)
+    #create lists using search terms and arrays provided 
+    #if there are errors this is most likely where it is happening...
+    #look at the search terms and make sure they still are present in the Eagle file
+     
+    #Create a list by searching for any dict items conatining 'AN' and place those items in pots[]
+    createList('AN', pots) 
     joyPots += (createList2('JOYV'))
     joyPots += (createList2('JOYH'))
     subArray(pots[8:], userPots, 0)
@@ -119,7 +126,7 @@ def process(filename):
     createList('M_IN', motorINs)
     createList('M_PWM', motorPWMs)
     
-    #Create a new header file
+    #Create a new header file for MIDI
     output = open("MIDI.h", "w")
     
     output.write("//------------------------------------------------------\n")
@@ -151,7 +158,7 @@ def process(filename):
     output.write("//------------------------------------------------------\n")
     
 
-    #Create arrays for variables for looping 
+    #Create a new header file for ARRAYS used for variables for looping 
     output.write('\n')
     output.write('//------------')
     output.write('---ARRAYS---')
@@ -164,6 +171,21 @@ def process(filename):
         for val in value[1 :-1]:
             outputLine += '{:>31}{}{}{}'.format(' ',val[0],',','\n')
         outputLine += '{:>31}{}{}{}'.format(' ',value[-1][0],'}',';\n')
+        outputLine += '\n'
+        output.write(outputLine)
+  
+    output.close()
+    
+    #Create inputs.txt file for Pd abstractions
+    output = open("inputs.txt", "w")
+
+    #Create arrays for variables for looping 
+    for key, value in arrayNames.items():
+    
+        outputLine = key
+        for val in value:
+            outputLine += '{}{}'.format(' ',val[1])
+        outputLine += ';'
         outputLine += '\n'
         output.write(outputLine)
   

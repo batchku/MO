@@ -1,5 +1,5 @@
 //------------------------------------------------------
-//Thiis file is automatically generated with pinlister_.py
+//Thiis file is automatically generated with pinlister.py
 //------------------------------------------------------
 
 const int LED4      = 0;
