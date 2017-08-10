@@ -4,8 +4,8 @@ This python script generates the following header files for the arduino program 
 - `ARRAYS.H`: defines arrays of all the related variables for easier coding ([example](https://github.com/batchku/MO/blob/master/PCBs/Processor/ARRAYS.h))
 - `MIDI.h`: defines midi not and control numbers for each pin ([example](https://github.com/batchku/MO/blob/master/PCBs/Processor/MIDI.h))
 
-It also generates a text file for the [MO Pd abstractions](https://github.com/batchku/MO/tree/master/Pd/MO) i
-- `inputs.txt`: defines MIDI values for UI elements in abstractions (see [inputs.txt](https://github.com/batchku/MO/blob/master/PCBs/Processor/inputs.txt))
+It also generates a text file for the [MO Pd abstractions](https://github.com/batchku/MO/tree/master/Pd/MO)
+- `inputs.txt`: defines MIDI values for UI elements in abstractions ([example](https://github.com/batchku/MO/blob/master/PCBs/Processor/inputs.txt))
 
 # Coming...
 - XML file for openFrameworks for MIDI mapping
