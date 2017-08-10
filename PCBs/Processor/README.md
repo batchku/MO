@@ -1,6 +1,6 @@
 # Pin Mapping Generator
 This python script generates the following header files for the arduino program [MOD.ino](https://github.com/batchku/MO/blob/master/Arduino/MOD/MOD.ino):
-- [MO.H](https://github.com/batchku/MO/blob/master/PCBs/Processor/MO.h): defines a variable for each used pin(https://github.com/batchku/MO/blob/master/PCBs/Processor/MO.h))
+- [MO.H](https://github.com/batchku/MO/blob/master/PCBs/Processor/MO.h): defines a variable for each used pin
 - [ARRAYS.H](https://github.com/batchku/MO/blob/master/PCBs/Processor/ARRAYS.h): defines arrays of all the related variables for easier coding
 - [MIDI.h](https://github.com/batchku/MO/blob/master/PCBs/Processor/MIDI.h): defines midi note and control numbers for each pin
 
