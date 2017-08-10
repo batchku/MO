@@ -1,8 +1,8 @@
-#Pd
+# Pd
 
-###MO
+### MO
 
 Pd abstraction set for interfacing with MO hardware
 
-###MOM
+### MOM
 Granular synthesis engine built with Pd, uses MO abstraction set for interfacing with hardware
