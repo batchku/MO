@@ -11,7 +11,7 @@ It also generates a text file for the [MO Pd abstractions](https://github.com/ba
 - XML file for openFrameworks for MIDI mapping
 - 
 
-To run:
+# Usage
 1.  export a pinlist from eagle schematic, here called inputfile
 2.  execute:
         ```python3 createFiles.py intputfile```
