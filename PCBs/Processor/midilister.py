@@ -98,9 +98,6 @@ def process(filename):
                   'USERLEDS' : userLeds,
                   'USERINS' : userIns,
                   'STRIPLEDS': stripLeds}
-                  
-                  
-                  
 
     #create lists using search terms and arrays provided 
     #if there are errors this is most likely where it is happening...
@@ -110,8 +107,8 @@ def process(filename):
     createList('AN', pots) 
     joyPots += (createList2('JOYV'))
     joyPots += (createList2('JOYH'))
-    subArray(pots[8:], userPots, 0)
-    subArray(pots[4:8], userIns, 20)
+    subArray(pots[8:], userPots, 0)     #sets the userPots midi at 0
+    subArray(pots[4:8], userIns, 20)    #sets the userIns midi at 20
 
 
     createList('JOYB', joyBtns)
