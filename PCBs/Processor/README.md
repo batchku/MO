@@ -1,8 +1,8 @@
 # Pin Mapping Generator
 This python script generates the following header files for the arduino program [MOD.ino](https://github.com/batchku/MO/blob/master/Arduino/MOD/MOD.ino):
-- `MO.H`: defines a variable for each used pin ([example](https://github.com/batchku/MO/blob/master/PCBs/Processor/MO.h))
-- `ARRAYS.H`: defines arrays of all the related variables for easier coding ([example](https://github.com/batchku/MO/blob/master/PCBs/Processor/ARRAYS.h))
-- `MIDI.h`: defines midi not and control numbers for each pin ([example](https://github.com/batchku/MO/blob/master/PCBs/Processor/MIDI.h))
+- [MO.H](https://github.com/batchku/MO/blob/master/PCBs/Processor/MO.h): defines a variable for each used pin(https://github.com/batchku/MO/blob/master/PCBs/Processor/MO.h))
+- [ARRAYS.H](https://github.com/batchku/MO/blob/master/PCBs/Processor/ARRAYS.h): defines arrays of all the related variables for easier coding
+- [MIDI.h](https://github.com/batchku/MO/blob/master/PCBs/Processor/MIDI.h): defines midi note and control numbers for each pin
 
 It also generates a text file for the [MO Pd abstractions](https://github.com/batchku/MO/tree/master/Pd/MO)
 - `inputs.txt`: defines MIDI values for UI elements in abstractions ([example](https://github.com/batchku/MO/blob/master/PCBs/Processor/inputs.txt))
