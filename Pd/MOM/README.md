@@ -1,2 +1,2 @@
-# CHIPD
-Running Puredata on the C.H.I.P. computer
+# MOM
+Running Puredata on the Raspberry Pi 3 computer
