@@ -6,4 +6,8 @@ All mo. objects require the presence of ```mo.arrayReader``` to be present in a 
 ### input.txt
 If you have changed MIDI information in EAGLE, be sure to use the [generator script](https://github.com/batchku/MO/blob/master/PCBs/Processor/createFiles.py) to create a new ```input.txt``` file and place it in this folder.
 ### Abstraction i/o
-All abstractions recieve and output messages from one input and one output. Each control's name is represented under it with ```[]```.
+All abstractions recieve and output messages from one input and one output. Each control's name is represented under it with ```[/var]```.
+
+<p align="center">
+  <img src="https://github.com/batchku/MO/blob/master/Documentation/mo.strip.png">
+</p>
