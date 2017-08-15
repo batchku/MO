@@ -3,6 +3,10 @@ Currently the MOD is hard-coded.
 
 MIDI.h and MOD.h can be used from the [generator script](https://github.com/batchku/MO/blob/master/PCBs/Processor/createFiles.py) but DO NOT replace [Arrays.h](https://github.com/batchku/MO/blob/master/Arduino/MOD/Arrays.h).
 
+In Tools of Arduino set:
+* ```Board:``` to ```Teensy 3.6```
+* ```USB Type:``` to ```Serial + MIDI```
+
 # Coming Soon...
 Modular class system for each aspect of the hardware. Classes will include: 
 1. Strip
