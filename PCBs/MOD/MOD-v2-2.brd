@@ -2383,11 +2383,15 @@ design rules under a new name.</description>
 <contactref element="J4" pad="8"/>
 <contactref element="U1" pad="3"/>
 <contactref element="R1" pad="2"/>
+<contactref element="RELAY1" pad="8"/>
+<contactref element="J3" pad="PWR"/>
 <wire x1="125.285" y1="30.4" x2="127.865" y2="30.45" width="0" layer="19" extent="1-1"/>
 <wire x1="113.907" y1="29.583" x2="125.285" y2="30.4" width="0" layer="19" extent="1-1"/>
 <wire x1="113.907" y1="32.377" x2="113.907" y2="29.583" width="0" layer="19" extent="1-1"/>
 <wire x1="75.053" y1="1.667" x2="113.907" y2="29.583" width="0" layer="19" extent="1-1"/>
-<wire x1="-20.365" y1="-7.33" x2="75.053" y2="1.667" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.22" y1="-18" x2="75.053" y2="1.667" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.365" y1="-7.33" x2="-3.22" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-50" y1="0.6" x2="-20.365" y2="-7.33" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="S1">
 <contactref element="J1" pad="3"/>
@@ -2759,11 +2763,6 @@ design rules under a new name.</description>
 <contactref element="U1" pad="5"/>
 <contactref element="SW2" pad="2"/>
 <wire x1="-19.095" y1="-0.67" x2="-54" y2="-38" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="+5V-PI">
-<contactref element="RELAY1" pad="8"/>
-<contactref element="J3" pad="PWR"/>
-<wire x1="-3.22" y1="-18" x2="-50" y2="0.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PI-REST">
 <contactref element="U1" pad="6"/>
