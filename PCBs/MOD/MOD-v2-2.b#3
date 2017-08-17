@@ -2225,7 +2225,6 @@ design rules under a new name.</description>
 <signal name="LED3">
 <contactref element="STRIP3" pad="7"/>
 <contactref element="TEENSY" pad="53"/>
-<wire x1="60.534" y1="29.77" x2="54.68" y2="40.383" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="J4" pad="9"/>
@@ -2337,17 +2336,14 @@ design rules under a new name.</description>
 <signal name="LED2">
 <contactref element="STRIP2" pad="7"/>
 <contactref element="TEENSY" pad="41"/>
-<wire x1="34.25" y1="40.363" x2="57.994" y2="27.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED4">
 <contactref element="STRIP4" pad="7"/>
 <contactref element="TEENSY" pad="0"/>
-<wire x1="96.094" y1="19.61" x2="75.15" y2="40.383" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED5">
 <contactref element="STRIP5" pad="7"/>
 <contactref element="TEENSY" pad="55"/>
-<wire x1="78.314" y1="29.77" x2="95.64" y2="40.393" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_1">
 <contactref element="STRIP1" pad="5"/>
@@ -2484,12 +2480,10 @@ design rules under a new name.</description>
 <signal name="LED1">
 <contactref element="STRIP1" pad="7"/>
 <contactref element="TEENSY" pad="43"/>
-<wire x1="13.82" y1="40.363" x2="50.374" y2="27.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED6">
 <contactref element="STRIP6" pad="7"/>
 <contactref element="TEENSY" pad="57"/>
-<wire x1="83.394" y1="29.77" x2="116.11" y2="40.393" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GNDBREAK">
 <contactref element="J5" pad="GNDBREAK"/>
@@ -2497,7 +2491,6 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="J5" pad="PWR"/>
 <contactref element="SW1" pad="2"/>
-<wire x1="68.804" y1="6.477" x2="126.012" y2="41.774" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R1" pad="1"/>

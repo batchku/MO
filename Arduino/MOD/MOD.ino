@@ -11,7 +11,7 @@
 #define NUM_SERVOS 2    //2
 #define NUM_MOTORS 2    //2
 
-#include "MOL.h"
+#include "MOD.h"
 #include "Arrays.h"
 #include "MIDI.h"
 #include "Filters.h"
