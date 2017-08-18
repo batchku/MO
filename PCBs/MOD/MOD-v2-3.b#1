@@ -167,7 +167,7 @@
 <wire x1="157.77" y1="5.81" x2="157.77" y2="45.26" width="0.1524" layer="20"/>
 <wire x1="157.77" y1="45.26" x2="153.96" y2="49.34" width="0.1524" layer="20" curve="73.739806"/>
 <wire x1="153.96" y1="49.34" x2="5.81" y2="49.34" width="0.1524" layer="20"/>
-<text x="41.73" y="36.42" size="1.6764" layer="22" font="vector" ratio="30" rot="MR180">MOL v2-2.2</text>
+<text x="41.73" y="36.42" size="1.6764" layer="22" font="vector" ratio="30" rot="MR180">MOL v2-3</text>
 <text x="82.328" y="36.78" size="1.016" layer="22" font="vector" ratio="15" rot="MR180">2017 Ali Momeni 
 Made in PGH</text>
 </plain>
