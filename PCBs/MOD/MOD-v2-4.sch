@@ -15472,6 +15472,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="GND3" gate="GND" pin="GND"/>
 <wire x1="177.8" y1="22.86" x2="180.34" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="22.86" x2="180.34" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="NC1"/>
+<wire x1="177.8" y1="22.86" x2="177.8" y2="20.32" width="0.1524" layer="91"/>
+<junction x="177.8" y="22.86"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="GND" pin="GND"/>
