@@ -23,7 +23,7 @@ def process(filename):
     #define important strings
     startText = 'TEENSY   0'                        #starting text
     endText = '         3V3(4)'                     #ending text
-    skiptText = 'unconnected|3V3|AREF|AGND|GND|\*\*\*'     #skip lines with these strings
+    skiptText = 'unconnected|3V3|AREF|AGND|GND|\*\*\*|N\$'     #skip lines with these strings
 
     #find starting and ending lines
     with open(filename) as myFile:
