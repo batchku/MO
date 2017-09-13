@@ -107,7 +107,7 @@ def process(filename):
     createList('AN', pots) 
     joyPots += (createList2('JOYV'))
     joyPots += (createList2('JOYH'))
-    subArray(pots[8:], userPots, 0)     #sets the userPots midi at 0
+    subArray(pots[8:], userPots, 80)     #sets the userPots midi at 0
     subArray(pots[4:8], userIns, 20)    #sets the userIns midi at 20
 
 

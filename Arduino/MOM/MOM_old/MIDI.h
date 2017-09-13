@@ -68,10 +68,10 @@ const int MOTORPWMS_MIDI[]    = {36,
 const int MOTORINS_MIDI[]     = {38,
                                  39};
 
-const int USERPOTS_MIDI[]     = {80,
-                                 81,
-                                 82,
-                                 83};
+const int USERPOTS_MIDI[]     = {0,
+                                 1,
+                                 2,
+                                 3};
 
 const int USERBUTTONS_MIDI[]  = {0,
                                  1,
