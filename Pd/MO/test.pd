@@ -1,11 +1,11 @@
 #N canvas 0 22 1310 676 10;
 #X obj 12 24 mo.arrayReader;
-#X obj 173 25 mo.strip 1;
-#X obj 358 26 mo.strip 2;
+#X obj 263 25 mo.strip 1;
 #X obj 777 71 mo.actuator;
 #X obj 976 84 mo.in;
-#X obj 706 351 mo.joy 2;
-#X obj 90 355 mo.joy 1;
 #X obj 249 310 mo.ui;
-#X obj 542 26 mo.strip 3;
-#X obj 854 317 mo.strip 4;
+#X obj 448 26 mo.strip 2;
+#X obj 90 355 mo.joy 1;
+#X obj 706 351 mo.joy 2;
+#X obj 892 384 mo.an 5;
+#X obj 972 384 mo.an 6;

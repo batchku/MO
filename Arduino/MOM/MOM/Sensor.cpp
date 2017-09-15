@@ -5,7 +5,7 @@ Sensor::Sensor()
 
 }
 
-Sensor::Sensor(int _input, int _midiAddress)
+Sensor::Sensor(const int _input, const int _midiAddress)
 {
   input = _input;
   midiAddress = _midiAddress;
@@ -25,44 +25,47 @@ void Sensor::setMidi(int _midiAddress) {
   midiAddress = _midiAddress;
 }
 
-void Sensor::update()
-{
-  int f = analogRead(input) / 8;
-
-  if (((f + potPrevs[0] + potPrevs[1] + potPrevs[2]) / 4) != potSend)  {
-    usbMIDI.sendControlChange(midiAddress, 127 - ((f + potPrevs[0] + potPrevs[1] + potPrevs[2]) / 4), 1);
-    potSend = (f + potPrevs[0] + potPrevs[1] + potPrevs[2]) / 4;
-    potPrevs[2] = potPrevs[1];
-    potPrevs[1] = potPrevs[0];
-    potPrevs[0] = f;
-  }
+void Sensor::update() {
+  read();
+  send();
 }
 
 void Sensor::read()
 {
-  int f = analogRead(input) / 8;
-  
-  if (((f + potPrevs[0] + potPrevs[1] + potPrevs[2]) / 4) != potSend)  {
-    change = true;
-    potSend = (f + potPrevs[0] + potPrevs[1] + potPrevs[2]) / 4;
-    potPrevs[2] = potPrevs[1];
-    potPrevs[1] = potPrevs[0];
-    potPrevs[0] = f;
-    change = false;
+  if (timer >= 20) {
+    current = analogRead(input) >> 3;
+    
+    current = (current + potPrev[0] + potPrev[1] + potPrev[2]) / 4;
+    if (current != potAvg) {
+      dataChange = true;
+      potAvg = (current + potPrev[0] + potPrev[1] + potPrev[2]) / 4;
+      potPrev[2] = potPrev[1];
+      potPrev[1] = potPrev[0];
+      potPrev[0] = analogRead(input) >> 3;
+    }
+    timer = 0;
   }
 }
 
+void Sensor::send(){
+  if(dataChange){
+    usbMIDI.sendControlChange(midiAddress, 127 - current, 1);
+    dataChange = false;
+    }
+  }
 
-int Sensor::getVal(){
 
-  int f = analogRead(input) / 8;
-  
-  return (f + potPrevs[0] + potPrevs[1] + potPrevs[2]) / 4;
+int Sensor::getCurrent(){
+  return current;
   }
- 
-int Sensor::getLastVal(){
-  return potSend;
-  }
-bool Sensor::getChange(){
-  return change;
-  }
+
+void Sensor::setName(String _name) {
+  name = _name;
+}
+
+void Sensor::debug() {
+  Serial.print(name);
+  Serial.print(" , ");
+  Serial.println(midiAddress);
+}
+

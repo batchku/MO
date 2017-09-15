@@ -1,7 +1,8 @@
 #include "MO.h"
 
-int sensorPin = AN4;    // select the input pin for the potentiometer
-int buttonPin = BTN2;
+int sensorPin = AN5;    // select the input pin for the potentiometer
+int sensorPin2 = AN3; 
+int buttonPin = JOYBTN2;
 int ledPin = PWM13;      // select the pin for the LED
 int ledPin2 = PWM14;
 // Pin 13: Arduino has an LED connected on pin 13
@@ -21,8 +22,8 @@ void setup() {
 
 void loop() {
   // read the value from the sensor:
-  //readSensors();
-  blinkLed(ledPin, ledPin2);
+  readSensors();
+  //blinkLed(ledPin, ledPin2);
 
 }
 
@@ -32,6 +33,9 @@ void readSensors() {
   Serial.print(sensorValue);
   Serial.print(" ,");
   Serial.println(buttonValue);
+
+//  usbMIDI.sendControlChange(3, int(sensorValue/8), 1);
+//  usbMIDI.sendControlChange(4, int(buttonValue/8), 1);
 }
 
 void blinkLed(int ledPin) {

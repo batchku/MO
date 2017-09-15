@@ -6,7 +6,7 @@
 
 Shield::Shield()
 {
-
+  msec = 0;
   for (int b = 0; b < NUM_USERCONTROLS; b++) {
     pinMode(USERBUTTONS[b], INPUT_PULLUP);
     button[b].attach(USERBUTTONS[b]);
@@ -19,7 +19,7 @@ Shield::Shield()
 
   for (int b = 0; b < NUM_USERCONTROLS; b++) {
     pots[b].set(USERPOTS[b], USERPOTS_MIDI[b]);
-    sensors.add( &pots[b]);
+    sensors.add(&pots[b]);
   }
 
 }
@@ -30,31 +30,24 @@ void Shield::update()
   buttonInput();
 }
 
-void Shield::add(Sensor *sensor) {
-  sensors.add(sensor);
-}
-
 void Shield::potInput() {
-
-  for (int b = 0; b < sensors.size(); b++) {
-    //pots[b].update();
-    sensors.get(b) -> update();
+  if (msec >= 20) {
+    msec = 0;
+    for (int b = 0; b < sensors.size(); b++) {
+      sensors.get(b) -> update();
+    }
   }
-
 }
 
 void Shield::buttonInput()
 {
-  if (msec >= 20) {
-    msec = 0;
-    for (int b = 0; b < NUM_USERCONTROLS; b++) {
-      button[b].update();
-      if (button[b].fallingEdge()) {
-        usbMIDI.sendNoteOn(USERBUTTONS_MIDI[b], 127, 1);
-      }
-      if (button[b].risingEdge()) {
-        usbMIDI.sendNoteOff(USERBUTTONS_MIDI[b], 0, 1);
-      }
+  for (int b = 0; b < NUM_USERCONTROLS; b++) {
+    button[b].update();
+    if (button[b].fallingEdge()) {
+      usbMIDI.sendNoteOn(USERBUTTONS_MIDI[b], 127, 1);
+    }
+    if (button[b].risingEdge()) {
+      usbMIDI.sendNoteOff(USERBUTTONS_MIDI[b], 0, 1);
     }
   }
 }

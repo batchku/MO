@@ -1,4 +1,3 @@
-
 #ifndef Shield_h
 #define Shield_h
 #define NUM_USERCONTROLS  4
@@ -7,6 +6,7 @@
 #include <Bounce2.h>
 #include <LinkedList.h>
 #include "Sensor.h"
+
 
 class Shield
 {
@@ -19,13 +19,11 @@ class Shield
     void light(int note, int velocity);
   private:
     Sensor pots[NUM_USERCONTROLS];
-    int potPrevs[3][NUM_USERCONTROLS];
-    int potSends[NUM_USERCONTROLS];
 
     LinkedList<Sensor*> sensors;
-
+    
     Bounce * button = new Bounce[NUM_USERCONTROLS]; // Create Bounce objects for each button.
-    elapsedMillis msec;
+    elapsedMillis msec;    
 };
 
 #endif

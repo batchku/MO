@@ -19,8 +19,8 @@ Strip::Strip(int _stripNum) {
   }
 
   for (int b = 0; b < NUM_CONTROLS; b++) {
-    pots[b] -> set(POTS[stripNum + b], POTS_MIDI[stripNum + b]);
-    sensors.add(pots[b]);
+    pots[b].set(POTS[stripNum + b], POTS_MIDI[stripNum + b]);
+    sensors.add( &pots[b]);
   }
 
 }
