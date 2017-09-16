@@ -3361,6 +3361,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="99.3648" y="24.7142" size="0.8128" layer="26" font="vector" ratio="15" rot="SMR270"/>
 <attribute name="VCC" value="" x="95.25" y="21.844" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
 </element>
+<element name="U$1" library="CMU-ArtFab" package="SOIC20" value="A2982" x="2.032" y="-10.16"/>
 </elements>
 <signals>
 <signal name="GND" class="2">

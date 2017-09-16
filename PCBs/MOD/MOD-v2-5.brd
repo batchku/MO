@@ -9,7 +9,7 @@
 </settings>
 <grid distance="39.3700787" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.000393700787" altunitdist="inch" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -24,9 +24,9 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -179,30 +179,6 @@
 <text x="61.484" y="1.999" size="1.016" layer="21" font="vector" ratio="15">v2-3b</text>
 <text x="77.264" y="98.552" size="1.016" layer="21" font="vector" ratio="20" rot="R270">+5V IN (Pi)</text>
 <text x="20.685" y="99.2886" size="1.016" layer="21" font="vector" ratio="20" rot="R270">+5V OUT (to Pi)</text>
-<text x="94.4118" y="14.224" size="0.762" layer="27" font="vector" ratio="15" rot="R270">VCC</text>
-<text x="94.4118" y="16.7894" size="0.762" layer="27" font="vector" ratio="15" rot="R270">GND</text>
-<text x="94.4118" y="19.3802" size="0.762" layer="27" font="vector" ratio="15" rot="R270">AN1</text>
-<text x="94.4372" y="21.7678" size="0.762" layer="27" font="vector" ratio="15" rot="R270">VCC</text>
-<text x="94.4372" y="24.3332" size="0.762" layer="27" font="vector" ratio="15" rot="R270">GND</text>
-<text x="94.4372" y="26.924" size="0.762" layer="27" font="vector" ratio="15" rot="R270">AN2</text>
-<text x="94.6404" y="44.1452" size="0.762" layer="27" font="vector" ratio="15" rot="R270">VCC</text>
-<text x="94.6404" y="46.7106" size="0.762" layer="27" font="vector" ratio="15" rot="R270">GND</text>
-<text x="94.6404" y="49.3014" size="0.762" layer="27" font="vector" ratio="15" rot="R270">AN3</text>
-<text x="94.6404" y="51.7652" size="0.762" layer="27" font="vector" ratio="15" rot="R270">VCC</text>
-<text x="94.6404" y="54.3306" size="0.762" layer="27" font="vector" ratio="15" rot="R270">GND</text>
-<text x="94.6404" y="56.9214" size="0.762" layer="27" font="vector" ratio="15" rot="R270">AN4</text>
-<text x="94.5642" y="60.4012" size="0.762" layer="27" font="vector" ratio="15" rot="R270">VCC</text>
-<text x="94.5642" y="62.9666" size="0.762" layer="27" font="vector" ratio="15" rot="R270">GND</text>
-<text x="94.5642" y="65.5574" size="0.762" layer="27" font="vector" ratio="15" rot="R270">AN5</text>
-<text x="94.5134" y="68.0466" size="0.762" layer="27" font="vector" ratio="15" rot="R270">VCC</text>
-<text x="94.5134" y="70.612" size="0.762" layer="27" font="vector" ratio="15" rot="R270">GND</text>
-<text x="94.5134" y="73.2028" size="0.762" layer="27" font="vector" ratio="15" rot="R270">AN6</text>
-<text x="94.5642" y="76.7842" size="0.762" layer="27" font="vector" ratio="15" rot="R270">VCC</text>
-<text x="94.5642" y="79.3496" size="0.762" layer="27" font="vector" ratio="15" rot="R270">GND</text>
-<text x="94.5642" y="81.9404" size="0.762" layer="27" font="vector" ratio="15" rot="R270">AN7</text>
-<text x="94.5134" y="84.4296" size="0.762" layer="27" font="vector" ratio="15" rot="R270">VCC</text>
-<text x="94.5134" y="86.995" size="0.762" layer="27" font="vector" ratio="15" rot="R270">GND</text>
-<text x="94.5134" y="89.5858" size="0.762" layer="27" font="vector" ratio="15" rot="R270">AN8</text>
 </plain>
 <libraries>
 <library name="CMU-ArtFab">
@@ -3209,11 +3185,13 @@ design rules under a new name.</description>
 </element>
 <element name="JOY2" library="SparkFun-Connectors" package="1X05_LOCK" value="JOY2" x="97.064" y="29.515" smashed="yes" rot="MR90">
 <attribute name="B" value="B" x="95.344" y="39.832" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
-<attribute name="GND" value="GND" x="95.32" y="33.054" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="GND" value="-" x="95.25" y="32.324" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="GNDT" value="-" x="95.314" y="31.785" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="H" value="H" x="95.288" y="34.726" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
 <attribute name="NAME" x="99.72" y="36.18" size="1.016" layer="26" font="vector" ratio="20" rot="SMR270"/>
 <attribute name="V" value="V" x="95.292" y="37.259" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
-<attribute name="VCC" value="VCC" x="95.345" y="30.317" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="VCC" value="+" x="95.115" y="29.507" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="VCCT" value="+" x="95.154" y="28.965" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="J5" library="adafruit" package="DCJACK_2MM_PTH" value="+5V IN (Pi)" x="83.615" y="102" smashed="yes" rot="MR180">
 <attribute name="NAME" x="86.347" y="91.221" size="0.8128" layer="26" font="vector" ratio="15" rot="MR180"/>
@@ -3320,27 +3298,35 @@ design rules under a new name.</description>
 </element>
 <element name="S3-AN5" library="SparkFun-Connectors" package="1X03_LOCK" value="AN5" x="97.042" y="59.411" smashed="yes" rot="MR90">
 <attribute name="AN5" value="AN5" x="95.372" y="65.371" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
-<attribute name="GND" value="GND" x="95.412" y="62.631" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="GND" value="-" x="95.352" y="62.171" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="GNDT" value="-" x="95.412" y="61.601" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="99.6282" y="63.8092" size="0.8128" layer="26" font="vector" ratio="15" rot="SMR270"/>
-<attribute name="VCC" value="VCC" x="95.442" y="60.233" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="VCC" value="+" x="95.382" y="59.443" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="VCCT" value="+" x="95.452" y="58.891" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="S3-AN6" library="SparkFun-Connectors" package="1X03_LOCK" value="AN6" x="97.016" y="67.026" smashed="yes" rot="MR90">
 <attribute name="AN6" value="AN6" x="95.403" y="72.98" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
-<attribute name="GND" value="GND" x="95.343" y="70.342" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="GND" value="-" x="95.373" y="69.822" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="GNDT" value="-" x="95.426" y="69.256" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="99.5552" y="71.6412" size="0.8128" layer="26" font="vector" ratio="15" rot="SMR270"/>
-<attribute name="VCC" value="VCC" x="95.342" y="67.857" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="VCC" value="+" x="95.362" y="67.227" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="VCCT" value="+" x="95.406" y="66.696" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="S4-AN7" library="SparkFun-Connectors" package="1X03_LOCK" value="AN7" x="97" y="75.649" smashed="yes" rot="MR90">
 <attribute name="AN7" value="AN7" x="95.382" y="81.538" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
-<attribute name="GND" value="GND" x="95.339" y="78.85" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="GND" value="-" x="95.379" y="78.47" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="GNDT" value="-" x="97" y="75.649" size="0.8128" layer="28" font="vector" ratio="15" rot="MR90"/>
 <attribute name="NAME" x="99.5502" y="79.9602" size="0.8128" layer="26" font="vector" ratio="15" rot="SMR270"/>
-<attribute name="VCC" value="VCC" x="95.401" y="76.447" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="VCC" value="+" x="95.361" y="75.657" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="VCCT" value="+" x="97" y="75.649" size="0.8128" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
 <element name="S4-AN8" library="SparkFun-Connectors" package="1X03_LOCK" value="AN8" x="97.011" y="83.262" smashed="yes" rot="MR90">
 <attribute name="AN8" value="AN8" x="95.418" y="89.108" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
-<attribute name="GND" value="GND" x="95.396" y="86.441" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="GND" value="-" x="95.356" y="86.051" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="GNDT" value="-" x="95.401" y="85.472" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="99.6002" y="87.6322" size="0.8128" layer="26" font="vector" ratio="15" rot="SMR270"/>
-<attribute name="VCC" value="VCC" x="95.425" y="84.003" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="VCC" value="+" x="95.365" y="83.523" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="VCCT" value="+" x="95.431" y="82.992" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="J17" library="adafruit" package="DCJACK_2MM_PTH" value="+5V IN (Main)" x="68.34" y="102.05" smashed="yes" rot="MR180">
 <attribute name="LABEL" value="+5V IN (Main)" x="62.55" y="87.74" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
@@ -3365,15 +3351,19 @@ design rules under a new name.</description>
 </element>
 <element name="S2-AN3" library="SparkFun-Connectors" package="1X03_LOCK" value="AN7" x="97.08" y="43.16" smashed="yes" rot="MR90">
 <attribute name="AN3" value="AN3" x="95.375" y="49.18" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
-<attribute name="GND" value="GND" x="95.334" y="46.71" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="GND" value="-" x="95.354" y="46.04" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="GNDT" value="-" x="95.4" y="45.48" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="99.5082" y="47.6036" size="0.8128" layer="26" font="vector" ratio="15" rot="SMR270"/>
-<attribute name="VCC" value="VCC" x="95.365" y="44.225" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="VCC" value="+" x="95.345" y="43.375" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="VCCT" value="+" x="95.41" y="42.81" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="S2-AN4" library="SparkFun-Connectors" package="1X03_LOCK" value="AN8" x="97.06" y="50.772" smashed="yes" rot="MR90">
 <attribute name="AN4" value="AN4" x="95.437" y="56.668" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
-<attribute name="GND" value="GND" x="95.437" y="54.116" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="GND" value="-" x="95.357" y="53.616" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="GNDT" value="-" x="95.4" y="53.062" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="99.5434" y="55.0478" size="0.8128" layer="26" font="vector" ratio="15" rot="SMR270"/>
-<attribute name="VCC" value="VCC" x="95.437" y="51.442" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="VCC" value="+" x="95.367" y="51.012" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="VCCT" value="+" x="95.4" y="50.462" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X02_LOCK" package3d_urn="urn:adsk.eagle:package:38045/1" value="Teensy-5V" x="16" y="90" smashed="yes" rot="MR0">
 <attribute name="LABELT" value="Teensy-5V" x="17.14" y="88.11" size="0.6096" layer="27" font="vector" ratio="20" rot="SR180"/>
@@ -3382,16 +3372,20 @@ design rules under a new name.</description>
 </element>
 <element name="S1-AN1" library="SparkFun-Connectors" package="1X03_LOCK" value="AN5" x="97.028" y="13.208" smashed="yes" rot="R90">
 <attribute name="AN1" value="" x="95.25" y="19.304" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
-<attribute name="GND" value="" x="95.25" y="16.764" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="GND" value="-" x="95.29" y="15.974" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="GNDT" value="-" x="95.318" y="15.428" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="99.3648" y="17.8562" size="0.8128" layer="26" font="vector" ratio="15" rot="SMR270"/>
 <attribute name="VALUE" x="100.203" y="11.938" size="1.27" layer="27" rot="R90" display="off"/>
-<attribute name="VCC" value="" x="95.25" y="13.97" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="VCC" value="+" x="95.33" y="13.37" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="VCCT" value="+" x="95.378" y="12.828" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="S1-AN2" library="SparkFun-Connectors" package="1X03_LOCK" value="AN6" x="97.028" y="20.828" smashed="yes" rot="R90">
 <attribute name="AN2" value="" x="95.25" y="26.924" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
-<attribute name="GND" value="" x="95.25" y="24.384" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="GND" value="-" x="95.31" y="23.594" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="GNDT" value="-" x="95.378" y="23.068" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="99.3648" y="25.2222" size="0.8128" layer="26" font="vector" ratio="15" rot="SMR270"/>
-<attribute name="VCC" value="" x="95.25" y="21.844" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270" display="name"/>
+<attribute name="VCC" value="+" x="95.35" y="20.824" size="0.7" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="VCCT" value="+" x="95.408" y="20.278" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0204/7" package3d_urn="urn:adsk.eagle:package:23498/1" value="330" x="72.132" y="22.44" smashed="yes" rot="MR270">
 <attribute name="NAME" x="71.22" y="24.5866" size="0.8128" layer="26" font="vector" ratio="15" rot="MR180"/>
