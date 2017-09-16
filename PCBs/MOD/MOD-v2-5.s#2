@@ -452,8 +452,8 @@ Manufacturer Part Number
 <wire x1="18.71" y1="-3.67" x2="18.71" y2="1.33" width="0.127" layer="21"/>
 <wire x1="18.71" y1="1.33" x2="-1.29" y2="1.33" width="0.127" layer="21"/>
 <wire x1="-1.29" y1="1.33" x2="-1.29" y2="-3.67" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="0.45"/>
-<pad name="2" x="2.54" y="0" drill="0.45"/>
+<pad name="1" x="0" y="0" drill="0.8"/>
+<pad name="2" x="2.54" y="0" drill="0.8"/>
 <pad name="5" x="10.16" y="0" drill="0.95"/>
 <pad name="8" x="17.78" y="0" drill="0.95"/>
 <text x="-1.016" y="1.778" size="1.27" layer="21">&gt;NAME</text>
@@ -18443,7 +18443,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$6" class="4">
+<net name="RELAY-PWR" class="4">
 <segment>
 <pinref part="RELAY1" gate="G$1" pin="8"/>
 <wire x1="492.76" y1="12.7" x2="492.76" y2="7.62" width="0.1524" layer="91"/>
