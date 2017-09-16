@@ -1,4 +1,4 @@
-#N canvas 0 22 1310 676 10;
+#N canvas 146 -943 1310 676 10;
 #X obj 12 24 mo.arrayReader;
 #X obj 263 25 mo.strip 1;
 #X obj 777 71 mo.actuator;

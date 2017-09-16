@@ -18404,7 +18404,7 @@ Source: AVX .. aphvc.pdf</description>
 <label x="627.38" y="137.16" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="TINY_SWITCH" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB0"/>
 <wire x1="436.88" y1="27.94" x2="452.12" y2="27.94" width="0.1524" layer="91"/>
@@ -18422,7 +18422,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="TINY_RELAY" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB2"/>
 <pinref part="RELAY1" gate="G$1" pin="1"/>
