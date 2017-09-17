@@ -1,0 +1,14 @@
+#N canvas 9 115 1310 676 10;
+#X obj 357 27 mo.strip 1;
+#X obj 777 71 mo.actuator;
+#X obj 976 84 mo.in;
+#X obj 249 310 mo.ui;
+#X obj 90 355 mo.joy 1;
+#X obj 706 351 mo.joy 2;
+#X obj 1060 397 mo.an 5;
+#X obj 1140 397 mo.an 6;
+#X obj 1059 535 mo.an 7;
+#X obj 1139 535 mo.an 8;
+#X obj 897 396 mo.an 3;
+#X obj 977 396 mo.an 4;
+#X obj 12 24 mo.init;
