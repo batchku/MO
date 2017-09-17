@@ -1,6 +1,6 @@
-#N canvas 315 155 1013 568 10;
-#X obj 438 434 dac~;
-#X obj 176 258 ali.paf-space-abs 0;
+#N canvas 135 191 1013 568 10;
+#X obj 318 508 dac~;
+#X obj 56 332 ali.paf-space-abs 0;
 #N canvas 49 189 1119 714 sensel 0;
 #X obj 101 245 route 0 1 2 3 4 5;
 #X floatatom 56 246 5 0 0 0 - - -, f 5;
@@ -8,17 +8,17 @@
 #X floatatom 38 413 5 0 0 0 - - -, f 5;
 #X floatatom 78 413 5 0 0 0 - - -, f 5;
 #X obj 84 465 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 6282 1;
+-1 -1 6217 1;
 #X obj 30 522 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 8428 1;
+-1 -1 6062 1;
 #X floatatom 117 413 5 0 0 0 - - -, f 5;
 #X floatatom 156 414 5 0 0 0 - - -, f 5;
 #X floatatom 195 415 5 0 0 0 - - -, f 5;
 #X obj 156 440 / 50;
 #X obj 167 466 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 184 1;
+-1 -1 90 1;
 #X obj 188 467 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 1025 1;
+-1 -1 250 1;
 #X obj 195 442 / 4;
 #X obj 78 440 / 2;
 #X obj 29 67 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -39,17 +39,17 @@
 #X floatatom 248 416 5 0 0 0 - - -, f 5;
 #X floatatom 288 416 5 0 0 0 - - -, f 5;
 #X obj 294 468 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 7137 1;
+-1 -1 7471 1;
 #X obj 240 525 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6300 1;
+-1 -1 8787 1;
 #X floatatom 327 416 5 0 0 0 - - -, f 5;
 #X floatatom 366 417 5 0 0 0 - - -, f 5;
 #X floatatom 405 418 5 0 0 0 - - -, f 5;
 #X obj 366 443 / 50;
 #X obj 377 469 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 167 1;
+-1 -1 134 1;
 #X obj 398 470 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 625 1;
+-1 -1 1325 1;
 #X obj 405 445 / 4;
 #X obj 288 443 / 2;
 #X text 245 398 state;
@@ -171,15 +171,15 @@
 #X connect 76 0 68 0;
 #X connect 85 0 84 0;
 #X connect 86 0 85 1;
-#X restore 111 106 pd sensel;
-#X obj 329 9 r fingers;
-#X obj 328 165 route 0 1 2 3;
-#X obj 328 260 ali.paf-space-abs 1;
-#X obj 479 260 ali.paf-space-abs 2;
-#X obj 629 259 ali.paf-space-abs 4;
-#X obj 368 83 list prepend sensel;
-#X obj 330 51 list split 1;
-#X obj 329 111 list append;
+#X restore 62 48 pd sensel;
+#X obj 209 83 r fingers;
+#X obj 208 239 route 0 1 2 3;
+#X obj 208 334 ali.paf-space-abs 1;
+#X obj 359 334 ali.paf-space-abs 2;
+#X obj 509 333 ali.paf-space-abs 4;
+#X obj 248 157 list prepend sensel;
+#X obj 210 125 list split 1;
+#X obj 209 185 list append;
 #X connect 1 0 0 0;
 #X connect 1 0 0 1;
 #X connect 3 0 9 0;
