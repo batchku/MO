@@ -1,0 +1,3 @@
+[submodule "Pd/aLib-pd"]
+	path = Pd/aLib-pd
+	url = https://github.com/batchku/aLib-pd
