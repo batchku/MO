@@ -1,4 +1,4 @@
-#N canvas 137 23 1398 812 10;
+#N canvas 137 51 1398 812 10;
 #X obj 27 40 tickler.in;
 #X obj 301 697 dac~;
 #X obj 667 53 tgl 15 0 empty empty record 17 7 0 10 -262144 -1 -1 0
@@ -83,7 +83,7 @@
 #X obj 422 251 send~ ali.loop-pedal-sync;
 #X obj 801 56 bng 15 250 50 0 empty empty init 17 7 0 10 -262144 -1
 -1;
-#X obj 87 9 mo.init;
+#X obj 101 9 mo.init;
 #X obj 959 85 mo.ui;
 #X obj 959 56 r to-mo.ui;
 #N canvas 622 179 818 666 mapping 0;
@@ -145,15 +145,14 @@
 #X obj 959 492 route /k1 /k2 /k3 /k4;
 #X obj 27 387 mo.strip 1;
 #X obj 27 678 route /k1 /k2;
-#N canvas 423 432 1238 628 setup 0;
+#N canvas 191 197 1101 439 setup 0;
 #X obj 60 41 loadbang;
 #X msg 35 175 \; pd dsp 1;
 #X obj 63 96 del 2000;
-#X msg 169 101 \; record resize 882000;
 #X msg 152 146 \; pd midi-dialog 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0
 0 0 0;
 #X msg 103 233 \; pd midi-properties;
-#X msg 230 232 \; pd audio-properties;
+#X msg 259 236 \; pd audio-properties;
 #X obj 663 260 noteout;
 #X obj 885 78 r pd-dsp-stopped;
 #X obj 872 136 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -176,32 +175,31 @@
 #X msg 535 31 1;
 #X obj 218 325 loadbang;
 #X obj 211 351 del 2500;
-#X msg 127 181 \; pd audio-dialog 5 0 0 0 1 0 0 0 5 0 0 0 2 0 0 0 44100
-25 0 64;
 #X msg 588 191 73 \$1;
-#X connect 0 0 3 0;
+#X msg 127 181 \; pd audio-dialog 0 0 0 0 1 0 0 0 0 0 0 0 2 0 0 0 44100
+25 0 64;
 #X connect 0 0 2 0;
 #X connect 2 0 1 0;
-#X connect 2 0 4 0;
+#X connect 2 0 3 0;
 #X connect 2 0 26 0;
-#X connect 8 0 9 0;
-#X connect 9 0 13 0;
-#X connect 10 0 12 0;
-#X connect 11 0 10 0;
-#X connect 12 0 7 0;
-#X connect 13 0 7 0;
-#X connect 14 0 15 0;
-#X connect 15 0 27 0;
-#X connect 16 0 14 0;
-#X connect 17 0 19 0;
-#X connect 18 0 17 0;
-#X connect 20 0 17 0;
-#X connect 21 0 14 0;
-#X connect 22 0 23 0;
-#X connect 23 0 21 0;
-#X connect 24 0 25 0;
-#X connect 25 0 17 0;
-#X connect 27 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 12 0;
+#X connect 9 0 11 0;
+#X connect 10 0 9 0;
+#X connect 11 0 6 0;
+#X connect 12 0 6 0;
+#X connect 13 0 14 0;
+#X connect 14 0 25 0;
+#X connect 15 0 13 0;
+#X connect 16 0 18 0;
+#X connect 17 0 16 0;
+#X connect 19 0 16 0;
+#X connect 20 0 13 0;
+#X connect 21 0 22 0;
+#X connect 22 0 20 0;
+#X connect 23 0 24 0;
+#X connect 24 0 16 0;
+#X connect 25 0 6 0;
 #X restore 31 9 pd setup;
 #X connect 0 0 7 0;
 #X connect 2 0 3 0;
