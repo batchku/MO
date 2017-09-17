@@ -578,18 +578,18 @@ design rules under a new name.</description>
 <element name="S1" library="CMU-ArtFab" package="SWITCH_TR2-MOMENTARY-LED" value="SW-LEDPTH" x="19" y="5" smashed="yes">
 <attribute name="NAME" x="13.285" y="7.794" size="1.016" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="AN-IN-1" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="9.32" y="29.03" smashed="yes" rot="SMR180">
-<attribute name="AN1" value="AN1" x="10.844" y="30.808" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180" display="name"/>
-<attribute name="GND" value="GND" x="13.384" y="30.808" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180" display="name"/>
+<element name="AN-IN-1A" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="9.32" y="29.03" smashed="yes" rot="SMR180">
+<attribute name="AN1" value="AN1" x="13.544" y="30.808" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180" display="name"/>
+<attribute name="GND" value="GND" x="10.884" y="30.808" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180" display="name"/>
 <attribute name="VALUE" x="8.05" y="32.205" size="1.27" layer="28" rot="SMR180"/>
 <attribute name="VCC" value="VCC" x="8.177" y="30.808" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180" display="name"/>
 </element>
 <element name="S2" library="CMU-ArtFab" package="SWITCH_TR2-MOMENTARY-LED" value="SW-LEDPTH" x="33" y="5" smashed="yes">
 <attribute name="NAME" x="37.064" y="7.54" size="1.016" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="AN-IN-2" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="37.66" y="29.03" smashed="yes" rot="SMR180">
-<attribute name="AN2" value="AN2" x="39.184" y="30.808" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180" display="name"/>
-<attribute name="GND" value="GND" x="41.851" y="30.808" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180" display="name"/>
+<element name="AN-IN-2A" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="37.66" y="29.03" smashed="yes" rot="SMR180">
+<attribute name="AN2" value="AN2" x="41.884" y="30.808" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180" display="name"/>
+<attribute name="GND" value="GND" x="39.151" y="30.808" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180" display="name"/>
 <attribute name="VALUE" x="36.39" y="32.205" size="1.27" layer="28" rot="SMR180"/>
 <attribute name="VCC" value="VCC" x="36.517" y="30.808" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180" display="name"/>
 </element>
@@ -603,21 +603,57 @@ design rules under a new name.</description>
 <attribute name="NAME" x="27.1954" y="5.06" size="1.016" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="VALUE" x="25.5174" y="4.3744" size="1.016" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="R1" library="CMU-ArtFab" package="0204/7" value="330" x="19" y="16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="16.831603125" y="15.3366" size="0.9906" layer="26" font="vector" ratio="15" rot="SMR90"/>
-<attribute name="VALUE" x="18.46659375" y="14.6284" size="0.9906" layer="28" font="vector" ratio="15" rot="MR90"/>
+<element name="R1" library="CMU-ArtFab" package="0204/7" value="330" x="21" y="16" smashed="yes" rot="MR90">
+<attribute name="NAME" x="18.831603125" y="15.3366" size="0.9906" layer="26" font="vector" ratio="15" rot="SMR90"/>
+<attribute name="VALUE" x="20.46659375" y="14.6284" size="0.9906" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="R2" library="CMU-ArtFab" package="0204/7" value="330" x="33" y="16" smashed="yes" rot="MR270">
-<attribute name="NAME" x="35.1316" y="17.106596875" size="0.9906" layer="26" font="vector" ratio="15" rot="MR270"/>
-<attribute name="VALUE" x="33.5334" y="17.498596875" size="0.9906" layer="28" font="vector" ratio="15" rot="MR270"/>
+<element name="R2" library="CMU-ArtFab" package="0204/7" value="330" x="31" y="16" smashed="yes" rot="MR270">
+<attribute name="NAME" x="33.1316" y="17.106596875" size="0.9906" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="VALUE" x="31.5334" y="17.498596875" size="0.9906" layer="28" font="vector" ratio="15" rot="MR270"/>
 </element>
-<element name="KNOB1" library="CMU-ArtFab" package="POT_ALPHA_RD901F-40-(L)R1" value="" x="8" y="17" smashed="yes">
-<attribute name="NAME" x="12.826" y="23.731" size="1.27" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="16.89" y="15.095" size="1.27" layer="27" rot="R90"/>
+<element name="KNOB1" library="CMU-ArtFab" package="POT_ALPHA_RD901F-40-(L)R1" value="" x="10" y="16" smashed="yes">
+<attribute name="NAME" x="14.826" y="22.731" size="1.27" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="18.89" y="14.095" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="KNOB2" library="CMU-ArtFab" package="POT_ALPHA_RD901F-40-(L)R1" value="" x="44" y="17" smashed="yes">
-<attribute name="NAME" x="45.016" y="23.604" size="1.27" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="52.89" y="15.095" size="1.27" layer="27" rot="R90"/>
+<element name="KNOB2" library="CMU-ArtFab" package="POT_ALPHA_RD901F-40-(L)R1" value="" x="42" y="16" smashed="yes">
+<attribute name="NAME" x="43.016" y="22.604" size="1.27" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="50.89" y="14.095" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="AN-IN-1A'" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="9.3" y="26.6" smashed="yes" rot="SMR180">
+<attribute name="AGND" value="GND" x="8.4" y="25.4" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180"/>
+<attribute name="AN1" value="AN1" x="13.6" y="25.4" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180"/>
+<attribute name="VALUE" x="8.03" y="29.775" size="1.27" layer="28" rot="SMR180"/>
+<attribute name="VCC" value="VCC" x="11" y="25.4" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180"/>
+</element>
+<element name="AN-IN-2A`" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="37.7" y="26.6" smashed="yes" rot="SMR180">
+<attribute name="AGND" value="GND" x="36.5" y="25.5" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180"/>
+<attribute name="AN2" value="AN2" x="42" y="25.5" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180"/>
+<attribute name="VALUE" x="36.43" y="29.775" size="1.27" layer="28" rot="SMR180"/>
+<attribute name="VCC" value="VCC" x="39.2" y="25.5" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR180"/>
+</element>
+<element name="AN-IN-1B" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="2" y="8" smashed="yes" rot="MR90">
+<attribute name="AN1" value="AN1" x="0.2" y="12.2" size="0.8128" layer="28" font="vector" ratio="15" rot="MR90"/>
+<attribute name="GND" value="GND" x="0.2" y="9.5" size="0.8128" layer="28" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="-1.175" y="6.73" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VCC" value="VCC" x="0.2" y="6.9" size="0.8128" layer="28" font="vector" ratio="15" rot="MR90"/>
+</element>
+<element name="AN-IN-2B" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="50" y="13" smashed="yes" rot="MR270">
+<attribute name="AN2" value="AN2" x="51.8" y="8.8" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="GND" value="GND" x="51.8" y="11.4" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="VALUE" x="53.175" y="14.27" size="1.27" layer="28" rot="MR270"/>
+<attribute name="VCC" value="VCC" x="51.8" y="14.1" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR270"/>
+</element>
+<element name="AN-IN-1B`" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="2" y="18" smashed="yes" rot="MR90">
+<attribute name="AN1" value="AN1" x="0.3" y="22.1" size="0.8128" layer="28" font="vector" ratio="15" rot="MR90"/>
+<attribute name="GND" value="GND" x="0.3" y="16.7" size="0.8128" layer="28" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="-1.175" y="16.73" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VCC" value="VCC" x="0.3" y="19.4" size="0.8128" layer="28" font="vector" ratio="15" rot="MR90"/>
+</element>
+<element name="AN-IN-2B`" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="50" y="23" smashed="yes" rot="MR270">
+<attribute name="AN2" value="AN2" x="51.7" y="18.8" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="GND" value="GND" x="51.8" y="24.1" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR270"/>
+<attribute name="VALUE" x="53.175" y="24.27" size="1.27" layer="28" rot="MR270"/>
+<attribute name="VCC" value="VCC" x="51.8" y="21.4" size="0.8128" layer="28" font="vector" ratio="15" rot="SMR270"/>
 </element>
 </elements>
 <signals>
@@ -636,14 +672,26 @@ design rules under a new name.</description>
 </signal>
 <signal name="AGND" class="3">
 <contactref element="STRIP-MOD" pad="8"/>
-<contactref element="AN-IN-1" pad="3"/>
-<contactref element="AN-IN-2" pad="3"/>
 <contactref element="KNOB1" pad="3"/>
 <contactref element="KNOB2" pad="3"/>
-<wire x1="23.46" y1="27.797" x2="42.74" y2="29.03" width="0" layer="19" extent="1-1"/>
-<wire x1="14.4" y1="29.03" x2="23.46" y2="27.797" width="0" layer="19" extent="1-1"/>
-<wire x1="46.54" y1="9.499990625" x2="42.74" y2="29.03" width="0" layer="19" extent="1-1"/>
-<wire x1="10.54" y1="9.499990625" x2="14.4" y2="29.03" width="0" layer="19" extent="1-1"/>
+<contactref element="AN-IN-1A" pad="2"/>
+<contactref element="AN-IN-2A" pad="2"/>
+<contactref element="AN-IN-1A'" pad="1"/>
+<contactref element="AN-IN-2A`" pad="1"/>
+<contactref element="AN-IN-1B" pad="2"/>
+<contactref element="AN-IN-2B" pad="2"/>
+<contactref element="AN-IN-1B`" pad="1"/>
+<contactref element="AN-IN-2B`" pad="1"/>
+<wire x1="37.7" y1="26.6" x2="40.2" y2="29.03" width="0" layer="19" extent="1-1"/>
+<wire x1="23.46" y1="27.797" x2="37.7" y2="26.6" width="0" layer="19" extent="1-1"/>
+<wire x1="11.86" y1="29.03" x2="23.46" y2="27.797" width="0" layer="19" extent="1-1"/>
+<wire x1="9.3" y1="26.6" x2="11.86" y2="29.03" width="0" layer="19" extent="1-1"/>
+<wire x1="12.54" y1="8.499990625" x2="9.3" y2="26.6" width="0" layer="19" extent="1-1"/>
+<wire x1="44.54" y1="8.499990625" x2="37.7" y2="26.6" width="0" layer="19" extent="1-1"/>
+<wire x1="2" y1="18" x2="12.54" y2="8.499990625" width="0" layer="19" extent="1-1"/>
+<wire x1="50" y1="23" x2="2" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="2" y1="10.54" x2="50" y2="23" width="0" layer="19" extent="1-1"/>
+<wire x1="50" y1="10.46" x2="2" y2="10.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B2">
 <contactref element="STRIP-MOD" pad="4"/>
@@ -657,38 +705,62 @@ design rules under a new name.</description>
 </signal>
 <signal name="+3V3">
 <contactref element="STRIP-MOD" pad="9"/>
-<contactref element="AN-IN-1" pad="1"/>
-<contactref element="AN-IN-2" pad="1"/>
+<contactref element="AN-IN-1A" pad="1"/>
+<contactref element="AN-IN-2A" pad="1"/>
 <contactref element="KNOB1" pad="1"/>
 <contactref element="KNOB2" pad="1"/>
+<contactref element="AN-IN-1A'" pad="2"/>
+<contactref element="AN-IN-2A`" pad="2"/>
+<contactref element="AN-IN-1B" pad="1"/>
+<contactref element="AN-IN-2B" pad="1"/>
+<contactref element="AN-IN-1B`" pad="2"/>
+<contactref element="AN-IN-2B`" pad="2"/>
+<wire x1="40.24" y1="26.6" x2="37.66" y2="29.03" width="0" layer="19" extent="1-1"/>
 <wire x1="20.92" y1="25.003" x2="37.66" y2="29.03" width="0" layer="19" extent="1-1"/>
-<wire x1="9.32" y1="29.03" x2="20.92" y2="25.003" width="0" layer="19" extent="1-1"/>
-<wire x1="41.46" y1="9.499990625" x2="37.66" y2="29.03" width="0" layer="19" extent="1-1"/>
-<wire x1="5.46" y1="9.499990625" x2="9.32" y2="29.03" width="0" layer="19" extent="1-1"/>
+<wire x1="11.84" y1="26.6" x2="20.92" y2="25.003" width="0" layer="19" extent="1-1"/>
+<wire x1="9.32" y1="29.03" x2="11.84" y2="26.6" width="0" layer="19" extent="1-1"/>
+<wire x1="39.46" y1="8.499990625" x2="40.24" y2="26.6" width="0" layer="19" extent="1-1"/>
+<wire x1="7.46" y1="8.499990625" x2="11.84" y2="26.6" width="0" layer="19" extent="1-1"/>
+<wire x1="2" y1="20.54" x2="7.46" y2="8.499990625" width="0" layer="19" extent="1-1"/>
+<wire x1="50" y1="20.46" x2="2" y2="20.54" width="0" layer="19" extent="1-1"/>
+<wire x1="2" y1="8" x2="50" y2="20.46" width="0" layer="19" extent="1-1"/>
+<wire x1="50" y1="13" x2="2" y2="8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AN1" class="3">
 <contactref element="STRIP-MOD" pad="1"/>
-<contactref element="AN-IN-1" pad="2"/>
 <contactref element="KNOB1" pad="2"/>
-<wire x1="11.86" y1="29.03" x2="31.08" y2="25.003" width="0" layer="19" extent="1-1"/>
-<wire x1="8" y1="9.499990625" x2="11.86" y2="29.03" width="0" layer="19" extent="1-1"/>
+<contactref element="AN-IN-1A" pad="3"/>
+<contactref element="AN-IN-1A'" pad="3"/>
+<contactref element="AN-IN-1B" pad="3"/>
+<contactref element="AN-IN-1B`" pad="3"/>
+<wire x1="14.38" y1="26.6" x2="31.08" y2="25.003" width="0" layer="19" extent="1-1"/>
+<wire x1="14.4" y1="29.03" x2="14.38" y2="26.6" width="0" layer="19" extent="1-1"/>
+<wire x1="10" y1="8.499990625" x2="14.38" y2="26.6" width="0" layer="19" extent="1-1"/>
+<wire x1="2" y1="23.08" x2="10" y2="8.499990625" width="0" layer="19" extent="1-1"/>
+<wire x1="2" y1="13.08" x2="2" y2="23.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AN2" class="3">
 <contactref element="STRIP-MOD" pad="2"/>
-<contactref element="AN-IN-2" pad="2"/>
 <contactref element="KNOB2" pad="2"/>
-<wire x1="31.08" y1="27.797" x2="40.2" y2="29.03" width="0" layer="19" extent="1-1"/>
-<wire x1="44" y1="9.499990625" x2="40.2" y2="29.03" width="0" layer="19" extent="1-1"/>
+<contactref element="AN-IN-2A" pad="3"/>
+<contactref element="AN-IN-2A`" pad="3"/>
+<contactref element="AN-IN-2B" pad="3"/>
+<contactref element="AN-IN-2B`" pad="3"/>
+<wire x1="42.78" y1="26.6" x2="42.74" y2="29.03" width="0" layer="19" extent="1-1"/>
+<wire x1="31.08" y1="27.797" x2="42.74" y2="29.03" width="0" layer="19" extent="1-1"/>
+<wire x1="42" y1="8.499990625" x2="42.78" y2="26.6" width="0" layer="19" extent="1-1"/>
+<wire x1="50" y1="17.92" x2="42" y2="8.499990625" width="0" layer="19" extent="1-1"/>
+<wire x1="50" y1="7.92" x2="50" y2="17.92" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_1" class="1">
 <contactref element="STRIP-MOD" pad="5"/>
 <contactref element="R1" pad="2"/>
-<wire x1="19" y1="19.81" x2="26" y2="25.003" width="0" layer="19" extent="1-1"/>
+<wire x1="21" y1="19.81" x2="26" y2="25.003" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_2" class="1">
 <contactref element="STRIP-MOD" pad="6"/>
 <contactref element="R2" pad="2"/>
-<wire x1="33" y1="12.19" x2="26" y2="27.797" width="0" layer="19" extent="1-1"/>
+<wire x1="31" y1="12.19" x2="26" y2="27.797" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED1">
 <contactref element="R4" pad="1"/>
@@ -703,12 +775,12 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="R1" pad="1"/>
 <contactref element="S1" pad="A"/>
-<wire x1="19" y1="7.54" x2="19" y2="12.19" width="0" layer="19" extent="1-1"/>
+<wire x1="19" y1="7.54" x2="21" y2="12.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="S2" pad="A"/>
 <contactref element="R2" pad="1"/>
-<wire x1="33" y1="7.54" x2="33" y2="19.81" width="0" layer="19" extent="1-1"/>
+<wire x1="33" y1="7.54" x2="31" y2="19.81" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

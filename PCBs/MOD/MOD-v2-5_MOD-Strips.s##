@@ -5867,11 +5867,11 @@ http://www.taydaelectronics.com/datasheets/A-1847.pdf</description>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="AGND" device=""/>
 <part name="S1" library="CMU-ArtFab" deviceset="SW-LED" device="PTH"/>
-<part name="AN-IN-1" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
+<part name="AN-IN-1A" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="AGND" device=""/>
 <part name="S2" library="CMU-ArtFab" deviceset="SW-LED" device="PTH"/>
-<part name="AN-IN-2" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
+<part name="AN-IN-2A" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
@@ -5881,6 +5881,12 @@ http://www.taydaelectronics.com/datasheets/A-1847.pdf</description>
 <part name="R2" library="CMU-ArtFab" deviceset="R-US_" device="0204/7" value="330"/>
 <part name="KNOB1" library="CMU-ArtFab" deviceset="POT" device="ALPHA_RD901"/>
 <part name="KNOB2" library="CMU-ArtFab" deviceset="POT" device="ALPHA_RD901"/>
+<part name="AN-IN-1A'" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
+<part name="AN-IN-2A`" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
+<part name="AN-IN-1B" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
+<part name="AN-IN-2B" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
+<part name="AN-IN-1B`" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
+<part name="AN-IN-2B`" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -5893,11 +5899,11 @@ http://www.taydaelectronics.com/datasheets/A-1847.pdf</description>
 <instance part="+3V1" gate="G$1" x="10.16" y="50.8"/>
 <instance part="SUPPLY3" gate="G$1" x="139.7" y="73.66"/>
 <instance part="S1" gate="G$1" x="88.9" y="78.74" rot="R180"/>
-<instance part="AN-IN-1" gate="G$1" x="170.18" y="81.28"/>
+<instance part="AN-IN-1A" gate="G$1" x="170.18" y="81.28"/>
 <instance part="+3V2" gate="G$1" x="162.56" y="86.36"/>
 <instance part="SUPPLY4" gate="G$1" x="139.7" y="50.8"/>
 <instance part="S2" gate="G$1" x="88.9" y="55.88" rot="R180"/>
-<instance part="AN-IN-2" gate="G$1" x="170.18" y="58.42"/>
+<instance part="AN-IN-2A" gate="G$1" x="170.18" y="58.42"/>
 <instance part="+3V3" gate="G$1" x="162.56" y="63.5"/>
 <instance part="LED1" gate="G$1" x="104.14" y="33.02" rot="R90"/>
 <instance part="SUPPLY1" gate="GND" x="111.76" y="27.94"/>
@@ -5907,6 +5913,12 @@ http://www.taydaelectronics.com/datasheets/A-1847.pdf</description>
 <instance part="R2" gate="G$1" x="109.22" y="58.42"/>
 <instance part="KNOB1" gate="G$1" x="149.86" y="78.74" rot="R90"/>
 <instance part="KNOB2" gate="G$1" x="149.86" y="55.88" rot="R90"/>
+<instance part="AN-IN-1A'" gate="G$1" x="200.66" y="81.28"/>
+<instance part="AN-IN-2A`" gate="G$1" x="200.66" y="58.42"/>
+<instance part="AN-IN-1B" gate="G$1" x="170.18" y="38.1"/>
+<instance part="AN-IN-2B" gate="G$1" x="170.18" y="15.24"/>
+<instance part="AN-IN-1B`" gate="G$1" x="200.66" y="38.1"/>
+<instance part="AN-IN-2B`" gate="G$1" x="200.66" y="15.24"/>
 </instances>
 <busses>
 </busses>
@@ -5951,26 +5963,56 @@ http://www.taydaelectronics.com/datasheets/A-1847.pdf</description>
 <pinref part="STRIP-MOD" gate="G$1" pin="8"/>
 </segment>
 <segment>
-<pinref part="AN-IN-1" gate="G$1" pin="3"/>
-<wire x1="177.8" y1="83.82" x2="185.42" y2="83.82" width="0.1524" layer="91"/>
-<label x="185.42" y="83.82" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="SUPPLY3" gate="G$1" pin="AGND"/>
 <wire x1="139.7" y1="78.74" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="KNOB1" gate="G$1" pin="OUT"/>
 <wire x1="144.78" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="AN-IN-2" gate="G$1" pin="3"/>
-<wire x1="177.8" y1="60.96" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
-<label x="185.42" y="60.96" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="SUPPLY4" gate="G$1" pin="AGND"/>
 <wire x1="139.7" y1="55.88" x2="139.7" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="KNOB2" gate="G$1" pin="OUT"/>
 <wire x1="144.78" y1="55.88" x2="139.7" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="AN-IN-1A" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
+<label x="185.42" y="81.28" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-2A" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="58.42" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
+<label x="185.42" y="58.42" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-1A'" gate="G$1" pin="1"/>
+<wire x1="208.28" y1="78.74" x2="215.9" y2="78.74" width="0.1524" layer="91"/>
+<label x="215.9" y="78.74" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-2A`" gate="G$1" pin="1"/>
+<wire x1="208.28" y1="55.88" x2="215.9" y2="55.88" width="0.1524" layer="91"/>
+<label x="215.9" y="55.88" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-1B" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="38.1" x2="185.42" y2="38.1" width="0.1524" layer="91"/>
+<label x="185.42" y="38.1" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-2B" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="15.24" x2="185.42" y2="15.24" width="0.1524" layer="91"/>
+<label x="185.42" y="15.24" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-1B`" gate="G$1" pin="1"/>
+<wire x1="208.28" y1="35.56" x2="215.9" y2="35.56" width="0.1524" layer="91"/>
+<label x="215.9" y="35.56" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-2B`" gate="G$1" pin="1"/>
+<wire x1="208.28" y1="12.7" x2="215.9" y2="12.7" width="0.1524" layer="91"/>
+<label x="215.9" y="12.7" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="B2" class="0">
@@ -6011,7 +6053,7 @@ http://www.taydaelectronics.com/datasheets/A-1847.pdf</description>
 <pinref part="KNOB1" gate="G$1" pin="IN"/>
 </segment>
 <segment>
-<pinref part="AN-IN-1" gate="G$1" pin="1"/>
+<pinref part="AN-IN-1A" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="78.74" x2="185.42" y2="78.74" width="0.1524" layer="91"/>
 <label x="185.42" y="78.74" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -6022,9 +6064,39 @@ http://www.taydaelectronics.com/datasheets/A-1847.pdf</description>
 <pinref part="KNOB2" gate="G$1" pin="IN"/>
 </segment>
 <segment>
-<pinref part="AN-IN-2" gate="G$1" pin="1"/>
+<pinref part="AN-IN-2A" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="55.88" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
 <label x="185.42" y="55.88" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-1A'" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="81.28" x2="215.9" y2="81.28" width="0.1524" layer="91"/>
+<label x="215.9" y="81.28" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-2A`" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="58.42" x2="215.9" y2="58.42" width="0.1524" layer="91"/>
+<label x="215.9" y="58.42" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-1B" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="35.56" x2="185.42" y2="35.56" width="0.1524" layer="91"/>
+<label x="185.42" y="35.56" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-2B" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="12.7" x2="185.42" y2="12.7" width="0.1524" layer="91"/>
+<label x="185.42" y="12.7" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-1B`" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="38.1" x2="215.9" y2="38.1" width="0.1524" layer="91"/>
+<label x="215.9" y="38.1" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-2B`" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="15.24" x2="215.9" y2="15.24" width="0.1524" layer="91"/>
+<label x="215.9" y="15.24" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="AN1" class="3">
@@ -6039,9 +6111,24 @@ http://www.taydaelectronics.com/datasheets/A-1847.pdf</description>
 <pinref part="KNOB1" gate="G$1" pin="WIPER"/>
 </segment>
 <segment>
-<pinref part="AN-IN-1" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
-<label x="185.42" y="81.28" size="1.016" layer="95" xref="yes"/>
+<pinref part="AN-IN-1A" gate="G$1" pin="3"/>
+<wire x1="177.8" y1="83.82" x2="185.42" y2="83.82" width="0.1524" layer="91"/>
+<label x="185.42" y="83.82" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-1A'" gate="G$1" pin="3"/>
+<wire x1="208.28" y1="83.82" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
+<label x="215.9" y="83.82" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-1B" gate="G$1" pin="3"/>
+<wire x1="177.8" y1="40.64" x2="185.42" y2="40.64" width="0.1524" layer="91"/>
+<label x="185.42" y="40.64" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-1B`" gate="G$1" pin="3"/>
+<wire x1="208.28" y1="40.64" x2="215.9" y2="40.64" width="0.1524" layer="91"/>
+<label x="215.9" y="40.64" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="AN2" class="3">
@@ -6056,9 +6143,24 @@ http://www.taydaelectronics.com/datasheets/A-1847.pdf</description>
 <pinref part="KNOB2" gate="G$1" pin="WIPER"/>
 </segment>
 <segment>
-<pinref part="AN-IN-2" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="58.42" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
-<label x="185.42" y="58.42" size="1.016" layer="95" xref="yes"/>
+<pinref part="AN-IN-2A" gate="G$1" pin="3"/>
+<wire x1="177.8" y1="60.96" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
+<label x="185.42" y="60.96" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-2A`" gate="G$1" pin="3"/>
+<wire x1="208.28" y1="60.96" x2="215.9" y2="60.96" width="0.1524" layer="91"/>
+<label x="215.9" y="60.96" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-2B" gate="G$1" pin="3"/>
+<wire x1="177.8" y1="17.78" x2="185.42" y2="17.78" width="0.1524" layer="91"/>
+<label x="185.42" y="17.78" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AN-IN-2B`" gate="G$1" pin="3"/>
+<wire x1="208.28" y1="17.78" x2="215.9" y2="17.78" width="0.1524" layer="91"/>
+<label x="215.9" y="17.78" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PWM_1" class="1">
