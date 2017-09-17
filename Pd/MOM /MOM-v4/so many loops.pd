@@ -86,14 +86,12 @@
 #X obj 963 43 mo.init;
 #X obj 959 85 mo.ui;
 #X obj 1037 44 r to-mo.ui;
-#N canvas 0 23 818 666 mapping 0;
+#N canvas 2542 179 818 666 mapping 1;
 #X obj 211 219 route /s1 /s2 /s3 /s4;
-#X obj 218 273 sel 1;
 #X obj 224 306 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 231 358 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 270 274 sel 1;
 #X obj 276 307 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 232 446 /l1 \$1;
@@ -101,7 +99,6 @@
 #X obj 234 586 s to-mo.ui;
 #X obj 329 388 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 352 278 sel 1;
 #X obj 358 311 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 411 392 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -112,27 +109,37 @@
 #X obj 63 396 outlet;
 #X obj 414 520 mo.led-flash /l2 50;
 #X obj 604 521 mo.led-flash /l4 50;
-#X connect 0 0 1 0;
-#X connect 0 1 4 0;
-#X connect 0 3 10 0;
-#X connect 1 1 2 0;
-#X connect 2 0 3 0;
+#X obj 404 135 print in;
+#X obj 218 273 sel 0 127 1;
+#X obj 325 274 sel 0 127 1;
+#X obj 433 275 sel 0 127 1;
+#X connect 0 0 17 0;
+#X connect 0 1 18 0;
+#X connect 0 3 19 0;
+#X connect 1 0 2 0;
+#X connect 2 0 5 0;
+#X connect 2 0 11 0;
 #X connect 3 0 7 0;
-#X connect 3 0 14 0;
-#X connect 4 1 5 0;
-#X connect 5 0 9 0;
-#X connect 5 0 15 0;
-#X connect 6 0 8 0;
-#X connect 7 0 6 0;
-#X connect 9 0 17 0;
-#X connect 10 1 11 0;
-#X connect 11 0 12 0;
-#X connect 11 0 16 0;
-#X connect 12 0 18 0;
-#X connect 13 0 0 0;
-#X connect 17 0 8 0;
-#X connect 18 0 8 0;
+#X connect 3 0 12 0;
+#X connect 4 0 6 0;
+#X connect 5 0 4 0;
+#X connect 7 0 14 0;
+#X connect 8 0 9 0;
+#X connect 8 0 13 0;
+#X connect 9 0 15 0;
+#X connect 10 0 0 0;
+#X connect 10 0 16 0;
+#X connect 14 0 6 0;
+#X connect 15 0 6 0;
+#X connect 17 1 1 0;
+#X connect 17 2 1 0;
+#X connect 18 1 3 0;
+#X connect 18 2 3 0;
+#X connect 19 1 8 0;
+#X connect 19 2 8 0;
 #X restore 962 430 pd mapping;
+#X obj 37 37;
+#X obj 1148 52 print;
 #X connect 0 0 7 0;
 #X connect 2 0 3 0;
 #X connect 3 0 5 0;
