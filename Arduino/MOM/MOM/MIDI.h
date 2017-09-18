@@ -36,8 +36,8 @@ const int BUTTONS_MIDI[]      = {12,
 
 const int JOYPOTS_MIDI[]      = {30,
                                  28,
-                                 29,
-                                 31};
+                                 31,
+                                 29};
 
 const int JOYBUTTONS_MIDI[]   = {32,
                                  33};
