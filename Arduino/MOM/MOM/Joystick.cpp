@@ -41,14 +41,14 @@ void Joystick::potInput() {
       int current = pots[b].getCurrent();
       if (current <= center[b]) {
         current = map(current, 0, center[b], 0, 64);
-        if( (b % 2) == 1) usbMIDI.sendControlChange(JOYPOTS_MIDI[b + joystickNum], current, 1);
-        if( (b % 2) == 0) usbMIDI.sendControlChange(JOYPOTS_MIDI[b + joystickNum], 127 - current, 1);
+        if( (b % 2) == 0) usbMIDI.sendControlChange(JOYPOTS_MIDI[b + joystickNum], current, 1);
+        if( (b % 2) == 1) usbMIDI.sendControlChange(JOYPOTS_MIDI[b + joystickNum], 127 - current, 1);
         
       }
       if (current >= center[b]) {
         current = map(current, center[b], 127, 65, 127);
-        if( (b % 2) == 1) usbMIDI.sendControlChange(JOYPOTS_MIDI[b + joystickNum], current, 1);
-        if( (b % 2) == 0) usbMIDI.sendControlChange(JOYPOTS_MIDI[b + joystickNum], 127 - current, 1);
+        if( (b % 2) == 0) usbMIDI.sendControlChange(JOYPOTS_MIDI[b + joystickNum], current, 1);
+        if( (b % 2) == 1) usbMIDI.sendControlChange(JOYPOTS_MIDI[b + joystickNum], 127 - current, 1);
         
       }
     }
