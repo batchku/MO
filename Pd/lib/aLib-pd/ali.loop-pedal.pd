@@ -1,4 +1,4 @@
-#N canvas 1529 33 1831 957 10;
+#N canvas 0 51 1905 1029 10;
 #X obj 58 9 tgl 15 0 \$0record-out \$0record-in record 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 270 336 sel 1 0;
@@ -21,8 +21,8 @@
 #X obj 450 774 t f f;
 #X obj 531 575 spigot;
 #X obj 58 27 tgl 15 0 \$0autosize-out \$0autosize-in autosize 17 7
-0 10 -262144 -1 -1 0 1;
-#N canvas 0 22 450 300 (subpatch) 0;
+0 10 -262144 -1 -1 1 1;
+#N canvas 0 50 450 300 (subpatch) 0;
 #X array \$1 69042 float 1;
 #A 0 0.0178866 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -5492,13 +5492,13 @@
 #X obj 1079 619 ali.fade-in-out;
 #X obj 1042 588 *~;
 #X obj 128 9 tgl 15 0 \$0play-out \$0play-in play 17 7 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 1078 303 sel 1 0;
 #X obj 1042 482 *~;
 #X msg 1141 371 1;
 #X msg 1108 370 1;
 #X obj 1079 585 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X msg 1178 372 0;
 #X msg 1211 415 0;
 #X obj 1046 336 t b b b;
@@ -5516,7 +5516,7 @@
 #X obj 1189 199 phasor~;
 #X obj 1234 78 expr 1/$f1*1000;
 #X obj 56 188 hsl 128 15 0 127 0 0 \$0rechead-out \$0rechead-in empty
--2 -8 0 10 -262144 -1 -1 12698 1;
+-2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 365 52 inlet~;
 #X text 109 336 audio in;
 #X text 1389 -5 synch in;
@@ -5530,19 +5530,19 @@
 #X obj 1122 247 *~ 1;
 #X obj 1222 250 *~ 0;
 #X obj 128 27 tgl 15 0 \$0sync-out \$0sync-in sync 17 7 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 1041 182 == 0;
 #X obj 791 65 loadbang;
 #X obj 119 425 +~;
 #X obj 193 363 *~;
-#X obj 208 335 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 208 335 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 1202 77 0;
 #X obj 1194 29 t b b f f;
 #X obj 987 279 s \$0play-in;
 #X obj 985 303 r \$0play-out;
 #X obj 1060 431 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X msg 1172 729 reclen \$1;
 #X obj 1218 307 +~;
 #X text 1172 797 msg out;
@@ -5576,13 +5576,13 @@
 #X msg 338 713 1;
 #X obj 335 543 t b b;
 #X obj 128 62 tgl 15 0 \$0odub-out \$0odub-in overdub 17 7 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 896 197 s \$0odub-in;
 #X obj 208 305 r \$0odub-out;
 #X msg 791 97 autosize 1 \, sync 0 \, size 20000 \, overdub 0;
 #X obj 75 282 receive~ ali.loop-pedal-audio;
 #X obj 551 90 receive ali.loop-pedal-msg;
-#X obj 1308 194 receive~ ali.loop-pedal-sync;
+#X obj 1302 236 receive~ ali.loop-pedal-sync;
 #X obj 501 138 route record name size autosize autostop clear play
 sync overdub reclen reset speed;
 #X obj 1242 122 f;
@@ -5595,7 +5595,7 @@ sync overdub reclen reset speed;
 #X msg 1720 582 0;
 #X obj 1688 427 < 0.1;
 #X obj 1688 455 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X obj 1689 480 change;
 #X obj 1689 513 sel 1;
 #X obj 1695 541 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -5612,7 +5612,7 @@ sync overdub reclen reset speed;
 -1 -1;
 #X obj 32 684 snapshot~;
 #X floatatom 32 714 5 0 0 0 - - -, f 5;
-#X obj 55 592 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 55 592 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 34 633 metro 100;
 #X obj 1493 609 threshold~ 0.999 1 0 1;
