@@ -5850,8 +5850,8 @@ http://www.taydaelectronics.com/datasheets/A-1847.pdf</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.1524" drill="0">
-<clearance class="0" value="0.1524"/>
+<class number="0" name="default" width="0.2032" drill="0">
+<clearance class="0" value="0.2032"/>
 </class>
 <class number="1" name="power" width="0.6096" drill="0">
 <clearance class="1" value="0.6096"/>
