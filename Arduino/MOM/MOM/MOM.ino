@@ -80,7 +80,7 @@ void OnNoteOn(byte channel, byte note, byte velocity) {
   //INVERSE MOTOR DIRECTION
   for (int b = 0; b < NUM_MOTORS; b++) {
     if (note == MOTORINS_MIDI[b]) {
-      analogWrite(MOTORINS[b], velocity * 2); //Send 0|1 based on 0-127 range
+      digitalWrite(MOTORINS[b], velocity * 2); //Send 0|1 based on 0-127 range
     }
   }
 
