@@ -59,6 +59,10 @@ int Sensor::getCurrent(){
   return current;
   }
 
+int Sensor::getMidiAddress(){
+  return midiAddress;
+  }
+
 void Sensor::setName(String _name) {
   name = _name;
 }

@@ -16,6 +16,7 @@ class Sensor
     void read();
     void send();
     int getCurrent();
+    int getMidiAddress();
     void setName(String _name);
     void debug();
 

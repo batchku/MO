@@ -1,15 +1,15 @@
 #N canvas 401 335 890 478 10;
 #X obj 116 120 vsl 15 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 4800 1;
 #X obj 212 245 tgl 15 0 empty empty Motor2_Dir -17 23 0 10 -262144
 -1 -1 0 1;
 #X obj 31 26 inlet;
 #X obj 157 120 vsl 15 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 2976 1;
 #X obj 205 120 vsl 15 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 4600 1;
 #X obj 249 120 vsl 15 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 4600 1;
 #X obj 147 245 tgl 15 0 empty empty Motor1_Dir -17 23 0 10 -262144
 -1 -1 0 1;
 #X obj 631 159 noteout;
@@ -64,6 +64,8 @@
 #X obj 482 23 t b;
 #X obj 482 2 loadbang;
 #X obj 430 2 r reset;
+#X obj 420 358 change;
+#X obj 620 358 change;
 #X connect 0 0 16 0;
 #X connect 1 0 21 0;
 #X connect 2 0 46 0;
@@ -95,8 +97,8 @@
 #X connect 34 0 32 0;
 #X connect 34 0 33 1;
 #X connect 35 0 33 0;
-#X connect 40 0 37 0;
-#X connect 41 0 39 0;
+#X connect 40 0 59 0;
+#X connect 41 0 60 0;
 #X connect 42 0 36 0;
 #X connect 42 0 37 1;
 #X connect 43 0 38 0;
@@ -111,4 +113,6 @@
 #X connect 56 0 25 0;
 #X connect 57 0 56 0;
 #X connect 58 0 56 0;
+#X connect 59 0 37 0;
+#X connect 60 0 39 0;
 #X coords 0 -1 1 1 180 200 1 100 100;

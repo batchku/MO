@@ -35,8 +35,8 @@ const int BUTTONS[]         = {BTN1,
                                BTN16};
 
 const int JOYPOTS[]         = {JOYV1,
-                               JOYH1,
                                JOYV2,
+                               JOYH1,
                                JOYH2};
 
 const int JOYBUTTONS[]      = {JOYBTN1,
@@ -68,10 +68,10 @@ const int MOTORPWMS[]       = {M_PWMA,
 const int MOTORINS[]        = {M_INA,
                                M_INB};
 
-const int USERPOTS[]        = {AN12,
-                               AN11,
+const int USERPOTS[]        = {AN9,
                                AN10,
-                               AN9};
+                               AN11,
+                               AN12};
 
 const int USERBUTTONS[]     = {BTN13,
                                BTN14,

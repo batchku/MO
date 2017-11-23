@@ -11,10 +11,11 @@ Joystick::Joystick(int _joystickNum) {
   button -> attach(JOYBUTTONS[joystickNum/2]);
   button -> interval(5);
 
-  for (int b = 0; b < 2; b++) {
-    pots[b].set(JOYPOTS[b + joystickNum], JOYPOTS_MIDI[b + joystickNum]);
-  }
-
+//  for (int b = 0; b < 2; b++) {
+//    pots[b].set(JOYPOTS[b + joystickNum], JOYPOTS_MIDI[b + joystickNum]);
+//  }
+  pots[0].set(JOYPOTS[joystickNum/2], JOYPOTS_MIDI[joystickNum/2]);
+  pots[1].set(JOYPOTS[joystickNum/2 + 2], JOYPOTS_MIDI[joystickNum/2 + 2]);
 }
 
 void Joystick::calibrate() {
@@ -41,14 +42,14 @@ void Joystick::potInput() {
       int current = pots[b].getCurrent();
       if (current <= center[b]) {
         current = map(current, 0, center[b], 0, 64);
-        if( (b % 2) == 0) usbMIDI.sendControlChange(JOYPOTS_MIDI[b + joystickNum], current, 1);
-        if( (b % 2) == 1) usbMIDI.sendControlChange(JOYPOTS_MIDI[b + joystickNum], 127 - current, 1);
+        if( (b % 2) == 1) usbMIDI.sendControlChange(pots[b].getMidiAddress(), current, 1);
+        if( (b % 2) == 0) usbMIDI.sendControlChange(pots[b].getMidiAddress(), 127 - current, 1);
         
       }
       if (current >= center[b]) {
         current = map(current, center[b], 127, 65, 127);
-        if( (b % 2) == 0) usbMIDI.sendControlChange(JOYPOTS_MIDI[b + joystickNum], current, 1);
-        if( (b % 2) == 1) usbMIDI.sendControlChange(JOYPOTS_MIDI[b + joystickNum], 127 - current, 1);
+        if( (b % 2) == 1) usbMIDI.sendControlChange(pots[b].getMidiAddress(), current, 1);
+        if( (b % 2) == 0) usbMIDI.sendControlChange(pots[b].getMidiAddress(), 127 - current, 1);
         
       }
     }
