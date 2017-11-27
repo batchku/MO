@@ -173,11 +173,11 @@
 <wire x1="0" y1="28" x2="0" y2="3" width="0.1524" layer="20"/>
 <text x="37.505640625" y="3.152140625" size="1.27" layer="25" font="vector" ratio="20">MO Strip</text>
 <text x="37.616459375" y="0.38608125" size="0.55" layer="25" font="vector" ratio="15">Ali Momeni 2017
-@ Pittsburgh
+Designed in Pittsburgh
 v 2-5</text>
 <text x="45.505640625" y="3.152140625" size="1.27" layer="26" font="vector" ratio="20" rot="MR0">MO Strip</text>
 <text x="46.244340625" y="0.30098125" size="0.55" layer="26" font="vector" ratio="15" rot="MR0">Ali Momeni 2017
-@ Pittsburgh
+Designed in Pittsburgh
 v 2-5</text>
 </plain>
 <libraries>
