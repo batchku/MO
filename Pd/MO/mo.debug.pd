@@ -1,0 +1,27 @@
+#N canvas 0 23 1440 851 10;
+#X obj 441 52 mo.strip 1;
+#X obj 1024 458 mo.in;
+#X obj 10 53 mo.ui;
+#X obj 626 53 mo.strip 2;
+#X obj 12 8 mo.init;
+#X obj 811 53 mo.strip 3;
+#X obj 441 334 mo.strip 4;
+#X obj 626 335 mo.strip 5;
+#X obj 811 335 mo.strip 6;
+#X obj 309 393 mo.joy 2;
+#X obj 201 393 mo.joy 1;
+#X obj 10 405 mo.actuator;
+#X obj 1017 52 mo.an 1;
+#X obj 1097 52 mo.an 2;
+#X obj 1177 52 mo.an 3;
+#X obj 1257 52 mo.an 4;
+#X obj 1017 186 mo.an 5;
+#X obj 1097 186 mo.an 6;
+#X obj 1177 186 mo.an 7;
+#X obj 1257 186 mo.an 8;
+#X obj 1017 320 mo.an 9;
+#X obj 1097 320 mo.an 10;
+#X obj 1177 320 mo.an 11;
+#X obj 1257 320 mo.an 12;
+#X text 77 7 <-- Mo tools need one init object to populate the arrays
+that all other objects reference, f 56;
