@@ -21,8 +21,8 @@ Servo servo[NUM_SERVOS];
 
 Shield shield;
 
-Strip * strip1 = new Strip(4);
-Strip * strip2 = new Strip(1);
+Strip * strip1 = new Strip(0);
+Strip * strip2 = new Strip(5);
 
 Joystick joy1(0);
 Joystick joy2(1);
@@ -53,7 +53,7 @@ void setup() {
 
   //Add Each strip to strips collection
   strips.add(strip1);
-  //strips.add(strip2);
+  strips.add(strip2);
 
   //Add additional sensors to shield
   //shield.add(ir);
@@ -66,7 +66,7 @@ void loop() {
 
   shield.update();
   strips.update();
-  joysticks.update();
+  //joysticks.update();
 
   usbMIDI.read();
 }
