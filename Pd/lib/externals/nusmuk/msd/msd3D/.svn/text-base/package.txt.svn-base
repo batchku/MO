@@ -1,4 +1,0 @@
-NAME=msd3D
-SRCS=main.cpp
-HDRS=../src/msd.h
-
