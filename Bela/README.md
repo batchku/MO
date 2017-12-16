@@ -1,2 +1,2 @@
-# aLib-pd
-PureData abstractions and utilties
+# Bela Project Files
+Upload all files to Bela Project Folder
