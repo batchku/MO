@@ -22,7 +22,7 @@ Servo servo[NUM_SERVOS];
 Shield shield;
 
 Strip * strip1 = new Strip(0);
-Strip * strip2 = new Strip(5);
+Strip * strip2 = new Strip(3);
 
 Joystick joy1(0);
 Joystick joy2(1);
