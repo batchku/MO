@@ -1,0 +1,6 @@
+#N canvas 519 237 190 116 10;
+#X obj 39 35 r mo.out.\$1;
+#X obj 38 57 route /\$2;
+#X obj 38 79 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
