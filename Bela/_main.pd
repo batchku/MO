@@ -276,6 +276,7 @@
 #X obj 950 925 mo.r ui k4, f 11;
 #X obj 908 799 route /k2;
 #X obj 1071 73 resonators~;
+#X obj 1163 75 gogo;
 #X connect 9 0 50 0;
 #X connect 10 0 26 0;
 #X connect 10 0 63 0;
