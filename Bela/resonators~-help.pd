@@ -1,0 +1,139 @@
+#N canvas 806 96 506 798 10;
+#X obj 30 711 dac~;
+#X obj 270 324 noise~;
+#X obj 270 352 *~ 100;
+#X obj 270 376 *~ 0;
+#X obj 321 323 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 264 502 640 0.5 4 843.5 0.4 2 2041 0.3 8;
+#X msg 264 474 540 0.5 4 543.5 0.4 2;
+#X msg 263 528 clear;
+#X obj 30 344 metro 600;
+#X msg 30 375 0.5;
+#X obj 30 317 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 180 378 0.5;
+#X obj 180 320 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 180 347 metro 200;
+#X obj 31 202 loadbang;
+#X obj 153 708 print 1;
+#X obj 303 710 print 1;
+#X obj 30 653 resonators~ 480 0.5 1;
+#X obj 180 657 resonators~ 880 0.5 1;
+#X obj 18 -6 cnv 15 400 200 empty empty resonators~ 20 12 0 14 -233017
+-66577 0;
+#X text 37 21 Resonant filter bank;
+#X text 36 44 A bank of 2-pole resonating filters with common input
+(the inlet) and summed together (outlet);
+#X text 37 81 The resonators~ object can be excited with an input signal
+or by an amplitude impulse of arbitrary size. An incoming float is
+interpreted as the amplitude of an impulse. The impulse is taken to
+come at the first sample of the next signal vector computed.;
+#X text 261 452 frequency \, gain \, decayrate triples;
+#X text 36 397 Float: impulse amplitude;
+#X text 345 324 Excitation signal;
+#N canvas 1197 337 455 507 why? 0;
+#X text 35 46 Why does this example multiply the noise~ amplitude by
+100 before passing the signal through the resonant filter?;
+#X text 39 98 Unless your model has lots of very wide resonances \,
+you'll probably have to boost input signals a lot to hear them. The
+issue is that only the spectral energy that lines up with the filters
+will appear in the output. But beware \, energy focused at the same
+frequency as a resonance will come through loud and clear.;
+#X obj 47 229 noise~;
+#X obj 300 225 osc~ 480;
+#X obj 47 284 *~ 100;
+#X obj 300 271 *~ 100;
+#X obj 47 336 resonators~ 480 0.5 1;
+#X obj 300 331 resonators~ 480 0.5 1;
+#N canvas 1144 741 450 300 minmax~ 0;
+#X obj 89 72 env~;
+#X obj 89 30 inlet~;
+#X obj 171 130 f;
+#X obj 88 129 min 3e+38;
+#X obj 306 134 f;
+#X obj 88 94 t a a;
+#X obj 88 182 outlet;
+#X obj 227 178 outlet;
+#X obj 227 133 max 1.1e-38;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 1;
+#X connect 3 0 2 0;
+#X connect 3 0 6 0;
+#X connect 4 0 8 1;
+#X connect 5 0 3 0;
+#X connect 5 1 8 0;
+#X connect 8 0 4 0;
+#X connect 8 0 7 0;
+#X restore 47 372 pd minmax~;
+#X floatatom 47 416 5 0 0 0 - - -;
+#X floatatom 104 416 10 0 0 0 - - -;
+#N canvas 1144 741 450 300 minmax~ 0;
+#X obj 89 72 env~;
+#X obj 89 30 inlet~;
+#X obj 171 130 f;
+#X obj 88 129 min 3e+38;
+#X obj 306 134 f;
+#X obj 88 94 t a a;
+#X obj 88 182 outlet;
+#X obj 227 178 outlet;
+#X obj 227 133 max 1.1e-38;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 1;
+#X connect 3 0 2 0;
+#X connect 3 0 6 0;
+#X connect 4 0 8 1;
+#X connect 5 0 3 0;
+#X connect 5 1 8 0;
+#X connect 8 0 4 0;
+#X connect 8 0 7 0;
+#X restore 300 374 pd minmax~;
+#X floatatom 300 418 5 0 0 0 - - -;
+#X floatatom 357 418 10 0 0 0 - - -;
+#X obj 177 474 switch~;
+#X obj 177 448 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X connect 2 0 4 0;
+#X connect 3 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 7 0;
+#X connect 6 0 8 0;
+#X connect 7 0 11 0;
+#X connect 8 0 9 0;
+#X connect 8 1 10 0;
+#X connect 11 0 12 0;
+#X connect 11 1 13 0;
+#X connect 15 0 14 0;
+#X restore 348 350 pd why?;
+#X msg 70 270 \; pd dsp 1;
+#X obj 31 227 delay 100;
+#X obj 31 247 t b b;
+#X msg 31 268 1;
+#X obj 31 289 t a a;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 17 0;
+#X connect 4 0 3 1;
+#X connect 5 0 17 0;
+#X connect 6 0 17 0;
+#X connect 7 0 17 0;
+#X connect 8 0 9 0;
+#X connect 9 0 17 0;
+#X connect 10 0 8 0;
+#X connect 11 0 18 0;
+#X connect 12 0 13 0;
+#X connect 13 0 11 0;
+#X connect 14 0 28 0;
+#X connect 17 0 0 0;
+#X connect 17 1 15 0;
+#X connect 18 0 0 1;
+#X connect 18 1 16 0;
+#X connect 28 0 29 0;
+#X connect 29 0 30 0;
+#X connect 29 1 27 0;
+#X connect 30 0 31 0;
+#X connect 31 0 10 0;
+#X connect 31 1 12 0;
