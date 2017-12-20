@@ -277,6 +277,11 @@
 #X obj 908 799 route /k2;
 #X obj 1071 73 resonators~;
 #X obj 1163 75 gogo;
+#X obj 1126 130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1077 179 dac~;
+#X obj 1058 15 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 9 0 50 0;
 #X connect 10 0 26 0;
 #X connect 10 0 63 0;
@@ -397,3 +402,6 @@
 #X connect 110 1 12 1;
 #X connect 111 0 110 2;
 #X connect 112 0 64 2;
+#X connect 113 0 116 0;
+#X connect 113 1 115 0;
+#X connect 117 0 113 0;
