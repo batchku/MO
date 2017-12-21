@@ -53,13 +53,13 @@
 #X obj 973 479 mo.r s1 s1;
 #X obj 114 448 s mo.out.ui;
 #X obj 908 776 r mo.out.ui;
-#X obj 1586 99 mo.r ui s1;
-#X obj 1656 99 mo.r ui s2;
-#X obj 1726 99 mo.r ui s3;
+#X obj 1586 95 mo.r ui s1;
+#X obj 1656 95 mo.r ui s2;
+#X obj 1726 95 mo.r ui s3;
 #X obj 1586 121 sel 127;
 #X obj 115 77 r mo.in.ui;
 #X obj 912 670 mo.s s1 l1 127;
-#X obj 1467 225 mo.s ui l1 127;
+#X obj 1489 176 mo.s ui l1 127;
 #X obj 662 530 r mo.out.s1;
 #X obj 1051 479 mo.r s1 s2;
 #X obj 1051 672 mo.s s1 l2 127;
@@ -68,7 +68,7 @@
 #X obj 16 277 rev3~ 100 90 600 20;
 #X obj 16 310 ali.gain2;
 #X obj 18 58 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X obj 14 344 outlet~;
 #X obj 71 344 outlet~;
 #X obj 18 21 r verbGain;
@@ -223,7 +223,7 @@
 #X restore 1587 178 pd router;
 #X obj 1653 145 bng 15 250 50 0 empty empty reset 17 7 0 10 -262144
 -1 -1;
-#X obj 1587 207 route 0 1 2 3 4;
+#X obj 1587 247 route 0 1 2 3 4;
 #X obj 1712 399 ali.loop-pedal sound4;
 #X obj 1276 399 ali.loop-pedal sound1;
 #X obj 1275 128 ali.loop-pedal sound0;
@@ -240,55 +240,21 @@
 #X msg 1725 218 recording;
 #X obj 1723 190 sel 1;
 #X obj 119 521 adc~ 3 4 5 6 7 8 9 10, f 22;
-#X obj 975 258 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 975 201 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 975 288 mo.s s1 st;
-#X obj 975 228 metro 1000;
-#X obj 1045 288 mo.s s2 st;
 #X obj 1772 147 tgl 15 0 empty empty play/pause 17 7 0 10 -262144 -1
 -1 1 1;
 #X obj 1848 290 loadbang;
 #X msg 1848 312 sync 1 \, overdub 1;
-#X obj 1139 363 noise~;
-#X obj 1139 411 ali.gain;
-#X obj 1195 314 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 1242 361 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg 1182 370 127;
-#X msg 1242 381 0;
-#X obj 1192 255 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
-#X obj 1195 334 del 10;
-#X obj 1195 292 metro 500;
-#X obj 1036 439 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
-#X msg 1013 397 1;
-#X obj 1049 396 0;
-#X floatatom 949 418 5 0 0 0 - - -, f 5;
-#X obj 1046 365 sel 1 5;
-#X obj 1046 343 ali.counter 1 50;
-#X msg 1128 239 0;
 #X obj 1357 722 mo.r ui k1;
 #X obj 859 943 ali.gain2;
 #X obj 950 925 mo.r ui k4, f 11;
 #X obj 908 799 route /k2;
-#X obj 1071 73 resonators~;
-#X obj 1163 75 gogo;
-#X obj 1126 130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 1077 179 dac~;
-#X obj 1058 15 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 946 305 resonators~ 480 0.5 1;
+#X obj 1096 309 resonators~ 880 0.5 1;
+#X obj 946 251 *~ 500;
+#X obj 946 251 *~ 500;
 #X connect 9 0 50 0;
-#X connect 10 0 26 0;
-#X connect 10 0 63 0;
-#X connect 10 0 63 1;
-#X connect 11 0 44 0;
-#X connect 11 0 63 0;
-#X connect 11 0 63 1;
+#X connect 10 0 94 0;
+#X connect 11 0 95 0;
 #X connect 14 0 29 0;
 #X connect 18 0 13 0;
 #X connect 18 1 13 1;
@@ -321,7 +287,7 @@
 #X connect 45 0 46 0;
 #X connect 46 0 43 0;
 #X connect 49 0 35 0;
-#X connect 51 0 112 0;
+#X connect 51 0 91 0;
 #X connect 52 0 55 0;
 #X connect 53 0 68 0;
 #X connect 54 0 76 0;
@@ -333,10 +299,10 @@
 #X connect 62 0 63 1;
 #X connect 62 0 64 0;
 #X connect 62 0 64 1;
-#X connect 63 0 110 0;
-#X connect 63 1 110 1;
-#X connect 64 0 110 0;
-#X connect 64 1 110 1;
+#X connect 63 0 89 0;
+#X connect 63 1 89 1;
+#X connect 64 0 89 0;
+#X connect 64 1 89 1;
 #X connect 65 0 63 2;
 #X connect 66 0 67 0;
 #X connect 66 0 58 0;
@@ -370,38 +336,18 @@
 #X connect 84 1 13 1;
 #X connect 84 2 13 2;
 #X connect 84 3 13 3;
-#X connect 85 0 87 0;
-#X connect 85 0 89 0;
-#X connect 86 0 88 0;
-#X connect 88 0 85 0;
-#X connect 90 0 67 3;
-#X connect 91 0 92 0;
-#X connect 92 0 74 2;
-#X connect 92 0 71 2;
-#X connect 92 0 70 2;
-#X connect 92 0 73 2;
-#X connect 93 0 94 0;
-#X connect 95 0 97 0;
-#X connect 95 0 100 0;
-#X connect 95 0 107 0;
-#X connect 96 0 98 0;
-#X connect 97 0 94 1;
-#X connect 98 0 94 1;
-#X connect 99 0 101 0;
-#X connect 100 0 96 0;
-#X connect 101 0 95 0;
-#X connect 103 0 102 0;
-#X connect 104 0 102 0;
-#X connect 106 0 103 0;
-#X connect 106 1 104 0;
-#X connect 107 0 105 0;
-#X connect 107 0 106 0;
-#X connect 108 0 107 2;
-#X connect 109 0 62 1;
-#X connect 110 0 12 0;
-#X connect 110 1 12 1;
-#X connect 111 0 110 2;
-#X connect 112 0 64 2;
-#X connect 113 0 116 0;
-#X connect 113 1 115 0;
-#X connect 117 0 113 0;
+#X connect 85 0 67 3;
+#X connect 86 0 87 0;
+#X connect 87 0 74 2;
+#X connect 87 0 71 2;
+#X connect 87 0 70 2;
+#X connect 87 0 73 2;
+#X connect 88 0 62 1;
+#X connect 89 0 12 0;
+#X connect 89 1 12 1;
+#X connect 90 0 89 2;
+#X connect 91 0 64 2;
+#X connect 92 0 26 0;
+#X connect 93 0 44 0;
+#X connect 94 0 92 0;
+#X connect 95 0 93 0;
