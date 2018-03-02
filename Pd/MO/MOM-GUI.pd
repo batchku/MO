@@ -1,6 +1,5 @@
-#N canvas 146 22 1310 676 10;
-#X obj 12 24 mo.arrayReader;
-#X obj 263 25 mo.strip 1;
+#N canvas 17 -886 1310 699 10;
+#X obj 181 25 mo.strip 1;
 #X obj 777 71 mo.actuator;
 #X obj 976 84 mo.in;
 #X obj 249 310 mo.ui;
@@ -12,3 +11,6 @@
 #X obj 1139 535 mo.an 8;
 #X obj 897 396 mo.an 3;
 #X obj 977 396 mo.an 4;
+#X obj 12 24 mo.init;
+#X obj 371 25 mo.strip 2;
+#X obj 560 25 mo.strip 3;
