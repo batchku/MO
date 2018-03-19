@@ -4,8 +4,7 @@
 
 //---------------MIDI VALUES---------------
 
-const int POTS_MIDI[]         = {0,
-                                 1,
+const int POTS_MIDI[]         = {1,
                                  2,
                                  3,
                                  4,
@@ -15,10 +14,10 @@ const int POTS_MIDI[]         = {0,
                                  8,
                                  9,
                                  10,
-                                 11};
+                                 11,
+                                 12};
 
-const int BUTTONS_MIDI[]      = {12,
-                                 13,
+const int BUTTONS_MIDI[]      = {13,
                                  14,
                                  15,
                                  16,
@@ -32,15 +31,16 @@ const int BUTTONS_MIDI[]      = {12,
                                  24,
                                  25,
                                  26,
-                                 27};
+                                 27,
+                                 28};
 
-const int JOYPOTS_MIDI[]      = {28,
-                                 29,
+const int JOYPOTS_MIDI[]      = {29,
                                  30,
-                                 31};
+                                 31,
+                                 32};
 
-const int JOYBUTTONS_MIDI[]   = {32,
-                                 33};
+const int JOYBUTTONS_MIDI[]   = {33,
+                                 34};
 
 const int LEDS_MIDI[]         = {12,
                                  13,
