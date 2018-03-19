@@ -42,8 +42,7 @@ const int JOYPOTS_MIDI[]      = {29,
 const int JOYBUTTONS_MIDI[]   = {33,
                                  34};
 
-const int LEDS_MIDI[]         = {12,
-                                 13,
+const int LEDS_MIDI[]         = {13,
                                  14,
                                  15,
                                  16,
@@ -57,7 +56,8 @@ const int LEDS_MIDI[]         = {12,
                                  24,
                                  25,
                                  26,
-                                 27};
+                                 27,
+                                 28};
 
 const int SERVOS_MIDI[]       = {34,
                                  35};
