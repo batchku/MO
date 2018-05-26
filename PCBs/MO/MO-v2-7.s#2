@@ -15569,15 +15569,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP1" gate="G$1" pin="3"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="12"/>
+<wire x1="571.5" y1="205.74" x2="568.96" y2="205.74" width="0.1524" layer="91"/>
+<label x="568.96" y="205.74" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="350.52" y1="205.74" x2="340.36" y2="205.74" width="0.1524" layer="91"/>
 <label x="340.36" y="205.74" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="48/SDA0/TX6"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="203.2" x2="568.96" y2="203.2" width="0.1524" layer="91"/>
-<label x="568.96" y="203.2" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="13"/>
-<junction x="571.5" y="203.2"/>
 </segment>
 </net>
 <net name="AGND" class="3">
@@ -15717,15 +15716,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP1" gate="G$1" pin="4"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="13"/>
+<wire x1="571.5" y1="203.2" x2="568.96" y2="203.2" width="0.1524" layer="91"/>
+<label x="568.96" y="203.2" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="350.52" y1="198.12" x2="340.36" y2="198.12" width="0.1524" layer="91"/>
 <label x="340.36" y="198.12" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="51/MISO2"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="200.66" x2="568.96" y2="200.66" width="0.1524" layer="91"/>
-<label x="568.96" y="200.66" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="14"/>
-<junction x="571.5" y="200.66"/>
 </segment>
 </net>
 <net name="BTN3" class="0">
@@ -15735,15 +15733,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP2" gate="G$1" pin="3"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="14"/>
+<wire x1="571.5" y1="200.66" x2="568.96" y2="200.66" width="0.1524" layer="91"/>
+<label x="568.96" y="200.66" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="398.78" y1="198.12" x2="411.48" y2="198.12" width="0.1524" layer="91"/>
 <label x="411.48" y="198.12" size="1.016" layer="95" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="42"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="198.12" x2="568.96" y2="198.12" width="0.1524" layer="91"/>
-<label x="568.96" y="198.12" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="15"/>
-<junction x="571.5" y="198.12"/>
 </segment>
 </net>
 <net name="BTN4" class="0">
@@ -15753,15 +15750,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP2" gate="G$1" pin="4"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="15"/>
+<wire x1="571.5" y1="198.12" x2="568.96" y2="198.12" width="0.1524" layer="91"/>
+<label x="568.96" y="198.12" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="350.52" y1="195.58" x2="340.36" y2="195.58" width="0.1524" layer="91"/>
 <label x="340.36" y="195.58" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="52/MOSI2"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="195.58" x2="568.96" y2="195.58" width="0.1524" layer="91"/>
-<label x="568.96" y="195.58" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="16"/>
-<junction x="571.5" y="195.58"/>
 </segment>
 </net>
 <net name="BTN5" class="0">
@@ -15771,15 +15767,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP3" gate="G$1" pin="3"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="16"/>
+<wire x1="571.5" y1="195.58" x2="568.96" y2="195.58" width="0.1524" layer="91"/>
+<label x="568.96" y="195.58" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="398.78" y1="193.04" x2="411.48" y2="193.04" width="0.1524" layer="91"/>
 <label x="411.48" y="193.04" size="1.016" layer="95" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="40"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="193.04" x2="568.96" y2="193.04" width="0.1524" layer="91"/>
-<label x="568.96" y="193.04" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="17"/>
-<junction x="571.5" y="193.04"/>
 </segment>
 </net>
 <net name="BTN6" class="0">
@@ -15789,15 +15784,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP3" gate="G$1" pin="4"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="17"/>
+<wire x1="571.5" y1="193.04" x2="568.96" y2="193.04" width="0.1524" layer="91"/>
+<label x="568.96" y="193.04" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="424.18" y1="177.8" x2="434.34" y2="177.8" width="0.1524" layer="91"/>
 <label x="434.34" y="177.8" size="1.016" layer="95" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="28/ALT-MOSI0"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="190.5" x2="568.96" y2="190.5" width="0.1524" layer="91"/>
-<label x="568.96" y="190.5" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="18"/>
-<junction x="571.5" y="190.5"/>
 </segment>
 </net>
 <net name="BTN7" class="0">
@@ -15807,15 +15801,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP4" gate="G$1" pin="3"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="18"/>
+<wire x1="571.5" y1="190.5" x2="568.96" y2="190.5" width="0.1524" layer="91"/>
+<label x="568.96" y="190.5" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="424.18" y1="175.26" x2="434.34" y2="175.26" width="0.1524" layer="91"/>
 <label x="434.34" y="175.26" size="1.016" layer="95" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="27/ALT-RX1/ALT-SCK0"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="187.96" x2="568.96" y2="187.96" width="0.1524" layer="91"/>
-<label x="568.96" y="187.96" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="19"/>
-<junction x="571.5" y="187.96"/>
 </segment>
 </net>
 <net name="M_PWMB" class="0">
@@ -15881,10 +15874,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="31/A12/PWM/RX4/CS1-0"/>
 </segment>
 <segment>
-<wire x1="571.5" y1="154.94" x2="568.96" y2="154.94" width="0.1524" layer="91"/>
-<label x="568.96" y="154.94" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="32"/>
-<junction x="571.5" y="154.94"/>
+<pinref part="MIDI_IN" gate="G$1" pin="31"/>
+<wire x1="571.5" y1="157.48" x2="568.96" y2="157.48" width="0.1524" layer="91"/>
+<label x="568.96" y="157.48" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="JOYV2" class="3">
@@ -15899,10 +15891,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="32/A13/PWM/TX4/SCK1"/>
 </segment>
 <segment>
-<wire x1="571.5" y1="160.02" x2="568.96" y2="160.02" width="0.1524" layer="91"/>
-<label x="568.96" y="160.02" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="30"/>
-<junction x="571.5" y="160.02"/>
+<pinref part="MIDI_IN" gate="G$1" pin="29"/>
+<wire x1="571.5" y1="162.56" x2="568.96" y2="162.56" width="0.1524" layer="91"/>
+<label x="568.96" y="162.56" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BTN12" class="0">
@@ -15912,15 +15903,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP6" gate="G$1" pin="4"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="23"/>
+<wire x1="571.5" y1="177.8" x2="568.96" y2="177.8" width="0.1524" layer="91"/>
+<label x="568.96" y="177.8" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="424.18" y1="160.02" x2="434.34" y2="160.02" width="0.1524" layer="91"/>
 <label x="434.34" y="160.02" size="1.016" layer="95" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="11/MOSI0"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="175.26" x2="568.96" y2="175.26" width="0.1524" layer="91"/>
-<label x="568.96" y="175.26" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="24"/>
-<junction x="571.5" y="175.26"/>
 </segment>
 </net>
 <net name="BTN11" class="0">
@@ -15930,15 +15920,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP6" gate="G$1" pin="3"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="22"/>
+<wire x1="571.5" y1="180.34" x2="568.96" y2="180.34" width="0.1524" layer="91"/>
+<label x="568.96" y="180.34" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="424.18" y1="162.56" x2="434.34" y2="162.56" width="0.1524" layer="91"/>
 <label x="434.34" y="162.56" size="1.016" layer="95" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="12/MISO0"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="177.8" x2="568.96" y2="177.8" width="0.1524" layer="91"/>
-<label x="568.96" y="177.8" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="23"/>
-<junction x="571.5" y="177.8"/>
 </segment>
 </net>
 <net name="BTN10" class="0">
@@ -15948,15 +15937,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP5" gate="G$1" pin="4"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="21"/>
+<wire x1="571.5" y1="182.88" x2="568.96" y2="182.88" width="0.1524" layer="91"/>
+<label x="568.96" y="182.88" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="424.18" y1="167.64" x2="434.34" y2="167.64" width="0.1524" layer="91"/>
 <label x="434.34" y="167.64" size="1.016" layer="95" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="24"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="180.34" x2="568.96" y2="180.34" width="0.1524" layer="91"/>
-<label x="568.96" y="180.34" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="22"/>
-<junction x="571.5" y="180.34"/>
 </segment>
 </net>
 <net name="BTN9" class="0">
@@ -15966,15 +15954,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP5" gate="G$1" pin="3"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="20"/>
+<wire x1="571.5" y1="185.42" x2="568.96" y2="185.42" width="0.1524" layer="91"/>
+<label x="568.96" y="185.42" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="424.18" y1="170.18" x2="434.34" y2="170.18" width="0.1524" layer="91"/>
 <label x="434.34" y="170.18" size="1.016" layer="95" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="25"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="182.88" x2="568.96" y2="182.88" width="0.1524" layer="91"/>
-<label x="568.96" y="182.88" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="21"/>
-<junction x="571.5" y="182.88"/>
 </segment>
 </net>
 <net name="BTN8" class="0">
@@ -15984,15 +15971,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP4" gate="G$1" pin="4"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="19"/>
+<wire x1="571.5" y1="187.96" x2="568.96" y2="187.96" width="0.1524" layer="91"/>
+<label x="568.96" y="187.96" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="424.18" y1="172.72" x2="434.34" y2="172.72" width="0.1524" layer="91"/>
 <label x="434.34" y="172.72" size="1.016" layer="95" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="26/ALT-PWM/ALT-TX1/ALT-SCL2"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="185.42" x2="568.96" y2="185.42" width="0.1524" layer="91"/>
-<label x="568.96" y="185.42" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="20"/>
-<junction x="571.5" y="185.42"/>
 </segment>
 </net>
 <net name="+5V" class="4">
@@ -16257,6 +16243,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="STRIP1" gate="G$1" pin="1"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="0"/>
+<wire x1="571.5" y1="236.22" x2="568.96" y2="236.22" width="0.1524" layer="91"/>
+<label x="568.96" y="236.22" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="304.8" y1="172.72" x2="294.64" y2="172.72" width="0.1524" layer="91"/>
 <label x="294.64" y="172.72" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="39/A20/ALT-MISO0"/>
@@ -16266,18 +16257,17 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="617.22" y1="50.8" x2="627.38" y2="50.8" width="0.1524" layer="91"/>
 <label x="627.38" y="50.8" size="1.016" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="571.5" y1="233.68" x2="568.96" y2="233.68" width="0.1524" layer="91"/>
-<label x="568.96" y="233.68" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="1"/>
-<junction x="571.5" y="233.68"/>
-</segment>
 </net>
 <net name="AN2" class="3">
 <segment>
 <wire x1="586.74" y1="50.8" x2="591.82" y2="50.8" width="0.1524" layer="91"/>
 <label x="591.82" y="50.8" size="1.27" layer="95" xref="yes"/>
 <pinref part="STRIP1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="MIDI_IN" gate="G$1" pin="1"/>
+<wire x1="571.5" y1="233.68" x2="568.96" y2="233.68" width="0.1524" layer="91"/>
+<label x="568.96" y="233.68" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="304.8" y1="170.18" x2="294.64" y2="170.18" width="0.1524" layer="91"/>
@@ -16289,18 +16279,17 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="645.16" y1="50.8" x2="652.78" y2="50.8" width="0.1524" layer="91"/>
 <label x="652.78" y="50.8" size="1.016" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="571.5" y1="231.14" x2="568.96" y2="231.14" width="0.1524" layer="91"/>
-<label x="568.96" y="231.14" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="2"/>
-<junction x="571.5" y="231.14"/>
-</segment>
 </net>
 <net name="AN3" class="3">
 <segment>
 <wire x1="571.5" y1="33.02" x2="566.42" y2="33.02" width="0.1524" layer="91"/>
 <label x="566.42" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="STRIP2" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="MIDI_IN" gate="G$1" pin="2"/>
+<wire x1="571.5" y1="231.14" x2="568.96" y2="231.14" width="0.1524" layer="91"/>
+<label x="568.96" y="231.14" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="304.8" y1="167.64" x2="294.64" y2="167.64" width="0.1524" layer="91"/>
@@ -16312,18 +16301,17 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="617.22" y1="30.48" x2="624.84" y2="30.48" width="0.1524" layer="91"/>
 <label x="624.84" y="30.48" size="1.016" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="571.5" y1="228.6" x2="568.96" y2="228.6" width="0.1524" layer="91"/>
-<label x="568.96" y="228.6" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="3"/>
-<junction x="571.5" y="228.6"/>
-</segment>
 </net>
 <net name="AN4" class="3">
 <segment>
 <wire x1="586.74" y1="33.02" x2="591.82" y2="33.02" width="0.1524" layer="91"/>
 <label x="591.82" y="33.02" size="1.27" layer="95" xref="yes"/>
 <pinref part="STRIP2" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="MIDI_IN" gate="G$1" pin="3"/>
+<wire x1="571.5" y1="228.6" x2="568.96" y2="228.6" width="0.1524" layer="91"/>
+<label x="568.96" y="228.6" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="304.8" y1="157.48" x2="294.64" y2="157.48" width="0.1524" layer="91"/>
@@ -16335,18 +16323,17 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="645.16" y1="30.48" x2="652.78" y2="30.48" width="0.1524" layer="91"/>
 <label x="652.78" y="30.48" size="1.016" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="571.5" y1="226.06" x2="568.96" y2="226.06" width="0.1524" layer="91"/>
-<label x="568.96" y="226.06" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="4"/>
-<junction x="571.5" y="226.06"/>
-</segment>
 </net>
 <net name="AN5" class="3">
 <segment>
 <label x="568.96" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="571.5" y1="15.24" x2="568.96" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="STRIP3" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="MIDI_IN" gate="G$1" pin="4"/>
+<wire x1="571.5" y1="226.06" x2="568.96" y2="226.06" width="0.1524" layer="91"/>
+<label x="568.96" y="226.06" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="304.8" y1="149.86" x2="294.64" y2="149.86" width="0.1524" layer="91"/>
@@ -16358,18 +16345,17 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="617.22" y1="12.7" x2="624.84" y2="12.7" width="0.1524" layer="91"/>
 <label x="624.84" y="12.7" size="1.016" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="571.5" y1="223.52" x2="568.96" y2="223.52" width="0.1524" layer="91"/>
-<label x="568.96" y="223.52" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="5"/>
-<junction x="571.5" y="223.52"/>
-</segment>
 </net>
 <net name="AN6" class="3">
 <segment>
 <wire x1="586.74" y1="15.24" x2="594.36" y2="15.24" width="0.1524" layer="91"/>
 <label x="594.36" y="15.24" size="1.27" layer="95" xref="yes"/>
 <pinref part="STRIP3" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="MIDI_IN" gate="G$1" pin="5"/>
+<wire x1="571.5" y1="223.52" x2="568.96" y2="223.52" width="0.1524" layer="91"/>
+<label x="568.96" y="223.52" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="304.8" y1="147.32" x2="294.64" y2="147.32" width="0.1524" layer="91"/>
@@ -16381,18 +16367,17 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="645.16" y1="12.7" x2="652.78" y2="12.7" width="0.1524" layer="91"/>
 <label x="652.78" y="12.7" size="1.016" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="571.5" y1="220.98" x2="568.96" y2="220.98" width="0.1524" layer="91"/>
-<label x="568.96" y="220.98" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="6"/>
-<junction x="571.5" y="220.98"/>
-</segment>
 </net>
 <net name="AN7" class="3">
 <segment>
 <wire x1="571.5" y1="-2.54" x2="566.42" y2="-2.54" width="0.1524" layer="91"/>
 <label x="566.42" y="-2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="STRIP4" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="MIDI_IN" gate="G$1" pin="6"/>
+<wire x1="571.5" y1="220.98" x2="568.96" y2="220.98" width="0.1524" layer="91"/>
+<label x="568.96" y="220.98" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="304.8" y1="144.78" x2="294.64" y2="144.78" width="0.1524" layer="91"/>
@@ -16404,18 +16389,17 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="617.22" y1="-5.08" x2="624.84" y2="-5.08" width="0.1524" layer="91"/>
 <label x="624.84" y="-5.08" size="1.016" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="571.5" y1="218.44" x2="568.96" y2="218.44" width="0.1524" layer="91"/>
-<label x="568.96" y="218.44" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="7"/>
-<junction x="571.5" y="218.44"/>
-</segment>
 </net>
 <net name="AN8" class="3">
 <segment>
 <wire x1="586.74" y1="-2.54" x2="591.82" y2="-2.54" width="0.1524" layer="91"/>
 <label x="591.82" y="-2.54" size="1.27" layer="95" xref="yes"/>
 <pinref part="STRIP4" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="MIDI_IN" gate="G$1" pin="7"/>
+<wire x1="571.5" y1="218.44" x2="568.96" y2="218.44" width="0.1524" layer="91"/>
+<label x="568.96" y="218.44" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="304.8" y1="142.24" x2="294.64" y2="142.24" width="0.1524" layer="91"/>
@@ -16426,12 +16410,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="S4-AN8" gate="G$1" pin="3"/>
 <wire x1="645.16" y1="-5.08" x2="652.78" y2="-5.08" width="0.1524" layer="91"/>
 <label x="652.78" y="-5.08" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="215.9" x2="568.96" y2="215.9" width="0.1524" layer="91"/>
-<label x="568.96" y="215.9" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="8"/>
-<junction x="571.5" y="215.9"/>
 </segment>
 </net>
 <net name="AN9" class="3">
@@ -16446,6 +16424,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="KNOB1" gate="G$1" pin="WIPER"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="8"/>
+<wire x1="571.5" y1="215.9" x2="568.96" y2="215.9" width="0.1524" layer="91"/>
+<label x="568.96" y="215.9" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="350.52" y1="203.2" x2="340.36" y2="203.2" width="0.1524" layer="91"/>
 <label x="340.36" y="203.2" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="49/A23"/>
@@ -16454,12 +16437,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="S5-AN9" gate="G$1" pin="3"/>
 <wire x1="617.22" y1="-20.32" x2="624.84" y2="-20.32" width="0.1524" layer="91"/>
 <label x="624.84" y="-20.32" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="213.36" x2="568.96" y2="213.36" width="0.1524" layer="91"/>
-<label x="568.96" y="213.36" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="9"/>
-<junction x="571.5" y="213.36"/>
 </segment>
 </net>
 <net name="AN10" class="3">
@@ -16474,6 +16451,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="KNOB2" gate="G$1" pin="WIPER"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="9"/>
+<wire x1="571.5" y1="213.36" x2="568.96" y2="213.36" width="0.1524" layer="91"/>
+<label x="568.96" y="213.36" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="350.52" y1="200.66" x2="340.36" y2="200.66" width="0.1524" layer="91"/>
 <label x="340.36" y="200.66" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="50/A24"/>
@@ -16482,12 +16464,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="S5-AN10" gate="G$1" pin="3"/>
 <wire x1="645.16" y1="-20.32" x2="652.78" y2="-20.32" width="0.1524" layer="91"/>
 <label x="652.78" y="-20.32" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="210.82" x2="568.96" y2="210.82" width="0.1524" layer="91"/>
-<label x="568.96" y="210.82" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="10"/>
-<junction x="571.5" y="210.82"/>
 </segment>
 </net>
 <net name="AN11" class="3">
@@ -16502,6 +16478,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="KNOB3" gate="G$1" pin="WIPER"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="10"/>
+<wire x1="571.5" y1="210.82" x2="568.96" y2="210.82" width="0.1524" layer="91"/>
+<label x="568.96" y="210.82" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="304.8" y1="139.7" x2="294.64" y2="139.7" width="0.1524" layer="91"/>
 <label x="294.64" y="139.7" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="22/A8/PWM/T"/>
@@ -16510,12 +16491,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="S6-AN11" gate="G$1" pin="3"/>
 <wire x1="617.22" y1="-38.1" x2="624.84" y2="-38.1" width="0.1524" layer="91"/>
 <label x="624.84" y="-38.1" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="208.28" x2="568.96" y2="208.28" width="0.1524" layer="91"/>
-<label x="568.96" y="208.28" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="11"/>
-<junction x="571.5" y="208.28"/>
 </segment>
 </net>
 <net name="AN12" class="3">
@@ -16530,6 +16505,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="KNOB4" gate="G$1" pin="WIPER"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="11"/>
+<wire x1="571.5" y1="208.28" x2="568.96" y2="208.28" width="0.1524" layer="91"/>
+<label x="568.96" y="208.28" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="304.8" y1="137.16" x2="294.64" y2="137.16" width="0.1524" layer="91"/>
 <label x="294.64" y="137.16" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="23/A9/PWM/T"/>
@@ -16539,12 +16519,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="645.16" y1="-38.1" x2="652.78" y2="-38.1" width="0.1524" layer="91"/>
 <label x="652.78" y="-38.1" size="1.016" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="571.5" y1="205.74" x2="568.96" y2="205.74" width="0.1524" layer="91"/>
-<label x="568.96" y="205.74" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="12"/>
-<junction x="571.5" y="205.74"/>
-</segment>
 </net>
 <net name="BTN13" class="0">
 <segment>
@@ -16553,18 +16527,22 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="S1" gate="G$1" pin="3"/>
 </segment>
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="24"/>
+<wire x1="571.5" y1="175.26" x2="568.96" y2="175.26" width="0.1524" layer="91"/>
+<label x="568.96" y="175.26" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="304.8" y1="162.56" x2="294.64" y2="162.56" width="0.1524" layer="91"/>
 <label x="294.64" y="162.56" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="13/LED/ALT-PWM/SCK0"/>
 </segment>
-<segment>
-<wire x1="571.5" y1="172.72" x2="568.96" y2="172.72" width="0.1524" layer="91"/>
-<label x="568.96" y="172.72" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="25"/>
-<junction x="571.5" y="172.72"/>
-</segment>
 </net>
 <net name="BTN14" class="0">
+<segment>
+<pinref part="MIDI_IN" gate="G$1" pin="25"/>
+<wire x1="571.5" y1="172.72" x2="568.96" y2="172.72" width="0.1524" layer="91"/>
+<label x="568.96" y="172.72" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
 <segment>
 <wire x1="350.52" y1="124.46" x2="340.36" y2="124.46" width="0.1524" layer="91"/>
 <label x="340.36" y="124.46" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -16575,14 +16553,13 @@ Source: AVX .. aphvc.pdf</description>
 <label x="480.06" y="121.92" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="S2" gate="G$1" pin="3"/>
 </segment>
-<segment>
-<wire x1="571.5" y1="170.18" x2="568.96" y2="170.18" width="0.1524" layer="91"/>
-<label x="568.96" y="170.18" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="26"/>
-<junction x="571.5" y="170.18"/>
-</segment>
 </net>
 <net name="BTN15" class="0">
+<segment>
+<pinref part="MIDI_IN" gate="G$1" pin="26"/>
+<wire x1="571.5" y1="170.18" x2="568.96" y2="170.18" width="0.1524" layer="91"/>
+<label x="568.96" y="170.18" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
 <segment>
 <wire x1="350.52" y1="119.38" x2="340.36" y2="119.38" width="0.1524" layer="91"/>
 <label x="340.36" y="119.38" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -16592,12 +16569,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="480.06" y1="104.14" x2="495.3" y2="104.14" width="0.1524" layer="91"/>
 <label x="480.06" y="104.14" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="S3" gate="G$1" pin="3"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="167.64" x2="568.96" y2="167.64" width="0.1524" layer="91"/>
-<label x="568.96" y="167.64" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="27"/>
-<junction x="571.5" y="167.64"/>
 </segment>
 </net>
 <net name="JOYV1" class="3">
@@ -16612,10 +16583,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="A10"/>
 </segment>
 <segment>
-<wire x1="571.5" y1="162.56" x2="568.96" y2="162.56" width="0.1524" layer="91"/>
-<label x="568.96" y="162.56" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="29"/>
-<junction x="571.5" y="162.56"/>
+<pinref part="MIDI_IN" gate="G$1" pin="28"/>
+<wire x1="571.5" y1="165.1" x2="568.96" y2="165.1" width="0.1524" layer="91"/>
+<label x="568.96" y="165.1" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="JOYH1" class="3">
@@ -16630,10 +16600,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="A11"/>
 </segment>
 <segment>
-<wire x1="571.5" y1="157.48" x2="568.96" y2="157.48" width="0.1524" layer="91"/>
-<label x="568.96" y="157.48" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="31"/>
-<junction x="571.5" y="157.48"/>
+<pinref part="MIDI_IN" gate="G$1" pin="30"/>
+<wire x1="571.5" y1="160.02" x2="568.96" y2="160.02" width="0.1524" layer="91"/>
+<label x="568.96" y="160.02" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="JOYBTN1" class="0">
@@ -16648,10 +16617,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="47/SCL0/RX6"/>
 </segment>
 <segment>
-<wire x1="571.5" y1="152.4" x2="568.96" y2="152.4" width="0.1524" layer="91"/>
-<label x="568.96" y="152.4" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="33"/>
-<junction x="571.5" y="152.4"/>
+<pinref part="MIDI_IN" gate="G$1" pin="32"/>
+<wire x1="571.5" y1="154.94" x2="568.96" y2="154.94" width="0.1524" layer="91"/>
+<label x="568.96" y="154.94" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="JOYBTN2" class="0">
@@ -16666,10 +16634,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="44/MOSI2"/>
 </segment>
 <segment>
-<wire x1="571.5" y1="149.86" x2="568.96" y2="149.86" width="0.1524" layer="91"/>
-<label x="568.96" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="34"/>
-<junction x="571.5" y="149.86"/>
+<pinref part="MIDI_IN" gate="G$1" pin="33"/>
+<wire x1="571.5" y1="152.4" x2="568.96" y2="152.4" width="0.1524" layer="91"/>
+<label x="568.96" y="152.4" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED2" class="0">
@@ -16747,10 +16714,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="2/PWM"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="203.2" x2="627.38" y2="203.2" width="0.1524" layer="91"/>
-<label x="627.38" y="203.2" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="13"/>
-<junction x="629.92" y="203.2"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="12"/>
+<wire x1="629.92" y1="205.74" x2="627.38" y2="205.74" width="0.1524" layer="91"/>
+<label x="627.38" y="205.74" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM2" class="0">
@@ -16765,10 +16731,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="3/PWM/SCL2/CAN0TX"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="200.66" x2="627.38" y2="200.66" width="0.1524" layer="91"/>
-<label x="627.38" y="200.66" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="14"/>
-<junction x="629.92" y="200.66"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="13"/>
+<wire x1="629.92" y1="203.2" x2="627.38" y2="203.2" width="0.1524" layer="91"/>
+<label x="627.38" y="203.2" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM3" class="0">
@@ -16783,10 +16748,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="4/PWM/SDA2/CAN0RX"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="198.12" x2="627.38" y2="198.12" width="0.1524" layer="91"/>
-<label x="627.38" y="198.12" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="15"/>
-<junction x="629.92" y="198.12"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="14"/>
+<wire x1="629.92" y1="200.66" x2="627.38" y2="200.66" width="0.1524" layer="91"/>
+<label x="627.38" y="200.66" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM4" class="0">
@@ -16801,10 +16765,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="5/PWM/ALT-TX1/ALT-MISO1"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="195.58" x2="627.38" y2="195.58" width="0.1524" layer="91"/>
-<label x="627.38" y="195.58" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="16"/>
-<junction x="629.92" y="195.58"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="15"/>
+<wire x1="629.92" y1="198.12" x2="627.38" y2="198.12" width="0.1524" layer="91"/>
+<label x="627.38" y="198.12" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM5" class="0">
@@ -16819,10 +16782,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="6/PWM"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="193.04" x2="627.38" y2="193.04" width="0.1524" layer="91"/>
-<label x="627.38" y="193.04" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="17"/>
-<junction x="629.92" y="193.04"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="16"/>
+<wire x1="629.92" y1="195.58" x2="627.38" y2="195.58" width="0.1524" layer="91"/>
+<label x="627.38" y="195.58" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM6" class="0">
@@ -16837,10 +16799,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="7/PWM/RX3/ALT-SCL0/ALT-MOSI0"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="190.5" x2="627.38" y2="190.5" width="0.1524" layer="91"/>
-<label x="627.38" y="190.5" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="18"/>
-<junction x="629.92" y="190.5"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="17"/>
+<wire x1="629.92" y1="193.04" x2="627.38" y2="193.04" width="0.1524" layer="91"/>
+<label x="627.38" y="193.04" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM7" class="0">
@@ -16855,10 +16816,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="8/PWM/TX3/ALT-SDA0/ALT-MISO0"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="187.96" x2="627.38" y2="187.96" width="0.1524" layer="91"/>
-<label x="627.38" y="187.96" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="19"/>
-<junction x="629.92" y="187.96"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="18"/>
+<wire x1="629.92" y1="190.5" x2="627.38" y2="190.5" width="0.1524" layer="91"/>
+<label x="627.38" y="190.5" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM8" class="0">
@@ -16873,10 +16833,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="9/PWM/RX2/CS0-1"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="185.42" x2="627.38" y2="185.42" width="0.1524" layer="91"/>
-<label x="627.38" y="185.42" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="20"/>
-<junction x="629.92" y="185.42"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="19"/>
+<wire x1="629.92" y1="187.96" x2="627.38" y2="187.96" width="0.1524" layer="91"/>
+<label x="627.38" y="187.96" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM9" class="0">
@@ -16891,10 +16850,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="37/A18/PWM/SCL1"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="182.88" x2="627.38" y2="182.88" width="0.1524" layer="91"/>
-<label x="627.38" y="182.88" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="21"/>
-<junction x="629.92" y="182.88"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="20"/>
+<wire x1="629.92" y1="185.42" x2="627.38" y2="185.42" width="0.1524" layer="91"/>
+<label x="627.38" y="185.42" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM10" class="0">
@@ -16909,10 +16867,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="29/PWM/T/ALT-CAN0TX"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="180.34" x2="627.38" y2="180.34" width="0.1524" layer="91"/>
-<label x="627.38" y="180.34" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="22"/>
-<junction x="629.92" y="180.34"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="21"/>
+<wire x1="629.92" y1="182.88" x2="627.38" y2="182.88" width="0.1524" layer="91"/>
+<label x="627.38" y="182.88" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM11" class="0">
@@ -16927,10 +16884,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="38/A19/PWM/SDA1"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="177.8" x2="627.38" y2="177.8" width="0.1524" layer="91"/>
-<label x="627.38" y="177.8" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="23"/>
-<junction x="629.92" y="177.8"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="22"/>
+<wire x1="629.92" y1="180.34" x2="627.38" y2="180.34" width="0.1524" layer="91"/>
+<label x="627.38" y="180.34" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM12" class="0">
@@ -16945,10 +16901,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="14/A0/PWM/ALT-SCK0"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="175.26" x2="627.38" y2="175.26" width="0.1524" layer="91"/>
-<label x="627.38" y="175.26" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="24"/>
-<junction x="629.92" y="175.26"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="23"/>
+<wire x1="629.92" y1="177.8" x2="627.38" y2="177.8" width="0.1524" layer="91"/>
+<label x="627.38" y="177.8" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM_2" class="2">
@@ -17047,10 +17002,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="30/PWM/T/ALT-CAN0RX"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="172.72" x2="627.38" y2="172.72" width="0.1524" layer="91"/>
-<label x="627.38" y="172.72" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="25"/>
-<junction x="629.92" y="172.72"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="24"/>
+<wire x1="629.92" y1="175.26" x2="627.38" y2="175.26" width="0.1524" layer="91"/>
+<label x="627.38" y="175.26" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM14" class="0">
@@ -17065,10 +17019,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="16/A2/PWM/T/ALT-SCL0"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="170.18" x2="627.38" y2="170.18" width="0.1524" layer="91"/>
-<label x="627.38" y="170.18" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="26"/>
-<junction x="629.92" y="170.18"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="25"/>
+<wire x1="629.92" y1="172.72" x2="627.38" y2="172.72" width="0.1524" layer="91"/>
+<label x="627.38" y="172.72" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM15" class="0">
@@ -17083,10 +17036,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="10/PWM/TX2/CS0-0"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="167.64" x2="627.38" y2="167.64" width="0.1524" layer="91"/>
-<label x="627.38" y="167.64" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="27"/>
-<junction x="629.92" y="167.64"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="26"/>
+<wire x1="629.92" y1="170.18" x2="627.38" y2="170.18" width="0.1524" layer="91"/>
+<label x="627.38" y="170.18" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM16" class="0">
@@ -17101,10 +17053,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEENSY" gate="G$1" pin="17/A3/PWM/T/ALT-SDA0"/>
 </segment>
 <segment>
-<wire x1="629.92" y1="165.1" x2="627.38" y2="165.1" width="0.1524" layer="91"/>
-<label x="627.38" y="165.1" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_OUT" gate="G$1" pin="28"/>
-<junction x="629.92" y="165.1"/>
+<pinref part="MIDI_OUT" gate="G$1" pin="27"/>
+<wire x1="629.92" y1="167.64" x2="627.38" y2="167.64" width="0.1524" layer="91"/>
+<label x="627.38" y="167.64" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM_9" class="2">
@@ -17205,6 +17156,11 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="BTN16" class="0">
 <segment>
+<pinref part="MIDI_IN" gate="G$1" pin="27"/>
+<wire x1="571.5" y1="167.64" x2="568.96" y2="167.64" width="0.1524" layer="91"/>
+<label x="568.96" y="167.64" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <wire x1="424.18" y1="134.62" x2="434.34" y2="134.62" width="0.1524" layer="91"/>
 <label x="434.34" y="134.62" size="1.016" layer="95" xref="yes"/>
 <pinref part="TEENSY" gate="G$1" pin="1/TX1/MISO1/T"/>
@@ -17213,12 +17169,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="480.06" y1="86.36" x2="495.3" y2="86.36" width="0.1524" layer="91"/>
 <label x="480.06" y="86.36" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="S4" gate="G$1" pin="3"/>
-</segment>
-<segment>
-<wire x1="571.5" y1="165.1" x2="568.96" y2="165.1" width="0.1524" layer="91"/>
-<label x="568.96" y="165.1" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="MIDI_IN" gate="G$1" pin="28"/>
-<junction x="571.5" y="165.1"/>
 </segment>
 </net>
 <net name="LED1" class="0">
@@ -17336,6 +17286,13 @@ Source: AVX .. aphvc.pdf</description>
 <label x="627.38" y="208.28" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="N$47" class="0">
+<segment>
+<pinref part="MIDI_OUT" gate="G$1" pin="28"/>
+<wire x1="629.92" y1="165.1" x2="627.38" y2="165.1" width="0.1524" layer="91"/>
+<label x="627.38" y="165.1" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 <net name="N$48" class="0">
 <segment>
 <pinref part="MIDI_OUT" gate="G$1" pin="29"/>
@@ -17369,6 +17326,13 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="MIDI_OUT" gate="G$1" pin="33"/>
 <wire x1="629.92" y1="152.4" x2="627.38" y2="152.4" width="0.1524" layer="91"/>
 <label x="627.38" y="152.4" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$53" class="0">
+<segment>
+<pinref part="MIDI_IN" gate="G$1" pin="34"/>
+<wire x1="571.5" y1="149.86" x2="568.96" y2="149.86" width="0.1524" layer="91"/>
+<label x="568.96" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$54" class="0">

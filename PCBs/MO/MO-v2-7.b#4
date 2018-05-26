@@ -177,8 +177,8 @@ Designed in Pittsburgh</text>
 <text x="61.897" y="9.895" size="1.778" layer="22" font="vector" ratio="20" rot="MR0">MO Teensy Breakout</text>
 <text x="61.904" y="6.699" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">2017 Ali Momeni
 Designed in Pittsburgh</text>
-<text x="34.104" y="4.399" size="1.016" layer="21" font="vector" ratio="15">v2-7</text>
-<text x="61.784" y="4.399" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">v2-7</text>
+<text x="34.104" y="4.399" size="1.016" layer="21" font="vector" ratio="15">v2-6</text>
+<text x="61.784" y="4.399" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">v2-5</text>
 </plain>
 <libraries>
 <library name="CMU-ArtFab">
@@ -3332,9 +3332,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="12.625" y="85.8684" size="0.8128" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
 <element name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C050-024X044" package3d_urn="urn:adsk.eagle:package:26162/1" value="10uF" x="32.3584" y="94.9536" smashed="yes" rot="MR90">
-<attribute name="G" value="-" x="33.4984" y="97.3636" size="1.778" layer="28" rot="MR90"/>
 <attribute name="NAME" x="33.1724" y="90.1936" size="0.8128" layer="26" font="vector" ratio="15" rot="MR0"/>
-<attribute name="V" value="+" x="33.6184" y="91.6836" size="1.778" layer="28" rot="MR90"/>
 <attribute name="VALUE" x="33.6594" y="98.7016" size="0.8128" layer="28" font="vector" ratio="15" rot="MR0"/>
 </element>
 <element name="S3-AN5" library="SparkFun-Connectors" package="1X03_LOCK" value="AN5" x="97.042" y="60.411" smashed="yes" rot="MR90">

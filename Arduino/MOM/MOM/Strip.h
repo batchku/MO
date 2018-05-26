@@ -6,6 +6,7 @@
 #include <Bounce2.h>
 #include <LinkedList.h>
 #include "Sensor.h"
+#include <SoftPWM.h>
 
 class Strip
 {

@@ -12,5 +12,4 @@
 #X obj 897 396 mo.an 3;
 #X obj 977 396 mo.an 4;
 #X obj 12 24 mo.init;
-#X obj 371 25 mo.strip 2;
-#X obj 560 25 mo.strip 3;
+#X obj 371 25 mo.strip 4;

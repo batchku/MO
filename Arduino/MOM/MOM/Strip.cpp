@@ -23,6 +23,10 @@ Strip::Strip(int _stripNum) {
     sensors.add( &pots[b]);
   }
 
+  SoftPWMBegin();
+  SoftPWMSet(STRIPLEDS[stripNum / 2], 0);
+  SoftPWMSetFadeTime(STRIPLEDS[stripNum / 2], 100, 100);
+
 }
 
 void Strip::update()
@@ -68,7 +72,7 @@ void Strip::light(int note, int velocity) {
   }
 
   if (note == STRIPLEDS_MIDI[stripNum / 2]) {
-    analogWrite(STRIPLEDS[stripNum / 2], velocity * 2);
+    SoftPWMSet(STRIPLEDS[stripNum / 2], velocity * 2);
   }
 }
 
