@@ -1,3 +1,4 @@
+
 //Change these values for debugging
 #define NUM_SERVOS 2    //2
 #define NUM_MOTORS 2    //2
@@ -22,7 +23,8 @@ Servo servo[NUM_SERVOS];
 Shield shield;
 
 Strip * strip1 = new Strip(0);
-Strip * strip2 = new Strip(3);
+Strip * strip2 = new Strip(1);
+Strip * strip3 = new Strip(2);
 
 Joystick joy1(0);
 Joystick joy2(1);
@@ -54,6 +56,7 @@ void setup() {
   //Add Each strip to strips collection
   strips.add(strip1);
   strips.add(strip2);
+  strips.add(strip3);
 
   //Add additional sensors to shield
   //shield.add(ir);
