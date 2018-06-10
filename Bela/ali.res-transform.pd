@@ -1,9 +1,9 @@
-#N canvas 495 23 891 669 10;
+#N canvas 521 -785 891 669 10;
 #X obj 158 57 inlet;
 #X obj 175 570 outlet;
 #X obj 531 199 list;
-#N canvas 0 22 450 300 rate-scale 0;
-#X obj 106 192 list-iter 3;
+#N canvas 835 22 628 529 rate-scale 0;
+#X obj 109 170 list-iter 3;
 #X obj 109 224 unpack 1 1 1;
 #X obj 220 266 * 1;
 #X obj 117 307 pack 1 1 1;
@@ -27,7 +27,7 @@
 #X restore 189 309 pd rate-scale;
 #X obj 211 149 t b f;
 #X obj 284 149 t b f;
-#N canvas 0 23 563 589 frequency-scale 0;
+#N canvas 876 23 563 589 frequency-scale 0;
 #X obj 169 194 list-iter 3;
 #X obj 172 226 unpack 1 1 1;
 #X obj 283 268 * 1;
