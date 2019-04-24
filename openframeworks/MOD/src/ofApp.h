@@ -4,7 +4,7 @@
 #include "ofxMidi.h"
 #include "vidLayer.h"
 #include "ofxCv.h"
-#include "ofxCvPiCam.h"
+//#include "ofxCvPiCam.h"
 #include "Utils.h"
 #include "ofxXmlSettings.h"
 #include "ConsoleListener.h"
@@ -12,12 +12,12 @@
 //for Raspberry Pi
 
 
-#ifdef TARGET_LINUX_ARM
+// #ifdef TARGET_LINUX_ARM
 
-    //#include "TerminalListener.h"
-    #include "ofxRPiCameraVideoGrabber.h"
+//     //#include "TerminalListener.h"
+//     #include "ofxRPiCameraVideoGrabber.h"
 
-#endif
+// #endif
 
 //use extern variables to have access across files
 
@@ -125,26 +125,27 @@ class ofApp : public ofBaseApp, public ofxMidiListener {
     
         // Live Camera
     
-        #ifdef TARGET_LINUX_ARM
+        /
+        // #ifdef TARGET_LINUX_ARM
     
-            /*
-            void onCharacterReceived(KeyListenerEventData& e)
-            {
-                keyPressed((int)e.character);
-            };
-            */
-            //TerminalListener consoleListener;
+        //     /*
+        //     void onCharacterReceived(KeyListenerEventData& e)
+        //     {
+        //         keyPressed((int)e.character);
+        //     };
+        //     */
+        //     //TerminalListener consoleListener;
             
-            OMXCameraSettings omxCameraSettings;
-            ofxRPiCameraVideoGrabber videoGrabber;
-            ofxCvPiCam videoGrabber2;
+        //     OMXCameraSettings omxCameraSettings;
+        //     ofxRPiCameraVideoGrabber videoGrabber;
+        //     ofxCvPiCam videoGrabber2;
 
     
-        #elif defined(TARGET_OSX)
+        // #elif defined(TARGET_OSX)
+        
+        ofVideoGrabber videoGrabber;
     
-            ofVideoGrabber videoGrabber;
-    
-        #endif
+        //#endif
 
     
         //XML settings related
